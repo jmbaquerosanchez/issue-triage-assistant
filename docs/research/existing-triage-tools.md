@@ -1,5 +1,7 @@
 # Existing AI triage and duplicate detection tools
 
+> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+
 Research for ticket #6. Researched on 2026-11-20 against primary sources: each tool's own docs, repository, workflow files or announcement; GitHub's docs and changelog; and the papers themselves. Where a claim could not be checked against its owner, the text says so.
 
 **Question.** Which tools already triage GitHub issues with AI or detect duplicate issues, GitHub's own features included? For each one: what it does, whether a human approves its actions, whether it publishes an evaluation, and whether it is open source. Plus any published duplicate-detection baselines or datasets worth comparing against.
