@@ -1,5 +1,7 @@
 # Redistribution of issue text and derived data
 
+> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+
 Research for ticket #5 of the phase-1 map (#2). The question: can this repository publish a target repository's issue text, comments and documentation, or data derived from them (embeddings, a ready-built index), so that the demo runs without downloading anything?
 
 This is not legal advice. It reports what the primary texts say, where they are ambiguous, and what comparable projects do. The demo mode is decided in #15. All sources were read on 2026-11-20; GitHub's Terms of Service quoted here are the version effective April 27, 2026.
