@@ -3,17 +3,17 @@
   "skills": {
     "jmb-code-review": {
       "source": "jmbaquerosanchez/skills",
-      "commit": "f60c8c7e1bf449467055cc42dbf4c9581789184a",
+      "commit": "51f69703ec7f82a6ec1ca102c4ce9e3cf3f8d413",
       "sourceType": "github",
       "skillPath": "skills/jmb-code-review/SKILL.md",
-      "computedHash": "d8a823cddc5a4c65aa778b9bd59c296180cd49de44483354d065f10d0ecfa911"
+      "computedHash": "f77619fbe0b83c5fe65b0159cc59c129fe6877e3bf1a0dfd7e82dd906b83f355"
     },
     "jmb-codebase-design": {
       "source": "jmbaquerosanchez/skills",
-      "commit": "f60c8c7e1bf449467055cc42dbf4c9581789184a",
+      "commit": "51f69703ec7f82a6ec1ca102c4ce9e3cf3f8d413",
       "sourceType": "github",
       "skillPath": "skills/jmb-codebase-design/SKILL.md",
-      "computedHash": "5f46ae00f2764370c25fd8edd7bef00b73daf76eba7695ad33cb7aa0fdadc57b"
+      "computedHash": "44d4cde85778d8f3e630dd5947c668212394f1d14601d456bdcc99a0990a5e1c"
     },
     "jmb-domain-modeling": {
       "source": "jmbaquerosanchez/skills",
@@ -31,10 +31,10 @@
     },
     "jmb-grilling": {
       "source": "jmbaquerosanchez/skills",
-      "commit": "f60c8c7e1bf449467055cc42dbf4c9581789184a",
+      "commit": "51f69703ec7f82a6ec1ca102c4ce9e3cf3f8d413",
       "sourceType": "github",
       "skillPath": "skills/jmb-grilling/SKILL.md",
-      "computedHash": "8a4031f4358d1ece725cb7f0fed412be9254fdbe4a006402ebfe9f1d8c5396ad"
+      "computedHash": "f449d29c3443ef38b232f3a6835268d3480989c2d2436d281eec13ef5cf8a70f"
     },
     "jmb-implement-frontier": {
       "source": "jmbaquerosanchez/skills",
@@ -52,10 +52,10 @@
     },
     "jmb-improve-codebase-architecture": {
       "source": "jmbaquerosanchez/skills",
-      "commit": "f60c8c7e1bf449467055cc42dbf4c9581789184a",
+      "commit": "51f69703ec7f82a6ec1ca102c4ce9e3cf3f8d413",
       "sourceType": "github",
       "skillPath": "skills/jmb-improve-codebase-architecture/SKILL.md",
-      "computedHash": "d406d9f5f6ba2fcaa28746156f02c04df8ef0d1f3f26f3a837a176f9e5de7a96"
+      "computedHash": "9fcf544f5dfafd9f164e8cd313826bb34e98f0c3a68ef584cc0f90b4bd465903"
     },
     "jmb-prototype": {
       "source": "jmbaquerosanchez/skills",
@@ -66,10 +66,10 @@
     },
     "jmb-research": {
       "source": "jmbaquerosanchez/skills",
-      "commit": "f60c8c7e1bf449467055cc42dbf4c9581789184a",
+      "commit": "51f69703ec7f82a6ec1ca102c4ce9e3cf3f8d413",
       "sourceType": "github",
       "skillPath": "skills/jmb-research/SKILL.md",
-      "computedHash": "fed79496d97abc899c029a6d4a7964d39fcd8503230653411fdf4f2a56307619"
+      "computedHash": "2be4725dc42f2242406ee219346ca1da7ed87c10e61fb34b44bdf4e643f296f3"
     },
     "jmb-resolving-merge-conflicts": {
       "source": "jmbaquerosanchez/skills",
@@ -101,10 +101,10 @@
     },
     "jmb-sync": {
       "source": "jmbaquerosanchez/skills",
-      "commit": "f60c8c7e1bf449467055cc42dbf4c9581789184a",
+      "commit": "51f69703ec7f82a6ec1ca102c4ce9e3cf3f8d413",
       "sourceType": "github",
       "skillPath": "skills/jmb-sync/SKILL.md",
-      "computedHash": "763ecf6ba73190dc582585d676111780c74ad018278cbf13d1c290247237cc92"
+      "computedHash": "edf7bc20e1f85eebecb548a3856fd337b30689944dc1cf8c9d63a2a4824b8b5f"
     },
     "jmb-tdd": {
       "source": "jmbaquerosanchez/skills",
@@ -143,10 +143,10 @@
     },
     "jmb-wayfinder": {
       "source": "jmbaquerosanchez/skills",
-      "commit": "f60c8c7e1bf449467055cc42dbf4c9581789184a",
+      "commit": "51f69703ec7f82a6ec1ca102c4ce9e3cf3f8d413",
       "sourceType": "github",
       "skillPath": "skills/jmb-wayfinder/SKILL.md",
-      "computedHash": "057df46e905adb26b1bc76336a062c40b22dd2074ae0ece87b063f80ca81fc60"
+      "computedHash": "b2eb7bb73fd904fb24a8f2101827db10206112b8d3ba437eaeaa673871cb7adb"
     },
     "jmb-wizard": {
       "source": "jmbaquerosanchez/skills",
