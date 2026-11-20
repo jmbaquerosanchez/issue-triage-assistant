@@ -1,0 +1,1305 @@
+{
+ "angular/angular": {
+  "frame": 2613,
+  "n": 48,
+  "usable_strict": {
+   "k": 10,
+   "p": 0.208,
+   "est": 544,
+   "lo": 307,
+   "hi": 895
+  },
+  "usable_main": {
+   "k": 21,
+   "p": 0.438,
+   "est": 1143,
+   "lo": 802,
+   "hi": 1508
+  },
+  "usable_lenient": {
+   "k": 21,
+   "p": 0.438,
+   "est": 1143,
+   "lo": 802,
+   "hi": 1508
+  },
+  "marker": {
+   "maint_comment": 15,
+   "unmarked": 20,
+   "maintainer": 12,
+   "author_self": 1
+  },
+  "original_how": {
+   "explicit_text": 15,
+   "explicit_event": 12
+  },
+  "first_actor": {
+   "null": 35,
+   "human": 13
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "anthropics/claude-code": {
+  "frame": 33137,
+  "n": 40,
+  "usable_strict": {
+   "k": 6,
+   "p": 0.15,
+   "est": 4971,
+   "lo": 2340,
+   "hi": 9634
+  },
+  "usable_main": {
+   "k": 6,
+   "p": 0.15,
+   "est": 4971,
+   "lo": 2340,
+   "hi": 9634
+  },
+  "usable_lenient": {
+   "k": 6,
+   "p": 0.15,
+   "est": 4971,
+   "lo": 2340,
+   "hi": 9634
+  },
+  "marker": {
+   "bot_only": 26,
+   "unknown_actor": 1,
+   "maintainer": 6,
+   "unmarked": 4,
+   "author_self": 3
+  },
+  "original_how": {
+   "explicit_event": 5,
+   "explicit_text": 1
+  },
+  "first_actor": {
+   "bot:github-actions": 28,
+   "human": 8,
+   "null": 4
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 16,
+  "bot_dedupe_logins": {
+   "github-actions": 16
+  },
+  "truncated": 0
+ },
+ "dart-lang/sdk": {
+  "frame": 4374,
+  "n": 46,
+  "usable_strict": {
+   "k": 19,
+   "p": 0.413,
+   "est": 1807,
+   "lo": 1237,
+   "hi": 2435
+  },
+  "usable_main": {
+   "k": 22,
+   "p": 0.478,
+   "est": 2092,
+   "lo": 1493,
+   "hi": 2706
+  },
+  "usable_lenient": {
+   "k": 25,
+   "p": 0.543,
+   "est": 2377,
+   "lo": 1757,
+   "hi": 2968
+  },
+  "marker": {
+   "maintainer": 27,
+   "bot_only": 1,
+   "unmarked": 11,
+   "maint_comment": 5,
+   "author_self": 2
+  },
+  "original_how": {
+   "inferred_ref": 3,
+   "explicit_text": 8,
+   "explicit_event": 19,
+   "none": 2
+  },
+  "first_actor": {
+   "human": 29,
+   "null": 16,
+   "bot:DartBot": 1
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "dotnet/aspnetcore": {
+  "frame": 2147,
+  "n": 42,
+  "usable_strict": {
+   "k": 15,
+   "p": 0.357,
+   "est": 767,
+   "lo": 494,
+   "hi": 1091
+  },
+  "usable_main": {
+   "k": 17,
+   "p": 0.405,
+   "est": 869,
+   "lo": 581,
+   "hi": 1192
+  },
+  "usable_lenient": {
+   "k": 21,
+   "p": 0.5,
+   "est": 1074,
+   "lo": 763,
+   "hi": 1384
+  },
+  "marker": {
+   "maintainer": 35,
+   "unmarked": 2,
+   "maint_comment": 4,
+   "author_self": 1
+  },
+  "original_how": {
+   "none": 5,
+   "explicit_event": 9,
+   "explicit_text": 17,
+   "inferred_ref": 8
+  },
+  "first_actor": {
+   "human": 36,
+   "null": 6
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "dotnet/roslyn": {
+  "frame": 2754,
+  "n": 46,
+  "usable_strict": {
+   "k": 27,
+   "p": 0.587,
+   "est": 1616,
+   "lo": 1221,
+   "hi": 1975
+  },
+  "usable_main": {
+   "k": 30,
+   "p": 0.652,
+   "est": 1796,
+   "lo": 1398,
+   "hi": 2129
+  },
+  "usable_lenient": {
+   "k": 33,
+   "p": 0.717,
+   "est": 1976,
+   "lo": 1582,
+   "hi": 2277
+  },
+  "marker": {
+   "maintainer": 35,
+   "unmarked": 7,
+   "maint_comment": 3,
+   "author_self": 1
+  },
+  "original_how": {
+   "explicit_text": 19,
+   "inferred_ref": 3,
+   "explicit_event": 15,
+   "none": 1
+  },
+  "first_actor": {
+   "human": 36,
+   "null": 10
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "dotnet/runtime": {
+  "frame": 3714,
+  "n": 44,
+  "usable_strict": {
+   "k": 11,
+   "p": 0.25,
+   "est": 928,
+   "lo": 541,
+   "hi": 1465
+  },
+  "usable_main": {
+   "k": 25,
+   "p": 0.568,
+   "est": 2110,
+   "lo": 1568,
+   "hi": 2612
+  },
+  "usable_lenient": {
+   "k": 25,
+   "p": 0.568,
+   "est": 2110,
+   "lo": 1568,
+   "hi": 2612
+  },
+  "marker": {
+   "unmarked": 12,
+   "maintainer": 13,
+   "maint_comment": 15,
+   "author_self": 4
+  },
+  "original_how": {
+   "explicit_event": 13,
+   "explicit_text": 15
+  },
+  "first_actor": {
+   "null": 27,
+   "human": 17
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "flutter/flutter": {
+  "frame": 12651,
+  "n": 44,
+  "usable_strict": {
+   "k": 20,
+   "p": 0.455,
+   "est": 5750,
+   "lo": 4011,
+   "hi": 7582
+  },
+  "usable_main": {
+   "k": 21,
+   "p": 0.477,
+   "est": 6038,
+   "lo": 4270,
+   "hi": 7852
+  },
+  "usable_lenient": {
+   "k": 30,
+   "p": 0.682,
+   "est": 8626,
+   "lo": 6761,
+   "hi": 10121
+  },
+  "marker": {
+   "unmarked": 12,
+   "maintainer": 31,
+   "maint_comment": 1
+  },
+  "original_how": {
+   "explicit_event": 10,
+   "explicit_text": 13,
+   "inferred_ref": 9
+  },
+  "first_actor": {
+   "human": 31,
+   "null": 13
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "godotengine/godot": {
+  "frame": 7128,
+  "n": 46,
+  "usable_strict": {
+   "k": 12,
+   "p": 0.261,
+   "est": 1859,
+   "lo": 1112,
+   "hi": 2870
+  },
+  "usable_main": {
+   "k": 32,
+   "p": 0.696,
+   "est": 4959,
+   "lo": 3934,
+   "hi": 5768
+  },
+  "usable_lenient": {
+   "k": 32,
+   "p": 0.696,
+   "est": 4959,
+   "lo": 3934,
+   "hi": 5768
+  },
+  "marker": {
+   "unmarked": 9,
+   "maint_comment": 23,
+   "maintainer": 13,
+   "author_self": 1
+  },
+  "original_how": {
+   "explicit_text": 23,
+   "explicit_event": 13
+  },
+  "first_actor": {
+   "null": 32,
+   "human": 14
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "golang/go": {
+  "frame": 4915,
+  "n": 48,
+  "usable_strict": {
+   "k": 21,
+   "p": 0.438,
+   "est": 2150,
+   "lo": 1509,
+   "hi": 2837
+  },
+  "usable_main": {
+   "k": 22,
+   "p": 0.458,
+   "est": 2253,
+   "lo": 1601,
+   "hi": 2935
+  },
+  "usable_lenient": {
+   "k": 22,
+   "p": 0.458,
+   "est": 2253,
+   "lo": 1601,
+   "hi": 2935
+  },
+  "marker": {
+   "unmarked": 18,
+   "maintainer": 26,
+   "maint_comment": 2,
+   "author_self": 2
+  },
+  "original_how": {
+   "explicit_event": 25,
+   "explicit_text": 2,
+   "none": 1
+  },
+  "first_actor": {
+   "human": 28,
+   "null": 20
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "grafana/grafana": {
+  "frame": 2125,
+  "n": 48,
+  "usable_strict": {
+   "k": 15,
+   "p": 0.312,
+   "est": 664,
+   "lo": 424,
+   "hi": 963
+  },
+  "usable_main": {
+   "k": 16,
+   "p": 0.333,
+   "est": 708,
+   "lo": 461,
+   "hi": 1009
+  },
+  "usable_lenient": {
+   "k": 22,
+   "p": 0.458,
+   "est": 974,
+   "lo": 692,
+   "hi": 1269
+  },
+  "marker": {
+   "unmarked": 17,
+   "maintainer": 27,
+   "maint_comment": 3,
+   "bot_only": 1
+  },
+  "original_how": {
+   "explicit_text": 12,
+   "inferred_ref": 7,
+   "explicit_event": 8,
+   "none": 3
+  },
+  "first_actor": {
+   "null": 20,
+   "human": 20,
+   "bot:grafanabot": 8
+  },
+  "on_command": 7,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "home-assistant/core": {
+  "frame": 3723,
+  "n": 46,
+  "usable_strict": {
+   "k": 17,
+   "p": 0.37,
+   "est": 1376,
+   "lo": 913,
+   "hi": 1914
+  },
+  "usable_main": {
+   "k": 25,
+   "p": 0.543,
+   "est": 2023,
+   "lo": 1496,
+   "hi": 2526
+  },
+  "usable_lenient": {
+   "k": 26,
+   "p": 0.565,
+   "est": 2104,
+   "lo": 1573,
+   "hi": 2598
+  },
+  "marker": {
+   "maintainer": 21,
+   "unmarked": 15,
+   "maint_comment": 9,
+   "author_self": 1
+  },
+  "original_how": {
+   "inferred_ref": 1,
+   "explicit_text": 10,
+   "none": 1,
+   "explicit_event": 18
+  },
+  "first_actor": {
+   "null": 24,
+   "human": 22
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "kubernetes/kubernetes": {
+  "frame": 1214,
+  "n": 41,
+  "usable_strict": {
+   "k": 0,
+   "p": 0.0,
+   "est": 0,
+   "lo": 0,
+   "hi": 104
+  },
+  "usable_main": {
+   "k": 17,
+   "p": 0.415,
+   "est": 503,
+   "lo": 337,
+   "hi": 688
+  },
+  "usable_lenient": {
+   "k": 19,
+   "p": 0.463,
+   "est": 563,
+   "lo": 389,
+   "hi": 744
+  },
+  "marker": {
+   "unmarked": 17,
+   "maint_comment": 20,
+   "maintainer": 4
+  },
+  "original_how": {
+   "explicit_text": 21,
+   "inferred_ref": 2,
+   "none": 1
+  },
+  "first_actor": {
+   "null": 37,
+   "bot:k8s-ci-robot": 4
+  },
+  "on_command": 4,
+  "bot_dedupe_comment_issues": 1,
+  "bot_dedupe_logins": {
+   "k8s-ci-robot": 1
+  },
+  "truncated": 0
+ },
+ "llvm/llvm-project": {
+  "frame": 6873,
+  "n": 48,
+  "usable_strict": {
+   "k": 13,
+   "p": 0.271,
+   "est": 1861,
+   "lo": 1139,
+   "hi": 2818
+  },
+  "usable_main": {
+   "k": 24,
+   "p": 0.5,
+   "est": 3436,
+   "lo": 2501,
+   "hi": 4372
+  },
+  "usable_lenient": {
+   "k": 26,
+   "p": 0.542,
+   "est": 3723,
+   "lo": 2769,
+   "hi": 4634
+  },
+  "marker": {
+   "imported": 11,
+   "unmarked": 19,
+   "maintainer": 18
+  },
+  "original_how": {
+   "explicit_text": 19,
+   "inferred_ref": 2,
+   "none": 2,
+   "explicit_event": 6
+  },
+  "first_actor": {
+   "null": 30,
+   "human": 18
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "microsoft/PowerToys": {
+  "frame": 16530,
+  "n": 46,
+  "usable_strict": {
+   "k": 33,
+   "p": 0.717,
+   "est": 11858,
+   "lo": 9497,
+   "hi": 13666
+  },
+  "usable_main": {
+   "k": 36,
+   "p": 0.783,
+   "est": 12937,
+   "lo": 10650,
+   "hi": 14503
+  },
+  "usable_lenient": {
+   "k": 39,
+   "p": 0.848,
+   "est": 14015,
+   "lo": 11865,
+   "hi": 15278
+  },
+  "marker": {
+   "maintainer": 41,
+   "author_self": 1,
+   "maint_comment": 3,
+   "unmarked": 1
+  },
+  "original_how": {
+   "inferred_ref": 4,
+   "explicit_text": 31,
+   "none": 3,
+   "explicit_event": 6
+  },
+  "first_actor": {
+   "human": 20,
+   "bot:microsoft-github-policy-service": 15,
+   "ghost": 5,
+   "null": 4,
+   "bot:github-actions": 2
+  },
+  "on_command": 20,
+  "bot_dedupe_comment_issues": 4,
+  "bot_dedupe_logins": {
+   "github-actions": 4
+  },
+  "truncated": 0
+ },
+ "microsoft/TypeScript": {
+  "frame": 7765,
+  "n": 48,
+  "usable_strict": {
+   "k": 14,
+   "p": 0.292,
+   "est": 2265,
+   "lo": 1416,
+   "hi": 3353
+  },
+  "usable_main": {
+   "k": 15,
+   "p": 0.312,
+   "est": 2427,
+   "lo": 1549,
+   "hi": 3520
+  },
+  "usable_lenient": {
+   "k": 29,
+   "p": 0.604,
+   "est": 4691,
+   "lo": 3596,
+   "hi": 5667
+  },
+  "marker": {
+   "maint_comment": 1,
+   "maintainer": 31,
+   "unmarked": 14,
+   "unknown_actor": 2
+  },
+  "original_how": {
+   "explicit_text": 17,
+   "inferred_ref": 14,
+   "none": 1
+  },
+  "first_actor": {
+   "human": 31,
+   "null": 15,
+   "ghost": 2
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 1,
+  "bot_dedupe_logins": {
+   "vscodebot": 1
+  },
+  "truncated": 0
+ },
+ "microsoft/WSL": {
+  "frame": 1683,
+  "n": 45,
+  "usable_strict": {
+   "k": 17,
+   "p": 0.378,
+   "est": 636,
+   "lo": 423,
+   "hi": 881
+  },
+  "usable_main": {
+   "k": 18,
+   "p": 0.4,
+   "est": 673,
+   "lo": 455,
+   "hi": 918
+  },
+  "usable_lenient": {
+   "k": 31,
+   "p": 0.689,
+   "est": 1159,
+   "lo": 914,
+   "hi": 1354
+  },
+  "marker": {
+   "maintainer": 35,
+   "unmarked": 6,
+   "maint_comment": 1,
+   "bot_only": 2,
+   "author_self": 1
+  },
+  "original_how": {
+   "explicit_event": 2,
+   "none": 3,
+   "explicit_text": 18,
+   "inferred_ref": 13
+  },
+  "first_actor": {
+   "human": 24,
+   "ghost": 10,
+   "null": 7,
+   "bot:microsoft-github-policy-service": 4
+  },
+  "on_command": 12,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 1
+ },
+ "microsoft/terminal": {
+  "frame": 4336,
+  "n": 44,
+  "usable_strict": {
+   "k": 37,
+   "p": 0.841,
+   "est": 3646,
+   "lo": 3063,
+   "hi": 3992
+  },
+  "usable_main": {
+   "k": 37,
+   "p": 0.841,
+   "est": 3646,
+   "lo": 3063,
+   "hi": 3992
+  },
+  "usable_lenient": {
+   "k": 41,
+   "p": 0.932,
+   "est": 4040,
+   "lo": 3546,
+   "hi": 4234
+  },
+  "marker": {
+   "maintainer": 43,
+   "unmarked": 1
+  },
+  "original_how": {
+   "explicit_text": 35,
+   "none": 1,
+   "inferred_ref": 4,
+   "explicit_event": 3
+  },
+  "first_actor": {
+   "ghost": 29,
+   "human": 8,
+   "bot:microsoft-github-policy-service": 6,
+   "null": 1
+  },
+  "on_command": 35,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "microsoft/vscode": {
+  "frame": 42796,
+  "n": 46,
+  "usable_strict": {
+   "k": 20,
+   "p": 0.435,
+   "est": 18607,
+   "lo": 12928,
+   "hi": 24716
+  },
+  "usable_main": {
+   "k": 20,
+   "p": 0.435,
+   "est": 18607,
+   "lo": 12928,
+   "hi": 24716
+  },
+  "usable_lenient": {
+   "k": 28,
+   "p": 0.609,
+   "est": 26050,
+   "lo": 19882,
+   "hi": 31501
+  },
+  "marker": {
+   "maintainer": 35,
+   "unmarked": 8,
+   "maint_comment": 2,
+   "bot_only": 1
+  },
+  "original_how": {
+   "explicit_text": 17,
+   "inferred_ref": 11,
+   "explicit_event": 6,
+   "none": 3
+  },
+  "first_actor": {
+   "human": 23,
+   "null": 10,
+   "bot:vscodenpa": 7,
+   "bot:vscode-triage-bot": 4,
+   "bot:vscodebot": 1,
+   "bot:vs-code-engineering": 1
+  },
+  "on_command": 12,
+  "bot_dedupe_comment_issues": 4,
+  "bot_dedupe_logins": {
+   "vscodebot": 4
+  },
+  "truncated": 0
+ },
+ "mui/material-ui": {
+  "frame": 2263,
+  "n": 44,
+  "usable_strict": {
+   "k": 28,
+   "p": 0.636,
+   "est": 1440,
+   "lo": 1106,
+   "hi": 1725
+  },
+  "usable_main": {
+   "k": 32,
+   "p": 0.727,
+   "est": 1646,
+   "lo": 1316,
+   "hi": 1893
+  },
+  "usable_lenient": {
+   "k": 34,
+   "p": 0.773,
+   "est": 1749,
+   "lo": 1426,
+   "hi": 1972
+  },
+  "marker": {
+   "maintainer": 38,
+   "unmarked": 2,
+   "maint_comment": 4
+  },
+  "original_how": {
+   "inferred_ref": 3,
+   "explicit_text": 14,
+   "none": 6,
+   "explicit_event": 19
+  },
+  "first_actor": {
+   "human": 38,
+   "null": 6
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "nextcloud/server": {
+  "frame": 1976,
+  "n": 44,
+  "usable_strict": {
+   "k": 14,
+   "p": 0.318,
+   "est": 629,
+   "lo": 395,
+   "hi": 920
+  },
+  "usable_main": {
+   "k": 25,
+   "p": 0.568,
+   "est": 1123,
+   "lo": 834,
+   "hi": 1389
+  },
+  "usable_lenient": {
+   "k": 26,
+   "p": 0.591,
+   "est": 1168,
+   "lo": 878,
+   "hi": 1429
+  },
+  "marker": {
+   "maint_comment": 14,
+   "unmarked": 13,
+   "maintainer": 17
+  },
+  "original_how": {
+   "explicit_text": 14,
+   "explicit_event": 16,
+   "inferred_ref": 1
+  },
+  "first_actor": {
+   "null": 27,
+   "human": 17
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 1
+ },
+ "openai/codex": {
+  "frame": 3591,
+  "n": 40,
+  "usable_strict": {
+   "k": 16,
+   "p": 0.4,
+   "est": 1436,
+   "lo": 946,
+   "hi": 1990
+  },
+  "usable_main": {
+   "k": 16,
+   "p": 0.4,
+   "est": 1436,
+   "lo": 946,
+   "hi": 1990
+  },
+  "usable_lenient": {
+   "k": 16,
+   "p": 0.4,
+   "est": 1436,
+   "lo": 946,
+   "hi": 1990
+  },
+  "marker": {
+   "maint_comment": 1,
+   "unmarked": 12,
+   "maintainer": 20,
+   "author_self": 7
+  },
+  "original_how": {
+   "explicit_text": 1,
+   "explicit_event": 20
+  },
+  "first_actor": {
+   "human": 27,
+   "null": 13
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 23,
+  "bot_dedupe_logins": {
+   "github-actions": 23
+  },
+  "truncated": 0
+ },
+ "oven-sh/bun": {
+  "frame": 3461,
+  "n": 41,
+  "usable_strict": {
+   "k": 25,
+   "p": 0.61,
+   "est": 2110,
+   "lo": 1583,
+   "hi": 2573
+  },
+  "usable_main": {
+   "k": 27,
+   "p": 0.659,
+   "est": 2279,
+   "lo": 1750,
+   "hi": 2715
+  },
+  "usable_lenient": {
+   "k": 27,
+   "p": 0.659,
+   "est": 2279,
+   "lo": 1750,
+   "hi": 2715
+  },
+  "marker": {
+   "unmarked": 4,
+   "maintainer": 28,
+   "bot_only": 7,
+   "maint_comment": 2
+  },
+  "original_how": {
+   "explicit_event": 28,
+   "explicit_text": 2
+  },
+  "first_actor": {
+   "human": 28,
+   "null": 6,
+   "bot:github-actions": 4,
+   "bot:robobun": 3
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 10,
+  "bot_dedupe_logins": {
+   "github-actions": 10
+  },
+  "truncated": 0
+ },
+ "pandas-dev/pandas": {
+  "frame": 1725,
+  "n": 47,
+  "usable_strict": {
+   "k": 13,
+   "p": 0.277,
+   "est": 477,
+   "lo": 292,
+   "hi": 720
+  },
+  "usable_main": {
+   "k": 23,
+   "p": 0.489,
+   "est": 844,
+   "lo": 608,
+   "hi": 1083
+  },
+  "usable_lenient": {
+   "k": 34,
+   "p": 0.723,
+   "est": 1248,
+   "lo": 1005,
+   "hi": 1433
+  },
+  "marker": {
+   "maint_comment": 10,
+   "unmarked": 13,
+   "maintainer": 24
+  },
+  "original_how": {
+   "explicit_text": 21,
+   "inferred_ref": 11,
+   "explicit_event": 2
+  },
+  "first_actor": {
+   "human": 24,
+   "null": 23
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "python/cpython": {
+  "frame": 3766,
+  "n": 44,
+  "usable_strict": {
+   "k": 11,
+   "p": 0.25,
+   "est": 942,
+   "lo": 549,
+   "hi": 1485
+  },
+  "usable_main": {
+   "k": 15,
+   "p": 0.341,
+   "est": 1284,
+   "lo": 824,
+   "hi": 1840
+  },
+  "usable_lenient": {
+   "k": 16,
+   "p": 0.364,
+   "est": 1369,
+   "lo": 896,
+   "hi": 1926
+  },
+  "marker": {
+   "maintainer": 17,
+   "unmarked": 19,
+   "maint_comment": 6,
+   "author_self": 2
+  },
+  "original_how": {
+   "explicit_event": 16,
+   "explicit_text": 6,
+   "inferred_ref": 1
+  },
+  "first_actor": {
+   "null": 25,
+   "human": 19
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "pytorch/pytorch": {
+  "frame": 1321,
+  "n": 42,
+  "usable_strict": {
+   "k": 11,
+   "p": 0.262,
+   "est": 346,
+   "lo": 202,
+   "hi": 543
+  },
+  "usable_main": {
+   "k": 17,
+   "p": 0.405,
+   "est": 535,
+   "lo": 357,
+   "hi": 733
+  },
+  "usable_lenient": {
+   "k": 17,
+   "p": 0.405,
+   "est": 535,
+   "lo": 357,
+   "hi": 733
+  },
+  "marker": {
+   "maint_comment": 7,
+   "maintainer": 16,
+   "unmarked": 17,
+   "author_self": 2
+  },
+  "original_how": {
+   "explicit_text": 8,
+   "explicit_event": 15
+  },
+  "first_actor": {
+   "null": 24,
+   "human": 18
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "rust-lang/rust": {
+  "frame": 4433,
+  "n": 46,
+  "usable_strict": {
+   "k": 9,
+   "p": 0.196,
+   "est": 867,
+   "lo": 472,
+   "hi": 1470
+  },
+  "usable_main": {
+   "k": 19,
+   "p": 0.413,
+   "est": 1831,
+   "lo": 1254,
+   "hi": 2467
+  },
+  "usable_lenient": {
+   "k": 19,
+   "p": 0.413,
+   "est": 1831,
+   "lo": 1254,
+   "hi": 2467
+  },
+  "marker": {
+   "unmarked": 24,
+   "maint_comment": 11,
+   "maintainer": 11
+  },
+  "original_how": {
+   "explicit_text": 11,
+   "explicit_event": 11
+  },
+  "first_actor": {
+   "null": 35,
+   "human": 11
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "spring-projects/spring-boot": {
+  "frame": 2278,
+  "n": 48,
+  "usable_strict": {
+   "k": 12,
+   "p": 0.25,
+   "est": 570,
+   "lo": 340,
+   "hi": 884
+  },
+  "usable_main": {
+   "k": 15,
+   "p": 0.312,
+   "est": 712,
+   "lo": 454,
+   "hi": 1033
+  },
+  "usable_lenient": {
+   "k": 27,
+   "p": 0.562,
+   "est": 1281,
+   "lo": 963,
+   "hi": 1579
+  },
+  "marker": {
+   "maint_comment": 4,
+   "unmarked": 4,
+   "maintainer": 40
+  },
+  "original_how": {
+   "explicit_text": 17,
+   "inferred_ref": 17,
+   "none": 6,
+   "explicit_event": 4
+  },
+  "first_actor": {
+   "human": 40,
+   "null": 8
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "vercel/next.js": {
+  "frame": 1285,
+  "n": 44,
+  "usable_strict": {
+   "k": 5,
+   "p": 0.114,
+   "est": 146,
+   "lo": 64,
+   "hi": 308
+  },
+  "usable_main": {
+   "k": 11,
+   "p": 0.25,
+   "est": 321,
+   "lo": 187,
+   "hi": 507
+  },
+  "usable_lenient": {
+   "k": 12,
+   "p": 0.273,
+   "est": 350,
+   "lo": 210,
+   "hi": 538
+  },
+  "marker": {
+   "unmarked": 24,
+   "maint_comment": 9,
+   "maintainer": 10,
+   "author_self": 1
+  },
+  "original_how": {
+   "explicit_text": 9,
+   "explicit_event": 9,
+   "inferred_ref": 1
+  },
+  "first_actor": {
+   "null": 33,
+   "human": 11
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ },
+ "zed-industries/zed": {
+  "frame": 3314,
+  "n": 44,
+  "usable_strict": {
+   "k": 15,
+   "p": 0.341,
+   "est": 1130,
+   "lo": 725,
+   "hi": 1619
+  },
+  "usable_main": {
+   "k": 16,
+   "p": 0.364,
+   "est": 1205,
+   "lo": 788,
+   "hi": 1695
+  },
+  "usable_lenient": {
+   "k": 16,
+   "p": 0.364,
+   "est": 1205,
+   "lo": 788,
+   "hi": 1695
+  },
+  "marker": {
+   "maintainer": 17,
+   "unmarked": 24,
+   "maint_comment": 1,
+   "author_self": 2
+  },
+  "original_how": {
+   "explicit_event": 17,
+   "explicit_text": 1
+  },
+  "first_actor": {
+   "null": 25,
+   "human": 19
+  },
+  "on_command": 0,
+  "bot_dedupe_comment_issues": 0,
+  "bot_dedupe_logins": {},
+  "truncated": 0
+ }
+}

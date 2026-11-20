@@ -1,0 +1,922 @@
+{
+ "microsoft/vscode": {
+  "prefix": "code.visualstudio.com/docs",
+  "frame": 3251,
+  "n": 20,
+  "k": 3,
+  "rows": [
+   {
+    "number": 38551,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 38560,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 67988,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 68006,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 91024,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 91145,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 119151,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 119258,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 180208,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 180266,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 181710,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 181716,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 195505,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 195542,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 208039,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 208055,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 225479,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 225669,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 325244,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 325747,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "microsoft/PowerToys": {
+  "prefix": "learn.microsoft.com",
+  "frame": 382,
+  "n": 14,
+  "k": 4,
+  "rows": [
+   {
+    "number": 1354,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 1881,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 4452,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 5571,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 10563,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 10810,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 15534,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 15597,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 22436,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 22459,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 27994,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 28018,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 28756,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 28876,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "flutter/flutter": {
+  "prefix": "docs.flutter.dev",
+  "frame": 957,
+  "n": 17,
+  "k": 6,
+  "rows": [
+   {
+    "number": 7150,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 8103,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 10824,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 10927,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 19083,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 21626,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 21839,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 54395,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 54784,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 96650,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 96653,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 117848,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 117938,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 168961,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 169027,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 172815,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 173174,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "godotengine/godot": {
+  "prefix": "docs.godotengine.org",
+  "frame": 1374,
+  "n": 20,
+  "k": 7,
+  "rows": [
+   {
+    "number": 208,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 405,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 6248,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 6276,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 7928,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 7994,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 30818,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 30861,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 38139,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 38167,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 42095,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 42162,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 45595,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 45599,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 76721,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 76840,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 85370,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 85416,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 109854,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 110109,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "microsoft/terminal": {
+  "prefix": "learn.microsoft.com",
+  "frame": 90,
+  "n": 12,
+  "k": 1,
+  "rows": [
+   {
+    "number": 1173,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 2531,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 12869,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 12950,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 13600,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 13970,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 14082,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 16896,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 17342,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 17558,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 18203,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 18213,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "llvm/llvm-project": {
+  "prefix": "llvm.org/docs",
+  "frame": 826,
+  "n": 16,
+  "k": 1,
+  "rows": [
+   {
+    "number": 49956,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 61221,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 61319,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 73510,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 75292,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 75313,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 79953,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 80287,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 84640,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 85069,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 123423,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 123947,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 134028,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 134377,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 149458,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 151001,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "golang/go": {
+  "prefix": "pkg.go.dev",
+  "frame": 1452,
+  "n": 20,
+  "k": 7,
+  "rows": [
+   {
+    "number": 16509,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 16666,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 31302,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 31669,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 34472,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 34544,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 40050,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 40103,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 43178,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 43205,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 58510,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 58517,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 58733,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 58752,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 59253,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 59263,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 71085,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 71088,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 78854,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 78880,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "microsoft/TypeScript": {
+  "prefix": "www.typescriptlang.org/docs",
+  "frame": 657,
+  "n": 18,
+  "k": 0,
+  "rows": [
+   {
+    "number": 8784,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 8839,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 20610,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 20613,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 21562,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 21670,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 31463,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 31768,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 39121,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 39171,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 41969,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 42100,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 57005,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 57046,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 61579,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 61594,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 62786,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 62814,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "home-assistant/core": {
+  "prefix": "www.home-assistant.io",
+  "frame": 5179,
+  "n": 20,
+  "k": 2,
+  "rows": [
+   {
+    "number": 7834,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 9120,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 13410,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 13446,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 17802,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 17839,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 21613,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 21729,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 50289,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 50344,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 73528,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 73540,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 89919,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 89924,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 122249,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 122311,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 124454,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 124460,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 131359,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 131384,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "dotnet/runtime": {
+  "prefix": "learn.microsoft.com",
+  "frame": 1123,
+  "n": 19,
+  "k": 4,
+  "rows": [
+   {
+    "number": 68328,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 68754,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 82165,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 82178,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 87407,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 87569,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 91571,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 91670,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 92345,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 92379,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 94231,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 105592,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 105614,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 109479,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 109615,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 120706,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 120927,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 129071,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 129308,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ },
+ "oven-sh/bun": {
+  "prefix": "bun.sh/docs",
+  "frame": 208,
+  "n": 18,
+  "k": 3,
+  "rows": [
+   {
+    "number": 38,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 43,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 3325,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 3502,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 4259,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 4335,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 6210,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 6224,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 11941,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 12091,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 22663,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 23615,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 24180,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 24383,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 29083,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 29347,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 43006,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 43796,
+    "maintainer_closing_docs_link": true
+   }
+  ]
+ },
+ "dotnet/roslyn": {
+  "prefix": "learn.microsoft.com",
+  "frame": 82,
+  "n": 12,
+  "k": 1,
+  "rows": [
+   {
+    "number": 20088,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 23089,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 46248,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 48083,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 56541,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 57525,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 60546,
+    "maintainer_closing_docs_link": true
+   },
+   {
+    "number": 61433,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 67632,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 68045,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 70816,
+    "maintainer_closing_docs_link": false
+   },
+   {
+    "number": 70947,
+    "maintainer_closing_docs_link": false
+   }
+  ]
+ }
+}

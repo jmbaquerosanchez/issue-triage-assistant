@@ -1,0 +1,1039 @@
+{
+ "microsoft/vscode": {
+  "closed": 240939,
+  "reason_dup": 4591,
+  "dup_comment": 24060,
+  "union": 42796,
+  "closed_by_pr": 22011,
+  "docs_link": 3251,
+  "dup_labels": [
+   "duplicate",
+   "*duplicate"
+  ],
+  "label_dup": 30625,
+  "docs_prefix": "code.visualstudio.com/docs"
+ },
+ "microsoft/TypeScript": {
+  "closed": 38902,
+  "reason_dup": 58,
+  "dup_comment": 5484,
+  "union": 7765,
+  "closed_by_pr": 6273,
+  "docs_link": 657,
+  "dup_labels": [
+   "Duplicate"
+  ],
+  "label_dup": 5860,
+  "docs_prefix": "www.typescriptlang.org/docs"
+ },
+ "facebook/react": {
+  "closed": 0,
+  "reason_dup": 0,
+  "dup_comment": 0,
+  "union": 0,
+  "closed_by_pr": 0,
+  "docs_link": 0,
+  "dup_labels": [
+   "Resolution: Duplicate"
+  ],
+  "label_dup": 311,
+  "docs_prefix": "react.dev"
+ },
+ "vercel/next.js": {
+  "closed": 24626,
+  "reason_dup": 312,
+  "dup_comment": 1164,
+  "union": 1285,
+  "closed_by_pr": 4810,
+  "docs_link": 1752,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "nextjs.org/docs"
+ },
+ "angular/angular": {
+  "closed": 30331,
+  "reason_dup": 330,
+  "dup_comment": 2493,
+  "union": 2613,
+  "closed_by_pr": 5144,
+  "docs_link": 486,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "angular.dev"
+ },
+ "vuejs/core": {
+  "closed": 5646,
+  "reason_dup": 70,
+  "dup_comment": 441,
+  "union": 462,
+  "closed_by_pr": 1612,
+  "docs_link": 354,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 10,
+  "docs_prefix": "vuejs.org"
+ },
+ "sveltejs/svelte": {
+  "closed": 8319,
+  "reason_dup": 72,
+  "dup_comment": 622,
+  "union": 611,
+  "closed_by_pr": 2755,
+  "docs_link": 250,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "svelte.dev/docs"
+ },
+ "vitejs/vite": {
+  "closed": 8443,
+  "reason_dup": 133,
+  "dup_comment": 605,
+  "union": 732,
+  "closed_by_pr": 2200,
+  "docs_link": 91,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 339,
+  "docs_prefix": "vite.dev"
+ },
+ "nodejs/node": {
+  "closed": 20576,
+  "reason_dup": 74,
+  "dup_comment": 962,
+  "union": 1073,
+  "closed_by_pr": 5046,
+  "docs_link": 841,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 559,
+  "docs_prefix": "nodejs.org/api"
+ },
+ "denoland/deno": {
+  "closed": 13881,
+  "reason_dup": 92,
+  "dup_comment": 782,
+  "union": 862,
+  "closed_by_pr": 5751,
+  "docs_link": 179,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 230,
+  "docs_prefix": "docs.deno.com"
+ },
+ "oven-sh/bun": {
+  "closed": 15776,
+  "reason_dup": 2339,
+  "dup_comment": 2342,
+  "union": 3461,
+  "closed_by_pr": 5049,
+  "docs_link": 208,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 11,
+  "docs_prefix": "bun.sh/docs"
+ },
+ "electron/electron": {
+  "closed": 21445,
+  "reason_dup": 77,
+  "dup_comment": 901,
+  "union": 924,
+  "closed_by_pr": 2485,
+  "docs_link": 372,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 29,
+  "docs_prefix": "www.electronjs.org/docs"
+ },
+ "prettier/prettier": {
+  "closed": 6266,
+  "reason_dup": 20,
+  "dup_comment": 541,
+  "union": 710,
+  "closed_by_pr": 1458,
+  "docs_link": 403,
+  "dup_labels": [
+   "type:duplicate"
+  ],
+  "label_dup": 522,
+  "docs_prefix": "prettier.io/docs"
+ },
+ "eslint/eslint": {
+  "closed": 10989,
+  "reason_dup": 31,
+  "dup_comment": 519,
+  "union": 477,
+  "closed_by_pr": 1968,
+  "docs_link": 706,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "eslint.org/docs"
+ },
+ "mui/material-ui": {
+  "closed": 19226,
+  "reason_dup": 28,
+  "dup_comment": 1533,
+  "union": 2263,
+  "closed_by_pr": 3762,
+  "docs_link": 1218,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 1995,
+  "docs_prefix": "mui.com"
+ },
+ "nuxt/nuxt": {
+  "closed": 17340,
+  "reason_dup": 308,
+  "dup_comment": 314,
+  "union": 544,
+  "closed_by_pr": 2947,
+  "docs_link": 545,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "nuxt.com/docs"
+ },
+ "webpack/webpack": {
+  "closed": 10250,
+  "reason_dup": 1,
+  "dup_comment": 190,
+  "union": 126,
+  "closed_by_pr": 1072,
+  "docs_link": 711,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "webpack.js.org"
+ },
+ "microsoft/playwright": {
+  "closed": 18539,
+  "reason_dup": 128,
+  "dup_comment": 264,
+  "union": 348,
+  "closed_by_pr": 3734,
+  "docs_link": 1907,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "playwright.dev/docs"
+ },
+ "storybookjs/storybook": {
+  "closed": 13272,
+  "reason_dup": 43,
+  "dup_comment": 281,
+  "union": 472,
+  "closed_by_pr": 2009,
+  "docs_link": 648,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 254,
+  "docs_prefix": "storybook.js.org/docs"
+ },
+ "facebook/react-native": {
+  "closed": 0,
+  "reason_dup": 0,
+  "dup_comment": 0,
+  "union": 0,
+  "closed_by_pr": 0,
+  "docs_link": 0,
+  "dup_labels": [
+   "Resolution: Duplicate"
+  ],
+  "label_dup": 167,
+  "docs_prefix": "reactnative.dev/docs"
+ },
+ "expo/expo": {
+  "closed": 19846,
+  "reason_dup": 30,
+  "dup_comment": 361,
+  "union": 332,
+  "closed_by_pr": 3029,
+  "docs_link": 933,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 16,
+  "docs_prefix": "docs.expo.dev"
+ },
+ "golang/go": {
+  "closed": 65546,
+  "reason_dup": 1248,
+  "dup_comment": 4220,
+  "union": 4915,
+  "closed_by_pr": 1842,
+  "docs_link": 1452,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "pkg.go.dev"
+ },
+ "kubernetes/kubernetes": {
+  "closed": 48199,
+  "reason_dup": 16,
+  "dup_comment": 1362,
+  "union": 1214,
+  "closed_by_pr": 11894,
+  "docs_link": 2337,
+  "dup_labels": [
+   "triage/duplicate"
+  ],
+  "label_dup": 52,
+  "docs_prefix": "kubernetes.io/docs"
+ },
+ "moby/moby": {
+  "closed": 20414,
+  "reason_dup": 56,
+  "dup_comment": 1227,
+  "union": 1167,
+  "closed_by_pr": 3474,
+  "docs_link": 1950,
+  "dup_labels": [
+   "kind/duplicate"
+  ],
+  "label_dup": 57,
+  "docs_prefix": "docs.docker.com"
+ },
+ "hashicorp/terraform": {
+  "closed": 20060,
+  "reason_dup": 75,
+  "dup_comment": 924,
+  "union": 939,
+  "closed_by_pr": 3034,
+  "docs_link": 87,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 317,
+  "docs_prefix": "developer.hashicorp.com/terraform"
+ },
+ "hashicorp/terraform-provider-aws": {
+  "closed": 20980,
+  "reason_dup": 146,
+  "dup_comment": 745,
+  "union": 729,
+  "closed_by_pr": 9644,
+  "docs_link": 463,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "registry.terraform.io/providers/hashicorp/aws"
+ },
+ "grafana/grafana": {
+  "closed": 43425,
+  "reason_dup": 109,
+  "dup_comment": 1715,
+  "union": 2125,
+  "closed_by_pr": 12557,
+  "docs_link": 1209,
+  "dup_labels": [
+   "type/duplicate"
+  ],
+  "label_dup": 950,
+  "docs_prefix": "grafana.com/docs"
+ },
+ "cli/cli": {
+  "closed": 5664,
+  "reason_dup": 89,
+  "dup_comment": 525,
+  "union": 512,
+  "closed_by_pr": 1449,
+  "docs_link": 66,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 16,
+  "docs_prefix": "cli.github.com/manual"
+ },
+ "prometheus/prometheus": {
+  "closed": 6125,
+  "reason_dup": 24,
+  "dup_comment": 173,
+  "union": 137,
+  "closed_by_pr": 1139,
+  "docs_link": 367,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 7,
+  "docs_prefix": "prometheus.io/docs"
+ },
+ "gohugoio/hugo": {
+  "closed": 8137,
+  "reason_dup": 1,
+  "dup_comment": 203,
+  "union": 238,
+  "closed_by_pr": 2084,
+  "docs_link": 484,
+  "dup_labels": [
+   "Duplicate"
+  ],
+  "label_dup": 143,
+  "docs_prefix": "gohugo.io"
+ },
+ "docker/compose": {
+  "closed": 8396,
+  "reason_dup": 23,
+  "dup_comment": 402,
+  "union": 459,
+  "closed_by_pr": 1230,
+  "docs_link": 599,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 133,
+  "docs_prefix": "docs.docker.com/compose"
+ },
+ "ollama/ollama": {
+  "closed": 8992,
+  "reason_dup": 713,
+  "dup_comment": 130,
+  "union": 799,
+  "closed_by_pr": 893,
+  "docs_link": 598,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "ollama/blob/main/docs"
+ },
+ "rust-lang/rust": {
+  "closed": 53600,
+  "reason_dup": 620,
+  "dup_comment": 4572,
+  "union": 4433,
+  "closed_by_pr": 17774,
+  "docs_link": 1805,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "doc.rust-lang.org"
+ },
+ "rust-lang/rust-analyzer": {
+  "closed": 8152,
+  "reason_dup": 138,
+  "dup_comment": 707,
+  "union": 785,
+  "closed_by_pr": 3125,
+  "docs_link": 137,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "rust-analyzer.github.io"
+ },
+ "rust-lang/cargo": {
+  "closed": 6770,
+  "reason_dup": 190,
+  "dup_comment": 665,
+  "union": 681,
+  "closed_by_pr": 1952,
+  "docs_link": 289,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "doc.rust-lang.org/cargo"
+ },
+ "zed-industries/zed": {
+  "closed": 21498,
+  "reason_dup": 1714,
+  "dup_comment": 2311,
+  "union": 3314,
+  "closed_by_pr": 5832,
+  "docs_link": 601,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "zed.dev/docs"
+ },
+ "tauri-apps/tauri": {
+  "closed": 5288,
+  "reason_dup": 112,
+  "dup_comment": 286,
+  "union": 360,
+  "closed_by_pr": 813,
+  "docs_link": 317,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "tauri.app"
+ },
+ "bevyengine/bevy": {
+  "closed": 6001,
+  "reason_dup": 79,
+  "dup_comment": 328,
+  "union": 341,
+  "closed_by_pr": 3230,
+  "docs_link": 75,
+  "dup_labels": [
+   "S-Duplicate"
+  ],
+  "label_dup": 78,
+  "docs_prefix": "docs.rs/bevy"
+ },
+ "alacritty/alacritty": {
+  "closed": 6048,
+  "reason_dup": 3,
+  "dup_comment": 536,
+  "union": 771,
+  "closed_by_pr": 785,
+  "docs_link": 36,
+  "dup_labels": [
+   "F - duplicate"
+  ],
+  "label_dup": 610,
+  "docs_prefix": "alacritty.org"
+ },
+ "astral-sh/uv": {
+  "closed": 7067,
+  "reason_dup": 281,
+  "dup_comment": 388,
+  "union": 640,
+  "closed_by_pr": 2781,
+  "docs_link": 614,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 237,
+  "docs_prefix": "docs.astral.sh/uv"
+ },
+ "astral-sh/ruff": {
+  "closed": 6726,
+  "reason_dup": 252,
+  "dup_comment": 263,
+  "union": 419,
+  "closed_by_pr": 3662,
+  "docs_link": 209,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 5,
+  "docs_prefix": "docs.astral.sh/ruff"
+ },
+ "python/cpython": {
+  "closed": 72302,
+  "reason_dup": 584,
+  "dup_comment": 4170,
+  "union": 3766,
+  "closed_by_pr": 2049,
+  "docs_link": 7577,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "docs.python.org"
+ },
+ "pandas-dev/pandas": {
+  "closed": 27164,
+  "reason_dup": 41,
+  "dup_comment": 1355,
+  "union": 1725,
+  "closed_by_pr": 12181,
+  "docs_link": 1801,
+  "dup_labels": [
+   "Duplicate Report"
+  ],
+  "label_dup": 1134,
+  "docs_prefix": "pandas.pydata.org"
+ },
+ "numpy/numpy": {
+  "closed": 12269,
+  "reason_dup": 34,
+  "dup_comment": 613,
+  "union": 609,
+  "closed_by_pr": 2619,
+  "docs_link": 179,
+  "dup_labels": [
+   "50 - Duplicate"
+  ],
+  "label_dup": 137,
+  "docs_prefix": "numpy.org/doc"
+ },
+ "matplotlib/matplotlib": {
+  "closed": 10409,
+  "reason_dup": 66,
+  "dup_comment": 527,
+  "union": 707,
+  "closed_by_pr": 2810,
+  "docs_link": 1325,
+  "dup_labels": [
+   "status: duplicate"
+  ],
+  "label_dup": 447,
+  "docs_prefix": "matplotlib.org"
+ },
+ "scikit-learn/scikit-learn": {
+  "closed": 10844,
+  "reason_dup": 17,
+  "dup_comment": 445,
+  "union": 379,
+  "closed_by_pr": 3642,
+  "docs_link": 958,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "scikit-learn.org"
+ },
+ "pytorch/pytorch": {
+  "closed": 48373,
+  "reason_dup": 381,
+  "dup_comment": 1373,
+  "union": 1321,
+  "closed_by_pr": 10880,
+  "docs_link": 1138,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "pytorch.org/docs"
+ },
+ "tensorflow/tensorflow": {
+  "closed": 41566,
+  "reason_dup": 142,
+  "dup_comment": 970,
+  "union": 925,
+  "closed_by_pr": 3718,
+  "docs_link": 3710,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "www.tensorflow.org"
+ },
+ "home-assistant/core": {
+  "closed": 73905,
+  "reason_dup": 795,
+  "dup_comment": 3362,
+  "union": 3723,
+  "closed_by_pr": 17942,
+  "docs_link": 5179,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 162,
+  "docs_prefix": "www.home-assistant.io"
+ },
+ "ansible/ansible": {
+  "closed": 32995,
+  "reason_dup": 18,
+  "dup_comment": 1337,
+  "union": 1206,
+  "closed_by_pr": 7664,
+  "docs_link": 3869,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "docs.ansible.com"
+ },
+ "pypa/pip": {
+  "closed": 6976,
+  "reason_dup": 26,
+  "dup_comment": 682,
+  "union": 873,
+  "closed_by_pr": 1071,
+  "docs_link": 345,
+  "dup_labels": [
+   "resolution: duplicate"
+  ],
+  "label_dup": 375,
+  "docs_prefix": "pip.pypa.io"
+ },
+ "python/mypy": {
+  "closed": 9562,
+  "reason_dup": 124,
+  "dup_comment": 1130,
+  "union": 1143,
+  "closed_by_pr": 2501,
+  "docs_link": 526,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "mypy.readthedocs.io"
+ },
+ "microsoft/pyright": {
+  "closed": 7350,
+  "reason_dup": 11,
+  "dup_comment": 149,
+  "union": 134,
+  "closed_by_pr": 103,
+  "docs_link": 32,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "pyright/blob/main/docs"
+ },
+ "huggingface/transformers": {
+  "closed": 19534,
+  "reason_dup": 17,
+  "dup_comment": 243,
+  "union": 214,
+  "closed_by_pr": 4343,
+  "docs_link": 489,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 1,
+  "docs_prefix": "huggingface.co/docs/transformers"
+ },
+ "langchain-ai/langchain": {
+  "closed": 10051,
+  "reason_dup": 38,
+  "dup_comment": 107,
+  "union": 94,
+  "closed_by_pr": 1388,
+  "docs_link": 419,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "python.langchain.com"
+ },
+ "godotengine/godot": {
+  "closed": 51058,
+  "reason_dup": 815,
+  "dup_comment": 7058,
+  "union": 7128,
+  "closed_by_pr": 17751,
+  "docs_link": 1374,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "docs.godotengine.org"
+ },
+ "neovim/neovim": {
+  "closed": 13192,
+  "reason_dup": 190,
+  "dup_comment": 897,
+  "union": 1103,
+  "closed_by_pr": 3702,
+  "docs_link": 95,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 556,
+  "docs_prefix": "neovim.io/doc"
+ },
+ "microsoft/terminal": {
+  "closed": 12531,
+  "reason_dup": 86,
+  "dup_comment": 3856,
+  "union": 4336,
+  "closed_by_pr": 2562,
+  "docs_link": 90,
+  "dup_labels": [
+   "Resolution-Duplicate"
+  ],
+  "label_dup": 3881,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "microsoft/PowerToys": {
+  "closed": 34726,
+  "reason_dup": 1584,
+  "dup_comment": 15092,
+  "union": 16530,
+  "closed_by_pr": 1397,
+  "docs_link": 382,
+  "dup_labels": [
+   "duplicate",
+   "Resolution-Duplicate"
+  ],
+  "label_dup": 14377,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "microsoft/WSL": {
+  "closed": 11905,
+  "reason_dup": 22,
+  "dup_comment": 1040,
+  "union": 1683,
+  "closed_by_pr": 95,
+  "docs_link": 282,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 1443,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "obsproject/obs-studio": {
+  "closed": 4501,
+  "reason_dup": 72,
+  "dup_comment": 459,
+  "union": 465,
+  "closed_by_pr": 659,
+  "docs_link": 20,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "obsproject.com/kb"
+ },
+ "llvm/llvm-project": {
+  "closed": 70891,
+  "reason_dup": 1060,
+  "dup_comment": 6162,
+  "union": 6873,
+  "closed_by_pr": 13300,
+  "docs_link": 826,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 4397,
+  "docs_prefix": "llvm.org/docs"
+ },
+ "dotnet/runtime": {
+  "closed": 67244,
+  "reason_dup": 588,
+  "dup_comment": 3865,
+  "union": 3714,
+  "closed_by_pr": 17472,
+  "docs_link": 1123,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "dotnet/roslyn": {
+  "closed": 30980,
+  "reason_dup": 317,
+  "dup_comment": 1927,
+  "union": 2754,
+  "closed_by_pr": 6698,
+  "docs_link": 82,
+  "dup_labels": [
+   "Resolution-Duplicate"
+  ],
+  "label_dup": 1537,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "dotnet/aspnetcore": {
+  "closed": 36442,
+  "reason_dup": 279,
+  "dup_comment": 996,
+  "union": 2147,
+  "closed_by_pr": 3725,
+  "docs_link": 852,
+  "dup_labels": [
+   ":heavy_check_mark: Resolution: Duplicate"
+  ],
+  "label_dup": 1468,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "PowerShell/PowerShell": {
+  "closed": 12384,
+  "reason_dup": 57,
+  "dup_comment": 583,
+  "union": 984,
+  "closed_by_pr": 1439,
+  "docs_link": 191,
+  "dup_labels": [
+   "Resolution-Duplicate"
+  ],
+  "label_dup": 769,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "microsoft/winget-cli": {
+  "closed": 2223,
+  "reason_dup": 8,
+  "dup_comment": 640,
+  "union": 559,
+  "closed_by_pr": 375,
+  "docs_link": 45,
+  "dup_labels": [
+   "Resolution-Duplicate"
+  ],
+  "label_dup": 444,
+  "docs_prefix": "learn.microsoft.com"
+ },
+ "flutter/flutter": {
+  "closed": 104234,
+  "reason_dup": 1561,
+  "dup_comment": 9336,
+  "union": 12651,
+  "closed_by_pr": 17945,
+  "docs_link": 957,
+  "dup_labels": [
+   "r: duplicate"
+  ],
+  "label_dup": 7628,
+  "docs_prefix": "docs.flutter.dev"
+ },
+ "dart-lang/sdk": {
+  "closed": 54152,
+  "reason_dup": 73,
+  "dup_comment": 2578,
+  "union": 4374,
+  "closed_by_pr": 734,
+  "docs_link": 423,
+  "dup_labels": [
+   "closed-duplicate"
+  ],
+  "label_dup": 2487,
+  "docs_prefix": "dart.dev"
+ },
+ "elastic/elasticsearch": {
+  "closed": 44115,
+  "reason_dup": 154,
+  "dup_comment": 1454,
+  "union": 1371,
+  "closed_by_pr": 15701,
+  "docs_link": 1223,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "www.elastic.co/guide"
+ },
+ "spring-projects/spring-boot": {
+  "closed": 43566,
+  "reason_dup": 182,
+  "dup_comment": 1079,
+  "union": 2278,
+  "closed_by_pr": 742,
+  "docs_link": 400,
+  "dup_labels": [
+   "status: duplicate"
+  ],
+  "label_dup": 2013,
+  "docs_prefix": "docs.spring.io/spring-boot"
+ },
+ "keycloak/keycloak": {
+  "closed": 18475,
+  "reason_dup": 295,
+  "dup_comment": 692,
+  "union": 850,
+  "closed_by_pr": 10731,
+  "docs_link": 338,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "www.keycloak.org/docs"
+ },
+ "rails/rails": {
+  "closed": 18272,
+  "reason_dup": 11,
+  "dup_comment": 424,
+  "union": 348,
+  "closed_by_pr": 2967,
+  "docs_link": 540,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 1,
+  "docs_prefix": "guides.rubyonrails.org"
+ },
+ "mastodon/mastodon": {
+  "closed": 8966,
+  "reason_dup": 92,
+  "dup_comment": 1073,
+  "union": 1078,
+  "closed_by_pr": 1751,
+  "docs_link": 140,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 81,
+  "docs_prefix": "docs.joinmastodon.org"
+ },
+ "Homebrew/brew": {
+  "closed": 5426,
+  "reason_dup": 19,
+  "dup_comment": 120,
+  "union": 111,
+  "closed_by_pr": 1263,
+  "docs_link": 254,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "docs.brew.sh"
+ },
+ "JuliaLang/julia": {
+  "closed": 23325,
+  "reason_dup": 205,
+  "dup_comment": 1049,
+  "union": 1136,
+  "closed_by_pr": 4760,
+  "docs_link": 899,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 112,
+  "docs_prefix": "docs.julialang.org"
+ },
+ "ziglang/zig": {
+  "closed": 10852,
+  "reason_dup": 173,
+  "dup_comment": 1052,
+  "union": 1094,
+  "closed_by_pr": 3115,
+  "docs_link": 141,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "ziglang.org/documentation"
+ },
+ "NixOS/nixpkgs": {
+  "closed": 50390,
+  "reason_dup": 340,
+  "dup_comment": 1457,
+  "union": 1531,
+  "closed_by_pr": 17286,
+  "docs_link": 445,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "nixos.org/manual"
+ },
+ "ohmyzsh/ohmyzsh": {
+  "closed": 5024,
+  "reason_dup": 4,
+  "dup_comment": 142,
+  "union": 150,
+  "closed_by_pr": 798,
+  "docs_link": 61,
+  "dup_labels": [
+   "Resolution: duplicate"
+  ],
+  "label_dup": 54,
+  "docs_prefix": "ohmyzsh/wiki"
+ },
+ "desktop/desktop": {
+  "closed": 12797,
+  "reason_dup": 205,
+  "dup_comment": 530,
+  "union": 594,
+  "closed_by_pr": 954,
+  "docs_link": 24,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "docs.github.com/en/desktop"
+ },
+ "anthropics/claude-code": {
+  "closed": 91623,
+  "reason_dup": 23165,
+  "dup_comment": 25648,
+  "union": 33137,
+  "closed_by_pr": 2694,
+  "docs_link": 342,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 27461,
+  "docs_prefix": "docs.anthropic.com"
+ },
+ "openai/codex": {
+  "closed": 13698,
+  "reason_dup": 2709,
+  "dup_comment": 1866,
+  "union": 3591,
+  "closed_by_pr": 891,
+  "docs_link": 53,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "codex/blob/main/docs"
+ },
+ "immich-app/immich": {
+  "closed": 9312,
+  "reason_dup": 1345,
+  "dup_comment": 899,
+  "union": 1606,
+  "closed_by_pr": 2068,
+  "docs_link": 190,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "immich.app/docs"
+ },
+ "nextcloud/server": {
+  "closed": 19087,
+  "reason_dup": 274,
+  "dup_comment": 1893,
+  "union": 1976,
+  "closed_by_pr": 3558,
+  "docs_link": 1036,
+  "dup_labels": [],
+  "label_dup": 0,
+  "docs_prefix": "docs.nextcloud.com"
+ },
+ "jellyfin/jellyfin": {
+  "closed": 8641,
+  "reason_dup": 259,
+  "dup_comment": 573,
+  "union": 730,
+  "closed_by_pr": 1317,
+  "docs_link": 302,
+  "dup_labels": [
+   "duplicate"
+  ],
+  "label_dup": 127,
+  "docs_prefix": "jellyfin.org/docs"
+ }
+}
