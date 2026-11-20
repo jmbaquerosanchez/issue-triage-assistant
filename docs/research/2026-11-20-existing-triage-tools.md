@@ -1,6 +1,6 @@
-# Existing AI triage and duplicate detection tools
+> Snapshot of 2026-11-20 for [Existing AI triage and duplicate detection tools](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/6). Not updated: later research supersedes it.
 
-> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+# Existing AI triage and duplicate detection tools
 
 Research for ticket #6. Researched on 2026-11-20 against primary sources: each tool's own docs, repository, workflow files or announcement; GitHub's docs and changelog; and the papers themselves. Where a claim could not be checked against its owner, the text says so.
 

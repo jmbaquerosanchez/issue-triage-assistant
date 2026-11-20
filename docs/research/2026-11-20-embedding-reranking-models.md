@@ -1,6 +1,6 @@
-# Embedding and reranking models usable from TypeScript
+> Snapshot of 2026-11-20 for [Embedding and reranking models usable from TypeScript](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/7). Not updated: later research supersedes it.
 
-> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+# Embedding and reranking models usable from TypeScript
 
 Research for ticket #7 of the phase-1 map (#2). Sources were read on **2026-11-20**, and every price is as of that date. This note gathers options and trade-offs. It does not choose: the choice is made in #12.
 

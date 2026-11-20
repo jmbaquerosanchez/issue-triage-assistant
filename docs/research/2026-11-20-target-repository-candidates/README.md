@@ -1,6 +1,6 @@
-# Target repository candidates and their ground truth counts
+> Snapshot of 2026-11-20 for [Target repository candidates and their ground truth counts](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/3). Not updated: later research supersedes it.
 
-> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+# Target repository candidates and their ground truth counts
 
 Research for ticket #3 of the phase-1 map (#2). It gathers facts; the target repository is chosen in #9.
 
