@@ -1,5 +1,7 @@
 # Embedding and reranking models usable from TypeScript
 
+> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+
 Research for ticket #7 of the phase-1 map (#2). Sources were read on **2026-11-20**, and every price is as of that date. This note gathers options and trade-offs. It does not choose: the choice is made in #12.
 
 The question has three parts: local models that run from TypeScript, hosted embedding and reranking APIs (including whether their results can be cached so the demo and CI run without a key), and whether a cross-encoder reranker can run locally from TypeScript.
