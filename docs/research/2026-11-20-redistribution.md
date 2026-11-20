@@ -1,6 +1,6 @@
-# Redistribution of issue text and derived data
+> Snapshot of 2026-11-20 for [Whether issue text and derived data can be redistributed](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/5). Not updated: later research supersedes it.
 
-> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+# Redistribution of issue text and derived data
 
 Research for ticket #5 of the phase-1 map (#2). The question: can this repository publish a target repository's issue text, comments and documentation, or data derived from them (embeddings, a ready-built index), so that the demo runs without downloading anything?
 

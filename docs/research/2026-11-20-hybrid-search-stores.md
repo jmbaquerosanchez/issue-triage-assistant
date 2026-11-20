@@ -1,6 +1,6 @@
-# Stores with hybrid search for a local TypeScript tool
+> Snapshot of 2026-11-20 for [Stores with hybrid search for a local TypeScript tool](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/8). Not updated: later research supersedes it.
 
-> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+# Stores with hybrid search for a local TypeScript tool
 
 Research for ticket #8 of the phase-1 map (#2). Question: which embedded stores can back hybrid search (BM25 keyword search plus vector search, fused) for a local, single-user tool written in TypeScript, given that every indexed piece carries a date and every query must only see what existed before a cutoff?
 

@@ -1,6 +1,6 @@
-# GitHub API for ingesting a repository's history under a cutoff
+> Snapshot of 2026-11-20 for [GitHub API for ingesting a repository's history under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/4). Not updated: later research supersedes it.
 
-> **Snapshot, 2026-11-20.** This report records what its sources said on that date and is not updated. Later research supersedes it by linking back here.
+# GitHub API for ingesting a repository's history under a cutoff
 
 Research for ticket #4 of the phase-1 map (#2). Question: what do GitHub's REST and GraphQL APIs offer for downloading a repository's history so that every eval case can be replayed under its cutoff?
 
