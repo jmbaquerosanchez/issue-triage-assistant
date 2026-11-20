@@ -1,0 +1,2623 @@
+{
+ "microsoft/vscode": {
+  "nameWithOwner": "microsoft/vscode",
+  "stargazerCount": 195698,
+  "forkCount": 43894,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:56:11Z",
+  "createdAt": "2015-09-03T20:23:38Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://code.visualstudio.com",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 259522
+  },
+  "open": {
+   "totalCount": 18514
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 383
+     }
+    },
+    {
+     "name": "*duplicate",
+     "issues": {
+      "totalCount": 30242
+     }
+    }
+   ]
+  }
+ },
+ "microsoft/TypeScript": {
+  "nameWithOwner": "microsoft/TypeScript",
+  "stargazerCount": 111865,
+  "forkCount": 14696,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T07:13:01Z",
+  "createdAt": "2014-06-17T15:28:39Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.typescriptlang.org",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 43883
+  },
+  "open": {
+   "totalCount": 4956
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Duplicate",
+     "issues": {
+      "totalCount": 5860
+     }
+    }
+   ]
+  }
+ },
+ "facebook/react": {
+  "nameWithOwner": "react/react",
+  "stargazerCount": 252831,
+  "forkCount": 52814,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:00:42Z",
+  "createdAt": "2013-05-24T16:15:54Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://react.dev",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 14852
+  },
+  "open": {
+   "totalCount": 870
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Resolution: Duplicate",
+     "issues": {
+      "totalCount": 311
+     }
+    }
+   ]
+  }
+ },
+ "vercel/next.js": {
+  "nameWithOwner": "vercel/next.js",
+  "stargazerCount": 143624,
+  "forkCount": 32808,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:52:43Z",
+  "createdAt": "2016-10-05T23:32:51Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://nextjs.org",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 25799
+  },
+  "open": {
+   "totalCount": 1150
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "discussion-has-duplicates",
+     "issues": {
+      "totalCount": 0
+     }
+    },
+    {
+     "name": "discussion-is-duplicate",
+     "issues": {
+      "totalCount": 0
+     }
+    }
+   ]
+  }
+ },
+ "angular/angular": {
+  "nameWithOwner": "angular/angular",
+  "stargazerCount": 101470,
+  "forkCount": 28194,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T11:02:09Z",
+  "createdAt": "2014-09-18T16:12:01Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://angular.dev",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 31168
+  },
+  "open": {
+   "totalCount": 834
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "vuejs/core": {
+  "nameWithOwner": "vuejs/core",
+  "stargazerCount": 55055,
+  "forkCount": 9322,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:51:12Z",
+  "createdAt": "2018-06-12T13:49:36Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://vuejs.org/",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 6202
+  },
+  "open": {
+   "totalCount": 551
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 10
+     }
+    }
+   ]
+  }
+ },
+ "sveltejs/svelte": {
+  "nameWithOwner": "sveltejs/svelte",
+  "stargazerCount": 89828,
+  "forkCount": 6212,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:45:04Z",
+  "createdAt": "2016-11-20T18:13:05Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://svelte.dev",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 9316
+  },
+  "open": {
+   "totalCount": 986
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "vitejs/vite": {
+  "nameWithOwner": "vitejs/vite",
+  "stargazerCount": 83995,
+  "forkCount": 10432,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T11:05:07Z",
+  "createdAt": "2020-04-21T05:03:57Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "http://vite.dev",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 8951
+  },
+  "open": {
+   "totalCount": 507
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 339
+     }
+    }
+   ]
+  }
+ },
+ "nodejs/node": {
+  "nameWithOwner": "nodejs/node",
+  "stargazerCount": 123811,
+  "forkCount": 38076,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:53:09Z",
+  "createdAt": "2014-11-26T19:57:11Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://nodejs.org",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 21231
+  },
+  "open": {
+   "totalCount": 641
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 559
+     }
+    }
+   ]
+  }
+ },
+ "denoland/deno": {
+  "nameWithOwner": "denoland/deno",
+  "stargazerCount": 109115,
+  "forkCount": 7494,
+  "isArchived": false,
+  "pushedAt": "2026-11-17T15:55:36Z",
+  "createdAt": "2018-05-15T01:34:26Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://deno.com",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 15247
+  },
+  "open": {
+   "totalCount": 1359
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 230
+     }
+    }
+   ]
+  }
+ },
+ "oven-sh/bun": {
+  "nameWithOwner": "oven-sh/bun",
+  "stargazerCount": 96796,
+  "forkCount": 5295,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:19:43Z",
+  "createdAt": "2021-04-14T00:48:17Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://bun.com",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 19381
+  },
+  "open": {
+   "totalCount": 3604
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 11
+     }
+    }
+   ]
+  }
+ },
+ "electron/electron": {
+  "nameWithOwner": "electron/electron",
+  "stargazerCount": 124016,
+  "forkCount": 17973,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:27:24Z",
+  "createdAt": "2013-04-12T01:47:36Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://electronjs.org",
+  "primaryLanguage": {
+   "name": "C++"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 22072
+  },
+  "open": {
+   "totalCount": 627
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 29
+     }
+    }
+   ]
+  }
+ },
+ "prettier/prettier": {
+  "nameWithOwner": "prettier/prettier",
+  "stargazerCount": 52438,
+  "forkCount": 5040,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T07:57:35Z",
+  "createdAt": "2016-11-29T17:13:37Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://prettier.io",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 7409
+  },
+  "open": {
+   "totalCount": 1141
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "type:duplicate",
+     "issues": {
+      "totalCount": 522
+     }
+    }
+   ]
+  }
+ },
+ "eslint/eslint": {
+  "nameWithOwner": "eslint/eslint",
+  "stargazerCount": 27639,
+  "forkCount": 5210,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:05:10Z",
+  "createdAt": "2013-06-29T23:59:48Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://eslint.org",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 11104
+  },
+  "open": {
+   "totalCount": 112
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "mui/material-ui": {
+  "nameWithOwner": "mui/material-ui",
+  "stargazerCount": 99370,
+  "forkCount": 32485,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:27:58Z",
+  "createdAt": "2014-08-18T19:11:54Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://mui.com/material-ui/",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 20631
+  },
+  "open": {
+   "totalCount": 1402
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 1995
+     }
+    }
+   ]
+  }
+ },
+ "nuxt/nuxt": {
+  "nameWithOwner": "nuxt/nuxt",
+  "stargazerCount": 61092,
+  "forkCount": 5850,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:58:29Z",
+  "createdAt": "2016-10-26T11:18:47Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://nuxt.com",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 17646
+  },
+  "open": {
+   "totalCount": 306
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "webpack/webpack": {
+  "nameWithOwner": "webpack/webpack",
+  "stargazerCount": 66015,
+  "forkCount": 9711,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:03:46Z",
+  "createdAt": "2012-03-10T10:08:14Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://webpack.js.org",
+  "primaryLanguage": {
+   "name": "JavaScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 10307
+  },
+  "open": {
+   "totalCount": 50
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "microsoft/playwright": {
+  "nameWithOwner": "microsoft/playwright",
+  "stargazerCount": 100650,
+  "forkCount": 6938,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T01:19:22Z",
+  "createdAt": "2019-11-15T18:32:42Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://playwright.dev",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 18585
+  },
+  "open": {
+   "totalCount": 37
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "storybookjs/storybook": {
+  "nameWithOwner": "storybookjs/storybook",
+  "stargazerCount": 91660,
+  "forkCount": 10600,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:07:01Z",
+  "createdAt": "2016-03-18T04:23:44Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://storybook.js.org",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 14858
+  },
+  "open": {
+   "totalCount": 1583
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 254
+     }
+    }
+   ]
+  }
+ },
+ "facebook/react-native": {
+  "nameWithOwner": "react/react-native",
+  "stargazerCount": 126976,
+  "forkCount": 25505,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T21:47:29Z",
+  "createdAt": "2015-01-09T18:10:16Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://reactnative.dev",
+  "primaryLanguage": {
+   "name": "C++"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 28095
+  },
+  "open": {
+   "totalCount": 771
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Resolution: Duplicate",
+     "issues": {
+      "totalCount": 167
+     }
+    }
+   ]
+  }
+ },
+ "expo/expo": {
+  "nameWithOwner": "expo/expo",
+  "stargazerCount": 53689,
+  "forkCount": 15212,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:45:31Z",
+  "createdAt": "2016-08-15T17:14:25Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://docs.expo.dev",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 20204
+  },
+  "open": {
+   "totalCount": 350
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 16
+     }
+    }
+   ]
+  }
+ },
+ "golang/go": {
+  "nameWithOwner": "golang/go",
+  "stargazerCount": 140126,
+  "forkCount": 20270,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T11:09:31Z",
+  "createdAt": "2014-08-19T04:33:40Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://go.dev",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "BSD-3-Clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License"
+  },
+  "issues": {
+   "totalCount": 74756
+  },
+  "open": {
+   "totalCount": 9199
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "kubernetes/kubernetes": {
+  "nameWithOwner": "kubernetes/kubernetes",
+  "stargazerCount": 129302,
+  "forkCount": 45106,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:56:15Z",
+  "createdAt": "2014-06-06T22:56:04Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://kubernetes.io",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 50063
+  },
+  "open": {
+   "totalCount": 1859
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "triage/duplicate",
+     "issues": {
+      "totalCount": 52
+     }
+    }
+   ]
+  }
+ },
+ "moby/moby": {
+  "nameWithOwner": "moby/moby",
+  "stargazerCount": 72301,
+  "forkCount": 19415,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:46:01Z",
+  "createdAt": "2013-01-18T18:10:57Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://mobyproject.org/",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 23726
+  },
+  "open": {
+   "totalCount": 3310
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "kind/duplicate",
+     "issues": {
+      "totalCount": 57
+     }
+    }
+   ]
+  }
+ },
+ "hashicorp/terraform": {
+  "nameWithOwner": "hashicorp/terraform",
+  "stargazerCount": 50298,
+  "forkCount": 10599,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T22:02:08Z",
+  "createdAt": "2014-03-13T22:25:48Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "http://developer.hashicorp.com/terraform",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 21845
+  },
+  "open": {
+   "totalCount": 1779
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 317
+     }
+    }
+   ]
+  }
+ },
+ "hashicorp/terraform-provider-aws": {
+  "nameWithOwner": "hashicorp/terraform-provider-aws",
+  "stargazerCount": 11158,
+  "forkCount": 10507,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T06:03:48Z",
+  "createdAt": "2017-06-05T20:37:52Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://registry.terraform.io/providers/hashicorp/aws",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "MPL-2.0",
+   "name": "Mozilla Public License 2.0"
+  },
+  "issues": {
+   "totalCount": 23732
+  },
+  "open": {
+   "totalCount": 2751
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "grafana/grafana": {
+  "nameWithOwner": "grafana/grafana",
+  "stargazerCount": 78013,
+  "forkCount": 15001,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:07:42Z",
+  "createdAt": "2013-12-11T15:59:56Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://grafana.com",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "AGPL-3.0",
+   "name": "GNU Affero General Public License v3.0"
+  },
+  "issues": {
+   "totalCount": 46006
+  },
+  "open": {
+   "totalCount": 2568
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "type/duplicate",
+     "issues": {
+      "totalCount": 950
+     }
+    },
+    {
+     "name": "bot/duplicate",
+     "issues": {
+      "totalCount": 7
+     }
+    }
+   ]
+  }
+ },
+ "cli/cli": {
+  "nameWithOwner": "cli/cli",
+  "stargazerCount": 47099,
+  "forkCount": 9430,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T19:00:01Z",
+  "createdAt": "2019-10-03T15:24:53Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://cli.github.com",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 6746
+  },
+  "open": {
+   "totalCount": 1082
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 16
+     }
+    }
+   ]
+  }
+ },
+ "prometheus/prometheus": {
+  "nameWithOwner": "prometheus/prometheus",
+  "stargazerCount": 67736,
+  "forkCount": 11051,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:58:49Z",
+  "createdAt": "2012-11-24T11:14:12Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://prometheus.io/",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 6655
+  },
+  "open": {
+   "totalCount": 526
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 7
+     }
+    }
+   ]
+  }
+ },
+ "gohugoio/hugo": {
+  "nameWithOwner": "gohugoio/hugo",
+  "stargazerCount": 90529,
+  "forkCount": 8545,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T17:42:51Z",
+  "createdAt": "2013-07-04T15:26:26Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://gohugo.io",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 8322
+  },
+  "open": {
+   "totalCount": 183
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Duplicate",
+     "issues": {
+      "totalCount": 143
+     }
+    },
+    {
+     "name": "BlockedUpstream",
+     "issues": {
+      "totalCount": 0
+     }
+    }
+   ]
+  }
+ },
+ "docker/compose": {
+  "nameWithOwner": "docker/compose",
+  "stargazerCount": 39068,
+  "forkCount": 6056,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:03:22Z",
+  "createdAt": "2013-12-09T11:40:58Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://docs.docker.com/compose/",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 8464
+  },
+  "open": {
+   "totalCount": 65
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 133
+     }
+    }
+   ]
+  }
+ },
+ "ollama/ollama": {
+  "nameWithOwner": "ollama/ollama",
+  "stargazerCount": 187732,
+  "forkCount": 19182,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T23:44:00Z",
+  "createdAt": "2023-06-26T19:39:32Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://ollama.com",
+  "primaryLanguage": {
+   "name": "Go"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 11639
+  },
+  "open": {
+   "totalCount": 2646
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "rust-lang/rust": {
+  "nameWithOwner": "rust-lang/rust",
+  "stargazerCount": 122308,
+  "forkCount": 16660,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:00:31Z",
+  "createdAt": "2010-06-16T20:39:03Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.rust-lang.org",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 64731
+  },
+  "open": {
+   "totalCount": 11131
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "rust-lang/rust-analyzer": {
+  "nameWithOwner": "rust-lang/rust-analyzer",
+  "stargazerCount": 17012,
+  "forkCount": 2298,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:07:05Z",
+  "createdAt": "2017-12-21T19:24:42Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://rust-analyzer.github.io/",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 9862
+  },
+  "open": {
+   "totalCount": 1707
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "rust-lang/cargo": {
+  "nameWithOwner": "rust-lang/cargo",
+  "stargazerCount": 15762,
+  "forkCount": 3245,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T04:21:00Z",
+  "createdAt": "2014-03-04T23:20:42Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://doc.rust-lang.org/cargo",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 8384
+  },
+  "open": {
+   "totalCount": 1611
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "zed-industries/zed": {
+  "nameWithOwner": "zed-industries/zed",
+  "stargazerCount": 95395,
+  "forkCount": 11797,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:52:16Z",
+  "createdAt": "2021-02-20T03:01:06Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://zed.dev",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 23786
+  },
+  "open": {
+   "totalCount": 2285
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "tauri-apps/tauri": {
+  "nameWithOwner": "tauri-apps/tauri",
+  "stargazerCount": 113019,
+  "forkCount": 4236,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T08:56:05Z",
+  "createdAt": "2019-07-13T09:09:37Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://tauri.app",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 6611
+  },
+  "open": {
+   "totalCount": 1315
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "bevyengine/bevy": {
+  "nameWithOwner": "bevyengine/bevy",
+  "stargazerCount": 49888,
+  "forkCount": 5084,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T06:52:41Z",
+  "createdAt": "2020-01-18T21:13:55Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://bevy.org",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 8931
+  },
+  "open": {
+   "totalCount": 2928
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "S-Duplicate",
+     "issues": {
+      "totalCount": 78
+     }
+    }
+   ]
+  }
+ },
+ "alacritty/alacritty": {
+  "nameWithOwner": "alacritty/alacritty",
+  "stargazerCount": 66240,
+  "forkCount": 3728,
+  "isArchived": false,
+  "pushedAt": "2026-11-18T15:50:57Z",
+  "createdAt": "2016-02-18T05:02:30Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://alacritty.org",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 6378
+  },
+  "open": {
+   "totalCount": 330
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "F - duplicate",
+     "issues": {
+      "totalCount": 610
+     }
+    }
+   ]
+  }
+ },
+ "astral-sh/uv": {
+  "nameWithOwner": "astral-sh/uv",
+  "stargazerCount": 92446,
+  "forkCount": 3944,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:46:47Z",
+  "createdAt": "2023-10-02T20:24:11Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://docs.astral.sh/uv",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 9472
+  },
+  "open": {
+   "totalCount": 2404
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 237
+     }
+    }
+   ]
+  }
+ },
+ "astral-sh/ruff": {
+  "nameWithOwner": "astral-sh/ruff",
+  "stargazerCount": 51325,
+  "forkCount": 2775,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:59:25Z",
+  "createdAt": "2022-08-09T17:17:44Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://docs.astral.sh/ruff",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 8476
+  },
+  "open": {
+   "totalCount": 1750
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 5
+     }
+    }
+   ]
+  }
+ },
+ "python/cpython": {
+  "nameWithOwner": "python/cpython",
+  "stargazerCount": 78439,
+  "forkCount": 36627,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:05:16Z",
+  "createdAt": "2017-02-10T19:23:51Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.python.org",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 79353
+  },
+  "open": {
+   "totalCount": 6935
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "pandas-dev/pandas": {
+  "nameWithOwner": "pandas-dev/pandas",
+  "stargazerCount": 50579,
+  "forkCount": 20768,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T23:13:45Z",
+  "createdAt": "2010-08-24T01:37:33Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://pandas.pydata.org",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "BSD-3-Clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License"
+  },
+  "issues": {
+   "totalCount": 28704
+  },
+  "open": {
+   "totalCount": 1530
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicated",
+     "issues": {
+      "totalCount": 41
+     }
+    },
+    {
+     "name": "Duplicate Report",
+     "issues": {
+      "totalCount": 1134
+     }
+    }
+   ]
+  }
+ },
+ "numpy/numpy": {
+  "nameWithOwner": "numpy/numpy",
+  "stargazerCount": 33434,
+  "forkCount": 13121,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T03:53:25Z",
+  "createdAt": "2010-09-13T23:02:39Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://numpy.org",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 14197
+  },
+  "open": {
+   "totalCount": 1922
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "50 - Duplicate",
+     "issues": {
+      "totalCount": 137
+     }
+    }
+   ]
+  }
+ },
+ "matplotlib/matplotlib": {
+  "nameWithOwner": "matplotlib/matplotlib",
+  "stargazerCount": 23494,
+  "forkCount": 8565,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T04:20:50Z",
+  "createdAt": "2011-02-19T03:17:12Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://matplotlib.org/stable/",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": null,
+  "issues": {
+   "totalCount": 11465
+  },
+  "open": {
+   "totalCount": 1044
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "status: duplicate",
+     "issues": {
+      "totalCount": 447
+     }
+    }
+   ]
+  }
+ },
+ "scikit-learn/scikit-learn": {
+  "nameWithOwner": "scikit-learn/scikit-learn",
+  "stargazerCount": 68265,
+  "forkCount": 27691,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:15:58Z",
+  "createdAt": "2010-08-17T09:43:38Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://scikit-learn.org",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "BSD-3-Clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License"
+  },
+  "issues": {
+   "totalCount": 12399
+  },
+  "open": {
+   "totalCount": 1544
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "pytorch/pytorch": {
+  "nameWithOwner": "pytorch/pytorch",
+  "stargazerCount": 105747,
+  "forkCount": 30769,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:02:09Z",
+  "createdAt": "2016-08-13T05:26:41Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://pytorch.org",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 62846
+  },
+  "open": {
+   "totalCount": 14432
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "tensorflow/tensorflow": {
+  "nameWithOwner": "tensorflow/tensorflow",
+  "stargazerCount": 201661,
+  "forkCount": 77969,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:59:16Z",
+  "createdAt": "2015-11-07T01:19:20Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://tensorflow.org",
+  "primaryLanguage": {
+   "name": "C++"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 41985
+  },
+  "open": {
+   "totalCount": 392
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "home-assistant/core": {
+  "nameWithOwner": "home-assistant/core",
+  "stargazerCount": 92397,
+  "forkCount": 39364,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:03:41Z",
+  "createdAt": "2013-09-17T07:29:48Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.home-assistant.io",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 76640
+  },
+  "open": {
+   "totalCount": 2702
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 162
+     }
+    },
+    {
+     "name": "potential-duplicate",
+     "issues": {
+      "totalCount": 128
+     }
+    }
+   ]
+  }
+ },
+ "ansible/ansible": {
+  "nameWithOwner": "ansible/ansible",
+  "stargazerCount": 71525,
+  "forkCount": 24478,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T21:15:12Z",
+  "createdAt": "2012-03-06T14:58:02Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.ansible.com/",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "GPL-3.0",
+   "name": "GNU General Public License v3.0"
+  },
+  "issues": {
+   "totalCount": 33542
+  },
+  "open": {
+   "totalCount": 536
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "pypa/pip": {
+  "nameWithOwner": "pypa/pip",
+  "stargazerCount": 10324,
+  "forkCount": 3443,
+  "isArchived": false,
+  "pushedAt": "2026-11-07T12:16:05Z",
+  "createdAt": "2011-03-06T14:30:46Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://pip.pypa.io/",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 7829
+  },
+  "open": {
+   "totalCount": 852
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "resolution: duplicate",
+     "issues": {
+      "totalCount": 375
+     }
+    }
+   ]
+  }
+ },
+ "python/mypy": {
+  "nameWithOwner": "python/mypy",
+  "stargazerCount": 20730,
+  "forkCount": 3494,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:04:04Z",
+  "createdAt": "2012-12-07T13:30:23Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.mypy-lang.org/",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 12269
+  },
+  "open": {
+   "totalCount": 2706
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "microsoft/pyright": {
+  "nameWithOwner": "microsoft/pyright",
+  "stargazerCount": 15751,
+  "forkCount": 1855,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:08:24Z",
+  "createdAt": "2019-03-12T03:38:46Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 7658
+  },
+  "open": {
+   "totalCount": 300
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "huggingface/transformers": {
+  "nameWithOwner": "huggingface/transformers",
+  "stargazerCount": 169315,
+  "forkCount": 35255,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:55:01Z",
+  "createdAt": "2018-10-29T13:56:00Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://huggingface.co/transformers",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 19923
+  },
+  "open": {
+   "totalCount": 386
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 1
+     }
+    }
+   ]
+  }
+ },
+ "langchain-ai/langchain": {
+  "nameWithOwner": "langchain-ai/langchain",
+  "stargazerCount": 149965,
+  "forkCount": 25159,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T08:51:44Z",
+  "createdAt": "2022-10-17T02:58:36Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://docs.langchain.com/langchain/",
+  "primaryLanguage": {
+   "name": "Python"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 10666
+  },
+  "open": {
+   "totalCount": 615
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "godotengine/godot": {
+  "nameWithOwner": "godotengine/godot",
+  "stargazerCount": 120462,
+  "forkCount": 27592,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T14:20:39Z",
+  "createdAt": "2014-01-04T16:05:36Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://godotengine.org",
+  "primaryLanguage": {
+   "name": "C++"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 64497
+  },
+  "open": {
+   "totalCount": 13436
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "neovim/neovim": {
+  "nameWithOwner": "neovim/neovim",
+  "stargazerCount": 103926,
+  "forkCount": 7432,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:39:55Z",
+  "createdAt": "2014-01-31T13:39:22Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://neovim.io",
+  "primaryLanguage": {
+   "name": "Vim Script"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 14862
+  },
+  "open": {
+   "totalCount": 1668
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 556
+     }
+    }
+   ]
+  }
+ },
+ "microsoft/terminal": {
+  "nameWithOwner": "microsoft/terminal",
+  "stargazerCount": 105456,
+  "forkCount": 9757,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:21:51Z",
+  "createdAt": "2017-08-11T18:38:22Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "",
+  "primaryLanguage": {
+   "name": "C++"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 14229
+  },
+  "open": {
+   "totalCount": 1694
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Resolution-Duplicate",
+     "issues": {
+      "totalCount": 3881
+     }
+    }
+   ]
+  }
+ },
+ "microsoft/PowerToys": {
+  "nameWithOwner": "microsoft/PowerToys",
+  "stargazerCount": 141209,
+  "forkCount": 8748,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T09:39:58Z",
+  "createdAt": "2019-05-01T17:44:02Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "",
+  "primaryLanguage": {
+   "name": "C"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 42631
+  },
+  "open": {
+   "totalCount": 7896
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 792
+     }
+    },
+    {
+     "name": "Resolution-Duplicate",
+     "issues": {
+      "totalCount": 13585
+     }
+    },
+    {
+     "name": "dedupe-digest",
+     "issues": {
+      "totalCount": 97
+     }
+    }
+   ]
+  }
+ },
+ "microsoft/WSL": {
+  "nameWithOwner": "microsoft/WSL",
+  "stargazerCount": 34433,
+  "forkCount": 1898,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T08:03:36Z",
+  "createdAt": "2016-04-06T17:32:56Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://wsl.dev/",
+  "primaryLanguage": {
+   "name": "C++"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 12780
+  },
+  "open": {
+   "totalCount": 874
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 1443
+     }
+    }
+   ]
+  }
+ },
+ "obsproject/obs-studio": {
+  "nameWithOwner": "obsproject/obs-studio",
+  "stargazerCount": 79803,
+  "forkCount": 11316,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T05:17:51Z",
+  "createdAt": "2013-10-01T02:40:31Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://obsproject.com",
+  "primaryLanguage": {
+   "name": "C"
+  },
+  "licenseInfo": {
+   "spdxId": "GPL-2.0",
+   "name": "GNU General Public License v2.0"
+  },
+  "issues": {
+   "totalCount": 5358
+  },
+  "open": {
+   "totalCount": 855
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "llvm/llvm-project": {
+  "nameWithOwner": "llvm/llvm-project",
+  "stargazerCount": 41533,
+  "forkCount": 19711,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:05:41Z",
+  "createdAt": "2016-12-07T09:39:33Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "http://llvm.org",
+  "primaryLanguage": {
+   "name": "LLVM"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 102702
+  },
+  "open": {
+   "totalCount": 30965
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 4397
+     }
+    }
+   ]
+  }
+ },
+ "dotnet/runtime": {
+  "nameWithOwner": "dotnet/runtime",
+  "stargazerCount": 18464,
+  "forkCount": 5834,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:49:10Z",
+  "createdAt": "2019-09-24T23:36:39Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://docs.microsoft.com/dotnet/core/",
+  "primaryLanguage": {
+   "name": "C#"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 74859
+  },
+  "open": {
+   "totalCount": 7558
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "dotnet/roslyn": {
+  "nameWithOwner": "dotnet/roslyn",
+  "stargazerCount": 20788,
+  "forkCount": 4385,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:07:20Z",
+  "createdAt": "2015-01-11T02:39:03Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://docs.microsoft.com/dotnet/csharp/roslyn-sdk/",
+  "primaryLanguage": {
+   "name": "C#"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 37009
+  },
+  "open": {
+   "totalCount": 6011
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Resolution-Duplicate",
+     "issues": {
+      "totalCount": 1537
+     }
+    }
+   ]
+  }
+ },
+ "dotnet/aspnetcore": {
+  "nameWithOwner": "dotnet/aspnetcore",
+  "stargazerCount": 38542,
+  "forkCount": 11552,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:04:03Z",
+  "createdAt": "2014-03-11T06:09:42Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://asp.net",
+  "primaryLanguage": {
+   "name": "C#"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 40435
+  },
+  "open": {
+   "totalCount": 3984
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": ":heavy_check_mark: Resolution: Duplicate",
+     "issues": {
+      "totalCount": 1468
+     }
+    }
+   ]
+  }
+ },
+ "PowerShell/PowerShell": {
+  "nameWithOwner": "PowerShell/PowerShell",
+  "stargazerCount": 56255,
+  "forkCount": 8550,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T07:32:59Z",
+  "createdAt": "2016-01-13T23:41:35Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://microsoft.com/PowerShell",
+  "primaryLanguage": {
+   "name": "C#"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 13693
+  },
+  "open": {
+   "totalCount": 1301
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Resolution-Duplicate",
+     "issues": {
+      "totalCount": 769
+     }
+    }
+   ]
+  }
+ },
+ "microsoft/winget-cli": {
+  "nameWithOwner": "microsoft/winget-cli",
+  "stargazerCount": 26628,
+  "forkCount": 1822,
+  "isArchived": false,
+  "pushedAt": "2026-11-19T19:19:44Z",
+  "createdAt": "2019-07-16T22:16:49Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://learn.microsoft.com/windows/package-manager/",
+  "primaryLanguage": {
+   "name": "C++"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 3508
+  },
+  "open": {
+   "totalCount": 1283
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 0
+     }
+    },
+    {
+     "name": "Resolution-Duplicate",
+     "issues": {
+      "totalCount": 444
+     }
+    },
+    {
+     "name": "Possible-Duplicate",
+     "issues": {
+      "totalCount": 26
+     }
+    }
+   ]
+  }
+ },
+ "flutter/flutter": {
+  "nameWithOwner": "flutter/flutter",
+  "stargazerCount": 181309,
+  "forkCount": 32160,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:01:36Z",
+  "createdAt": "2015-03-06T22:54:58Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://flutter.dev",
+  "primaryLanguage": {
+   "name": "Dart"
+  },
+  "licenseInfo": {
+   "spdxId": "BSD-3-Clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License"
+  },
+  "issues": {
+   "totalCount": 117154
+  },
+  "open": {
+   "totalCount": 12808
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "r: duplicate",
+     "issues": {
+      "totalCount": 7628
+     }
+    }
+   ]
+  }
+ },
+ "dart-lang/sdk": {
+  "nameWithOwner": "dart-lang/sdk",
+  "stargazerCount": 11360,
+  "forkCount": 2025,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:55:11Z",
+  "createdAt": "2015-05-16T14:14:58Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://dart.dev",
+  "primaryLanguage": {
+   "name": "Dart"
+  },
+  "licenseInfo": {
+   "spdxId": "BSD-3-Clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License"
+  },
+  "issues": {
+   "totalCount": 62718
+  },
+  "open": {
+   "totalCount": 8556
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "closed-duplicate",
+     "issues": {
+      "totalCount": 2487
+     }
+    }
+   ]
+  }
+ },
+ "elastic/elasticsearch": {
+  "nameWithOwner": "elastic/elasticsearch",
+  "stargazerCount": 78682,
+  "forkCount": 26234,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:58:04Z",
+  "createdAt": "2010-02-08T13:20:56Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.elastic.co/products/elasticsearch",
+  "primaryLanguage": {
+   "name": "Java"
+  },
+  "licenseInfo": {
+   "spdxId": "NOASSERTION",
+   "name": "Other"
+  },
+  "issues": {
+   "totalCount": 49078
+  },
+  "open": {
+   "totalCount": 4961
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "spring-projects/spring-boot": {
+  "nameWithOwner": "spring-projects/spring-boot",
+  "stargazerCount": 81913,
+  "forkCount": 42714,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T11:58:49Z",
+  "createdAt": "2012-10-19T15:02:57Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://spring.io/projects/spring-boot",
+  "primaryLanguage": {
+   "name": "Java"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 44020
+  },
+  "open": {
+   "totalCount": 445
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "status: duplicate",
+     "issues": {
+      "totalCount": 2013
+     }
+    }
+   ]
+  }
+ },
+ "keycloak/keycloak": {
+  "nameWithOwner": "keycloak/keycloak",
+  "stargazerCount": 37980,
+  "forkCount": 9230,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T05:31:58Z",
+  "createdAt": "2013-07-02T13:38:51Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://www.keycloak.org",
+  "primaryLanguage": {
+   "name": "Java"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 21417
+  },
+  "open": {
+   "totalCount": 2930
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "rails/rails": {
+  "nameWithOwner": "rails/rails",
+  "stargazerCount": 59080,
+  "forkCount": 23097,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:58:28Z",
+  "createdAt": "2008-04-11T02:19:47Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://rubyonrails.org",
+  "primaryLanguage": {
+   "name": "Ruby"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 18767
+  },
+  "open": {
+   "totalCount": 491
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 1
+     }
+    }
+   ]
+  }
+ },
+ "mastodon/mastodon": {
+  "nameWithOwner": "mastodon/mastodon",
+  "stargazerCount": 50603,
+  "forkCount": 7579,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T11:59:00Z",
+  "createdAt": "2016-02-22T15:01:25Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://joinmastodon.org",
+  "primaryLanguage": {
+   "name": "Ruby"
+  },
+  "licenseInfo": {
+   "spdxId": "AGPL-3.0",
+   "name": "GNU Affero General Public License v3.0"
+  },
+  "issues": {
+   "totalCount": 13362
+  },
+  "open": {
+   "totalCount": 4396
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 81
+     }
+    }
+   ]
+  }
+ },
+ "Homebrew/brew": {
+  "nameWithOwner": "Homebrew/brew",
+  "stargazerCount": 50388,
+  "forkCount": 11436,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:44:31Z",
+  "createdAt": "2016-03-06T05:08:38Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://brew.sh",
+  "primaryLanguage": {
+   "name": "Ruby"
+  },
+  "licenseInfo": {
+   "spdxId": "BSD-2-Clause",
+   "name": "BSD 2-Clause \"Simplified\" License"
+  },
+  "issues": {
+   "totalCount": 5430
+  },
+  "open": {
+   "totalCount": 3
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "JuliaLang/julia": {
+  "nameWithOwner": "JuliaLang/julia",
+  "stargazerCount": 49282,
+  "forkCount": 5969,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:07:19Z",
+  "createdAt": "2011-04-21T07:01:50Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://julialang.org/",
+  "primaryLanguage": {
+   "name": "Julia"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 26620
+  },
+  "open": {
+   "totalCount": 3285
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 112
+     }
+    }
+   ]
+  }
+ },
+ "ziglang/zig": {
+  "nameWithOwner": "ziglang/zig",
+  "stargazerCount": 43276,
+  "forkCount": 3115,
+  "isArchived": false,
+  "pushedAt": "2025-11-27T01:42:59Z",
+  "createdAt": "2015-08-06T00:51:28Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://ziglang.org/news/migrating-from-github-to-codeberg/",
+  "primaryLanguage": {
+   "name": "Zig"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 13514
+  },
+  "open": {
+   "totalCount": 2658
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "NixOS/nixpkgs": {
+  "nameWithOwner": "NixOS/nixpkgs",
+  "stargazerCount": 26901,
+  "forkCount": 20805,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T13:08:48Z",
+  "createdAt": "2012-06-04T02:49:46Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "",
+  "primaryLanguage": {
+   "name": "Nix"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 60369
+  },
+  "open": {
+   "totalCount": 9957
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "ohmyzsh/ohmyzsh": {
+  "nameWithOwner": "ohmyzsh/ohmyzsh",
+  "stargazerCount": 190706,
+  "forkCount": 27256,
+  "isArchived": false,
+  "pushedAt": "2026-11-16T12:08:14Z",
+  "createdAt": "2009-08-28T18:15:37Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://ohmyz.sh",
+  "primaryLanguage": {
+   "name": "Shell"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 5107
+  },
+  "open": {
+   "totalCount": 81
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Resolution: duplicate",
+     "issues": {
+      "totalCount": 54
+     }
+    }
+   ]
+  }
+ },
+ "desktop/desktop": {
+  "nameWithOwner": "desktop/desktop",
+  "stargazerCount": 22125,
+  "forkCount": 10732,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T10:32:54Z",
+  "createdAt": "2016-05-11T15:59:00Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://github.com/apps/desktop",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "MIT",
+   "name": "MIT License"
+  },
+  "issues": {
+   "totalCount": 13826
+  },
+  "open": {
+   "totalCount": 1029
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "anthropics/claude-code": {
+  "nameWithOwner": "anthropics/claude-code",
+  "stargazerCount": 156405,
+  "forkCount": 25063,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T07:56:59Z",
+  "createdAt": "2025-02-22T17:41:21Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://code.claude.com/docs/en/overview",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": null,
+  "issues": {
+   "totalCount": 107949
+  },
+  "open": {
+   "totalCount": 16360
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 27461
+     }
+    }
+   ]
+  }
+ },
+ "openai/codex": {
+  "nameWithOwner": "openai/codex",
+  "stargazerCount": 135965,
+  "forkCount": 21566,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:23:34Z",
+  "createdAt": "2025-04-13T05:37:54Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "",
+  "primaryLanguage": {
+   "name": "Rust"
+  },
+  "licenseInfo": {
+   "spdxId": "Apache-2.0",
+   "name": "Apache License 2.0"
+  },
+  "issues": {
+   "totalCount": 41610
+  },
+  "open": {
+   "totalCount": 27912
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "immich-app/immich": {
+  "nameWithOwner": "immich-app/immich",
+  "stargazerCount": 119712,
+  "forkCount": 7665,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T11:00:27Z",
+  "createdAt": "2022-02-03T15:56:27Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://immich.app",
+  "primaryLanguage": {
+   "name": "TypeScript"
+  },
+  "licenseInfo": {
+   "spdxId": "AGPL-3.0",
+   "name": "GNU Affero General Public License v3.0"
+  },
+  "issues": {
+   "totalCount": 9797
+  },
+  "open": {
+   "totalCount": 484
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "nextcloud/server": {
+  "nameWithOwner": "nextcloud/server",
+  "stargazerCount": 37577,
+  "forkCount": 5372,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:58:47Z",
+  "createdAt": "2016-06-02T07:44:14Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://nextcloud.com",
+  "primaryLanguage": {
+   "name": "PHP"
+  },
+  "licenseInfo": {
+   "spdxId": "AGPL-3.0",
+   "name": "GNU Affero General Public License v3.0"
+  },
+  "issues": {
+   "totalCount": 21901
+  },
+  "open": {
+   "totalCount": 2807
+  },
+  "labels": {
+   "nodes": []
+  }
+ },
+ "jellyfin/jellyfin": {
+  "nameWithOwner": "jellyfin/jellyfin",
+  "stargazerCount": 59569,
+  "forkCount": 5837,
+  "isArchived": false,
+  "pushedAt": "2026-11-20T12:37:34Z",
+  "createdAt": "2018-12-09T06:36:45Z",
+  "hasIssuesEnabled": true,
+  "homepageUrl": "https://jellyfin.org",
+  "primaryLanguage": {
+   "name": "C#"
+  },
+  "licenseInfo": {
+   "spdxId": "GPL-2.0",
+   "name": "GNU General Public License v2.0"
+  },
+  "issues": {
+   "totalCount": 9175
+  },
+  "open": {
+   "totalCount": 529
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "duplicate",
+     "issues": {
+      "totalCount": 127
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,324 @@
+[
+ {
+  "repo": "angular/angular",
+  "number": 13243,
+  "gql_items": 58,
+  "rest_items": 58,
+  "diff": {}
+ },
+ {
+  "repo": "angular/angular",
+  "number": 53565,
+  "gql_items": 4,
+  "rest_items": 4,
+  "diff": {}
+ },
+ {
+  "repo": "anthropics/claude-code",
+  "number": 895,
+  "gql_items": 60,
+  "rest_items": 60,
+  "diff": {}
+ },
+ {
+  "repo": "anthropics/claude-code",
+  "number": 49610,
+  "gql_items": 13,
+  "rest_items": 13,
+  "diff": {}
+ },
+ {
+  "repo": "dart-lang/sdk",
+  "number": 41913,
+  "gql_items": 36,
+  "rest_items": 36,
+  "diff": {}
+ },
+ {
+  "repo": "dart-lang/sdk",
+  "number": 25049,
+  "gql_items": 5,
+  "rest_items": 5,
+  "diff": {}
+ },
+ {
+  "repo": "dotnet/aspnetcore",
+  "number": 43843,
+  "gql_items": 20,
+  "rest_items": 20,
+  "diff": {}
+ },
+ {
+  "repo": "dotnet/aspnetcore",
+  "number": 8031,
+  "gql_items": 8,
+  "rest_items": 8,
+  "diff": {}
+ },
+ {
+  "repo": "dotnet/roslyn",
+  "number": 21049,
+  "gql_items": 21,
+  "rest_items": 21,
+  "diff": {}
+ },
+ {
+  "repo": "dotnet/roslyn",
+  "number": 84768,
+  "gql_items": 15,
+  "rest_items": 15,
+  "diff": {}
+ },
+ {
+  "repo": "dotnet/runtime",
+  "number": 60152,
+  "gql_items": 56,
+  "rest_items": 56,
+  "diff": {}
+ },
+ {
+  "repo": "dotnet/runtime",
+  "number": 43149,
+  "gql_items": 35,
+  "rest_items": 35,
+  "diff": {}
+ },
+ {
+  "repo": "flutter/flutter",
+  "number": 86545,
+  "gql_items": 41,
+  "rest_items": 41,
+  "diff": {}
+ },
+ {
+  "repo": "flutter/flutter",
+  "number": 42900,
+  "gql_items": 11,
+  "rest_items": 11,
+  "diff": {}
+ },
+ {
+  "repo": "godotengine/godot",
+  "number": 85082,
+  "gql_items": 40,
+  "rest_items": 40,
+  "diff": {}
+ },
+ {
+  "repo": "godotengine/godot",
+  "number": 80806,
+  "gql_items": 3,
+  "rest_items": 3,
+  "diff": {}
+ },
+ {
+  "repo": "golang/go",
+  "number": 42932,
+  "gql_items": 33,
+  "rest_items": 33,
+  "diff": {}
+ },
+ {
+  "repo": "golang/go",
+  "number": 46651,
+  "gql_items": 4,
+  "rest_items": 4,
+  "diff": {}
+ },
+ {
+  "repo": "grafana/grafana",
+  "number": 69836,
+  "gql_items": 20,
+  "rest_items": 20,
+  "diff": {}
+ },
+ {
+  "repo": "grafana/grafana",
+  "number": 69936,
+  "gql_items": 4,
+  "rest_items": 4,
+  "diff": {}
+ },
+ {
+  "repo": "home-assistant/core",
+  "number": 164777,
+  "gql_items": 77,
+  "rest_items": 77,
+  "diff": {}
+ },
+ {
+  "repo": "home-assistant/core",
+  "number": 15284,
+  "gql_items": 5,
+  "rest_items": 5,
+  "diff": {}
+ },
+ {
+  "repo": "llvm/llvm-project",
+  "number": 54257,
+  "gql_items": 23,
+  "rest_items": 23,
+  "diff": {}
+ },
+ {
+  "repo": "llvm/llvm-project",
+  "number": 54264,
+  "gql_items": 9,
+  "rest_items": 9,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/PowerToys",
+  "number": 24424,
+  "gql_items": 42,
+  "rest_items": 42,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/PowerToys",
+  "number": 18358,
+  "gql_items": 15,
+  "rest_items": 15,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/TypeScript",
+  "number": 7797,
+  "gql_items": 16,
+  "rest_items": 16,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/TypeScript",
+  "number": 1662,
+  "gql_items": 5,
+  "rest_items": 5,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/terminal",
+  "number": 15768,
+  "gql_items": 27,
+  "rest_items": 27,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/terminal",
+  "number": 8196,
+  "gql_items": 8,
+  "rest_items": 8,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/vscode",
+  "number": 10328,
+  "gql_items": 52,
+  "rest_items": 52,
+  "diff": {}
+ },
+ {
+  "repo": "microsoft/vscode",
+  "number": 280126,
+  "gql_items": 8,
+  "rest_items": 8,
+  "diff": {}
+ },
+ {
+  "repo": "mui/material-ui",
+  "number": 21528,
+  "gql_items": 52,
+  "rest_items": 52,
+  "diff": {}
+ },
+ {
+  "repo": "mui/material-ui",
+  "number": 23788,
+  "gql_items": 6,
+  "rest_items": 6,
+  "diff": {}
+ },
+ {
+  "repo": "openai/codex",
+  "number": 23588,
+  "gql_items": 19,
+  "rest_items": 19,
+  "diff": {}
+ },
+ {
+  "repo": "openai/codex",
+  "number": 44371,
+  "gql_items": 4,
+  "rest_items": 4,
+  "diff": {}
+ },
+ {
+  "repo": "oven-sh/bun",
+  "number": 181,
+  "gql_items": 16,
+  "rest_items": 16,
+  "diff": {}
+ },
+ {
+  "repo": "oven-sh/bun",
+  "number": 36428,
+  "gql_items": 4,
+  "rest_items": 4,
+  "diff": {}
+ },
+ {
+  "repo": "python/cpython",
+  "number": 140067,
+  "gql_items": 30,
+  "rest_items": 30,
+  "diff": {}
+ },
+ {
+  "repo": "python/cpython",
+  "number": 89567,
+  "gql_items": 17,
+  "rest_items": 17,
+  "diff": {}
+ },
+ {
+  "repo": "rust-lang/rust",
+  "number": 27336,
+  "gql_items": 91,
+  "rest_items": 91,
+  "diff": {}
+ },
+ {
+  "repo": "rust-lang/rust",
+  "number": 105656,
+  "gql_items": 11,
+  "rest_items": 11,
+  "diff": {}
+ },
+ {
+  "repo": "spring-projects/spring-boot",
+  "number": 9244,
+  "gql_items": 22,
+  "rest_items": 22,
+  "diff": {}
+ },
+ {
+  "repo": "spring-projects/spring-boot",
+  "number": 28499,
+  "gql_items": 5,
+  "rest_items": 5,
+  "diff": {}
+ },
+ {
+  "repo": "zed-industries/zed",
+  "number": 53182,
+  "gql_items": 34,
+  "rest_items": 34,
+  "diff": {}
+ },
+ {
+  "repo": "zed-industries/zed",
+  "number": 62261,
+  "gql_items": 4,
+  "rest_items": 4,
+  "diff": {}
+ }
+]
