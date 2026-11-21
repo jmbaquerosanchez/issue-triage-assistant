@@ -26,6 +26,10 @@ _Avoid_: tag; using it for ground truth
 **Triage**:
 The preparation of a proposal of what to do with a new issue, for a maintainer to decide on.
 
+**New issue**:
+The issue being triaged, whose duplicates are searched: one just opened, one about to be opened, or, in a replay, the eval case's issue as of its cutoff.
+_Avoid_: query, incoming issue
+
 **Duplicate**:
 An issue that a maintainer marked as a duplicate of an earlier one.
 
