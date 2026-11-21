@@ -1,0 +1,12 @@
+const { createRequire } = require('node:module');
+const req = createRequire(process.argv[2] + '/package.json');
+const sv = req('sqlite-vec');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(':memory:', { allowExtension: true });
+db.loadExtension(sv.getLoadablePath());
+console.log(process.version, 'node:sqlite', db.prepare('select sqlite_version() v').get().v, 'vec', db.prepare('select vec_version() v').get().v);
+db.exec("create virtual table v using vec0(embedding float[4] distance_metric=cosine, created_at integer)");
+const ins = db.prepare('insert into v(rowid, embedding, created_at) values (?, ?, ?)');
+ins.run(1n, new Uint8Array(new Float32Array([1,0,0,0]).buffer), 10n);
+ins.run(2n, new Uint8Array(new Float32Array([0,1,0,0]).buffer), 20n);
+console.log(db.prepare('select rowid, distance from v where embedding match ? and k = 5 and created_at < ?').all(new Uint8Array(new Float32Array([1,0.1,0,0]).buffer), 15));

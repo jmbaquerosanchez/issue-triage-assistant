@@ -1,0 +1,41 @@
+{
+ "node": "v24.16.0",
+ "N": 65000,
+ "loadMs": 51,
+ "rssBaselineMB": 47,
+ "rssAfterF32MB": 145,
+ "rssAfterF32andI8MB": 176,
+ "quantMs": 193,
+ "results": [
+  {
+   "frac": 1,
+   "visible": 65000,
+   "queries": 30,
+   "f32MedianMs": 21.09,
+   "i8MedianMs": 18.23,
+   "f32Top1Hit": 1,
+   "i8Top1Hit": 1,
+   "i8RecallAt50VsF32": 0.98
+  },
+  {
+   "frac": 0.5,
+   "visible": 32500,
+   "queries": 30,
+   "f32MedianMs": 10.94,
+   "i8MedianMs": 9.21,
+   "f32Top1Hit": 1,
+   "i8Top1Hit": 1,
+   "i8RecallAt50VsF32": 0.98
+  },
+  {
+   "frac": 0.05,
+   "visible": 3250,
+   "queries": 30,
+   "f32MedianMs": 1.07,
+   "i8MedianMs": 0.94,
+   "f32Top1Hit": 1,
+   "i8Top1Hit": 1,
+   "i8RecallAt50VsF32": 0.979
+  }
+ ]
+}

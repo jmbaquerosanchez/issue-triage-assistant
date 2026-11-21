@@ -1,0 +1,775 @@
+{
+ "meta": {
+  "sampled": 299,
+  "comments": 1349,
+  "totalIssues": 64503,
+  "years": {
+   "2014": 756,
+   "2015": 1457,
+   "2016": 2717,
+   "2017": 3858,
+   "2018": 5864,
+   "2019": 5968,
+   "2020": 5118,
+   "2021": 5350,
+   "2022": 7121,
+   "2023": 8965,
+   "2024": 6842,
+   "2025": 6065,
+   "2026": 4416
+  },
+  "nPerYear": {
+   "2014": 23,
+   "2015": 23,
+   "2016": 23,
+   "2017": 23,
+   "2018": 23,
+   "2019": 23,
+   "2020": 23,
+   "2021": 23,
+   "2022": 23,
+   "2023": 23,
+   "2024": 23,
+   "2025": 23,
+   "2026": 23
+  }
+ },
+ "Xenova/bge-small-en-v1.5": {
+  "weighted": {
+   "issues": {
+    "n": 299,
+    "mean": 493.8409565392648,
+    "median": 285,
+    "p90": 691,
+    "p99": 2308,
+    "max": 29778,
+    "over256": 0.5632159500509284,
+    "over512": 0.17208821980934688,
+    "over1024": 0.0575625020644707,
+    "over2048": 0.012862748587564882,
+    "over8192": 0.003450109914111266,
+    "cap256": 221.60322455173178,
+    "cap512": 310.82950133845065,
+    "cap1024": 360.88038944851394,
+    "cap2048": 394.97493311114476
+   },
+   "commentsPerIssue": {
+    "mean": 4.420912061295733,
+    "median": 3,
+    "p90": 10,
+    "max": 55
+   },
+   "botShare": 0.0010432871137725785,
+   "humanComments": {
+    "n": 1348,
+    "mean": 152.45937295268837,
+    "median": 63,
+    "p90": 264,
+    "p99": 1116,
+    "max": 30972,
+    "over256": 0.10126363169556538,
+    "over512": 0.03194064789821086,
+    "over1024": 0.012508097659143002,
+    "cap256": 90.12101184563089,
+    "cap512": 104.3532890386541
+   },
+   "structure": {
+    "fencedShare": 0.3938469594288449,
+    "htmlCommentShare": 0.015274380086795264,
+    "issuesWithFence": 0.2393916535383171,
+    "issuesWithHtmlComment": 0.09109827150706687,
+    "issuesWithStack": 0.03839544946815854,
+    "templateOld": 0.2641767631928947,
+    "templateForm": 0.5829101589490846
+   }
+  },
+  "unweighted": {
+   "issues": {
+    "n": 299,
+    "mean": 444.5183946488294,
+    "median": 252,
+    "p90": 632,
+    "p99": 2308,
+    "max": 29778,
+    "over256": 0.48494983277591974,
+    "over512": 0.14381270903010032,
+    "over1024": 0.046822742474916385,
+    "over2048": 0.010033444816053512,
+    "over8192": 0.0033444816053511705,
+    "cap256": 204.04347826086956,
+    "cap512": 279.74581939799333,
+    "cap1024": 322.3578595317726,
+    "cap2048": 349.494983277592
+   },
+   "commentsPerIssue": {
+    "mean": 4.511705685618729,
+    "median": 3,
+    "p90": 10,
+    "max": 55
+   },
+   "botShare": 0.0007412898443291327,
+   "humanComments": {
+    "n": 1348,
+    "mean": 140.6045994065282,
+    "median": 57,
+    "p90": 250,
+    "p99": 1049,
+    "max": 30972,
+    "over256": 0.0956973293768546,
+    "over512": 0.028189910979228485,
+    "over1024": 0.01112759643916914,
+    "cap256": 86.46958456973294,
+    "cap512": 99.66765578635015
+   },
+   "structure": {
+    "fencedShare": 0.3976349829961023,
+    "htmlCommentShare": 0.015466559001195708,
+    "issuesWithFence": 0.22742474916387959,
+    "issuesWithHtmlComment": 0.08695652173913043,
+    "issuesWithStack": 0.03678929765886288,
+    "templateOld": 0.26421404682274247,
+    "templateForm": 0.44481605351170567
+   }
+  },
+  "perYear": {
+   "2014": {
+    "n": 23,
+    "N": 756,
+    "meanIssue": 102.52173913043478,
+    "medianIssue": 72,
+    "meanCap512": 102.52173913043478,
+    "fencedShare": 0.05962441314553991,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 0,
+    "commentsPerIssue": 4.260869565217392,
+    "humanTokPerIssue": 439.3478260869565
+   },
+   "2015": {
+    "n": 23,
+    "N": 1457,
+    "meanIssue": 124.21739130434783,
+    "medianIssue": 99,
+    "meanCap512": 124.21739130434783,
+    "fencedShare": 0.17413127413127413,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 0,
+    "commentsPerIssue": 6,
+    "humanTokPerIssue": 493.8695652173913
+   },
+   "2016": {
+    "n": 23,
+    "N": 2717,
+    "meanIssue": 208.47826086956522,
+    "medianIssue": 188,
+    "meanCap512": 208.47826086956522,
+    "fencedShare": 0.1448306595365419,
+    "htmlShare": 0,
+    "templateOld": 0.43478260869565216,
+    "templateForm": 0,
+    "commentsPerIssue": 4.043478260869565,
+    "humanTokPerIssue": 262.82608695652175
+   },
+   "2017": {
+    "n": 23,
+    "N": 3858,
+    "meanIssue": 254.17391304347825,
+    "medianIssue": 172,
+    "meanCap512": 232.34782608695653,
+    "fencedShare": 0.2132523664940168,
+    "htmlShare": 0.03875692087872835,
+    "templateOld": 0.5217391304347826,
+    "templateForm": 0,
+    "commentsPerIssue": 5.956521739130435,
+    "humanTokPerIssue": 625.5217391304348
+   },
+   "2018": {
+    "n": 23,
+    "N": 5864,
+    "meanIssue": 252.1304347826087,
+    "medianIssue": 248,
+    "meanCap512": 252.1304347826087,
+    "fencedShare": 0.06321525885558583,
+    "htmlShare": 0.0997275204359673,
+    "templateOld": 0.6956521739130435,
+    "templateForm": 0,
+    "commentsPerIssue": 4.521739130434782,
+    "humanTokPerIssue": 389.04347826086956
+   },
+   "2019": {
+    "n": 23,
+    "N": 5968,
+    "meanIssue": 286.5217391304348,
+    "medianIssue": 233,
+    "meanCap512": 257.7826086956522,
+    "fencedShare": 0.1572177227251072,
+    "htmlShare": 0.08734317929172622,
+    "templateOld": 0.6956521739130435,
+    "templateForm": 0,
+    "commentsPerIssue": 2.9565217391304346,
+    "humanTokPerIssue": 200.6086956521739
+   },
+   "2020": {
+    "n": 23,
+    "N": 5118,
+    "meanIssue": 1705.391304347826,
+    "medianIssue": 354,
+    "meanCap512": 356.5217391304348,
+    "fencedShare": 0.8363233893593472,
+    "htmlShare": 0.01003835165118015,
+    "templateOld": 0.8695652173913043,
+    "templateForm": 0,
+    "commentsPerIssue": 8.521739130434783,
+    "humanTokPerIssue": 1331.8695652173913
+   },
+   "2021": {
+    "n": 23,
+    "N": 5350,
+    "meanIssue": 545.6521739130435,
+    "medianIssue": 398,
+    "meanCap512": 368.69565217391306,
+    "fencedShare": 0.39160667539267013,
+    "htmlShare": 0.023396596858638742,
+    "templateOld": 0.21739130434782608,
+    "templateForm": 0.782608695652174,
+    "commentsPerIssue": 3.130434782608696,
+    "humanTokPerIssue": 345.95652173913044
+   },
+   "2022": {
+    "n": 23,
+    "N": 7121,
+    "meanIssue": 478.7826086956522,
+    "medianIssue": 332,
+    "meanCap512": 345.7391304347826,
+    "fencedShare": 0.2781581168526681,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 5.173913043478261,
+    "humanTokPerIssue": 741.695652173913
+   },
+   "2023": {
+    "n": 23,
+    "N": 8965,
+    "meanIssue": 442.4782608695652,
+    "medianIssue": 336,
+    "meanCap512": 341.6521739130435,
+    "fencedShare": 0.290833417927114,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 4.6521739130434785,
+    "humanTokPerIssue": 495.4347826086956
+   },
+   "2024": {
+    "n": 23,
+    "N": 6842,
+    "meanIssue": 508.8695652173913,
+    "medianIssue": 376,
+    "meanCap512": 357.17391304347825,
+    "fencedShare": 0.2450816056462285,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 4.043478260869565,
+    "humanTokPerIssue": 740.5217391304348
+   },
+   "2025": {
+    "n": 23,
+    "N": 6065,
+    "meanIssue": 310.5652173913044,
+    "medianIssue": 263,
+    "meanCap512": 302.5217391304348,
+    "fencedShare": 0.040229885057471264,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 2.8260869565217392,
+    "humanTokPerIssue": 1644.1304347826087
+   },
+   "2026": {
+    "n": 23,
+    "N": 4416,
+    "meanIssue": 558.9565217391304,
+    "medianIssue": 437,
+    "meanCap512": 386.9130434782609,
+    "fencedShare": 0.10356713426853707,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 2.5652173913043477,
+    "humanTokPerIssue": 529.8260869565217
+   }
+  },
+  "extrapolation": {
+   "stratified": {
+    "issues": 31854223.219652265,
+    "issuesCap512": 20049435.324834123,
+    "issuesCap2048": 25477068.110468224,
+    "comments": 285162.0906897593,
+    "humanComments": 284864.58475520613,
+    "humanTok": 43430275.96820681,
+    "humanTokCap512": 29726556.34983627
+   },
+   "naive": {
+    "issues": 28672770.01003343,
+    "issuesCap512": 18044444.588628754,
+    "issuesCap2048": 22543474.9063545,
+    "comments": 291018.5518394642,
+    "humanComments": 290802.82274247427,
+    "humanTok": 40888214.397993356,
+    "humanTokCap512": 28983635.638795994
+   },
+   "ci90": {
+    "issues": [
+     23590461.142047025,
+     41014170.35508431
+    ],
+    "issuesCap512": [
+     19163974.221059825,
+     20837856.619460568
+    ],
+    "issuesCap2048": [
+     23206497.469635587,
+     27748215.978906993
+    ],
+    "comments": [
+     255876.06218691665,
+     327188.52168250474
+    ],
+    "humanComments": [
+     255561.9025293392,
+     326896.0596953951
+    ],
+    "humanTok": [
+     30587723.58512527,
+     59482901.25318063
+    ],
+    "humanTokCap512": [
+     25279416.203360297,
+     36262214.55063429
+    ]
+   }
+  },
+  "top": [
+   {
+    "year": 2020,
+    "tok": 29778,
+    "fencedPct": 100,
+    "stack": true
+   },
+   {
+    "year": 2024,
+    "tok": 2470,
+    "fencedPct": 74,
+    "stack": false
+   },
+   {
+    "year": 2022,
+    "tok": 2308,
+    "fencedPct": 93,
+    "stack": true
+   },
+   {
+    "year": 2021,
+    "tok": 1958,
+    "fencedPct": 90,
+    "stack": true
+   },
+   {
+    "year": 2021,
+    "tok": 1735,
+    "fencedPct": 62,
+    "stack": false
+   },
+   {
+    "year": 2023,
+    "tok": 1635,
+    "fencedPct": 75,
+    "stack": false
+   },
+   {
+    "year": 2020,
+    "tok": 1585,
+    "fencedPct": 56,
+    "stack": true
+   },
+   {
+    "year": 2022,
+    "tok": 1516,
+    "fencedPct": 0,
+    "stack": false
+   }
+  ]
+ },
+ "onnx-community/granite-embedding-small-english-r2-ONNX": {
+  "weighted": {
+   "issues": {
+    "n": 299,
+    "mean": 484.87505721533313,
+    "median": 279,
+    "p90": 680,
+    "p99": 1997,
+    "max": 28444,
+    "over256": 0.5921508988284583,
+    "over512": 0.17604121796025515,
+    "over1024": 0.06101261197858197,
+    "over2048": 0.008062390498782874,
+    "over8192": 0.003450109914111266,
+    "cap256": 222.5090064856403,
+    "cap512": 310.8772116802191,
+    "cap1024": 359.62332255426696,
+    "cap2048": 391.18618055035853
+   },
+   "commentsPerIssue": {
+    "mean": 4.420912061295733,
+    "median": 3,
+    "p90": 10,
+    "max": 55
+   },
+   "botShare": 0.0010432871137725785,
+   "humanComments": {
+    "n": 1348,
+    "mean": 147.23180858202238,
+    "median": 59,
+    "p90": 251,
+    "p99": 1131,
+    "max": 25720,
+    "over256": 0.09573005319879622,
+    "over512": 0.03574112890374321,
+    "over1024": 0.012245095459266215,
+    "cap256": 88.26668682558913,
+    "cap512": 102.5277385657386
+   },
+   "structure": {
+    "fencedShare": 0.386684987529077,
+    "htmlCommentShare": 0.012621111556712248,
+    "issuesWithFence": 0.2393916535383171,
+    "issuesWithHtmlComment": 0.09109827150706687,
+    "issuesWithStack": 0.03839544946815854,
+    "templateOld": 0.2641767631928947,
+    "templateForm": 0.5829101589490846
+   }
+  },
+  "unweighted": {
+   "issues": {
+    "n": 299,
+    "mean": 435.39464882943145,
+    "median": 259,
+    "p90": 632,
+    "p99": 1997,
+    "max": 28444,
+    "over256": 0.5016722408026756,
+    "over512": 0.14715719063545152,
+    "over1024": 0.05016722408026756,
+    "over2048": 0.006688963210702341,
+    "over8192": 0.0033444816053511705,
+    "cap256": 204.6020066889632,
+    "cap512": 279.2842809364549,
+    "cap1024": 320.60200668896323,
+    "cap2048": 345.2140468227425
+   },
+   "commentsPerIssue": {
+    "mean": 4.511705685618729,
+    "median": 3,
+    "p90": 10,
+    "max": 55
+   },
+   "botShare": 0.0007412898443291327,
+   "humanComments": {
+    "n": 1348,
+    "mean": 136.02225519287833,
+    "median": 55,
+    "p90": 243,
+    "p99": 1008,
+    "max": 25720,
+    "over256": 0.09124629080118694,
+    "over512": 0.03115727002967359,
+    "over1024": 0.009643916913946587,
+    "cap256": 84.79525222551929,
+    "cap512": 97.82344213649851
+   },
+   "structure": {
+    "fencedShare": 0.3903224244771495,
+    "htmlCommentShare": 0.012804996127033308,
+    "issuesWithFence": 0.22742474916387959,
+    "issuesWithHtmlComment": 0.08695652173913043,
+    "issuesWithStack": 0.03678929765886288,
+    "templateOld": 0.26421404682274247,
+    "templateForm": 0.44481605351170567
+   }
+  },
+  "perYear": {
+   "2014": {
+    "n": 23,
+    "N": 756,
+    "meanIssue": 102,
+    "medianIssue": 76,
+    "meanCap512": 102,
+    "fencedShare": 0.0476878612716763,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 0,
+    "commentsPerIssue": 4.260869565217392,
+    "humanTokPerIssue": 436.2608695652174
+   },
+   "2015": {
+    "n": 23,
+    "N": 1457,
+    "meanIssue": 122.1304347826087,
+    "medianIssue": 89,
+    "meanCap512": 122.1304347826087,
+    "fencedShare": 0.17299240910906913,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 0,
+    "commentsPerIssue": 6,
+    "humanTokPerIssue": 476.3478260869565
+   },
+   "2016": {
+    "n": 23,
+    "N": 2717,
+    "meanIssue": 206.47826086956522,
+    "medianIssue": 184,
+    "meanCap512": 206.47826086956522,
+    "fencedShare": 0.14357567443987196,
+    "htmlShare": 0,
+    "templateOld": 0.43478260869565216,
+    "templateForm": 0,
+    "commentsPerIssue": 4.043478260869565,
+    "humanTokPerIssue": 256.30434782608694
+   },
+   "2017": {
+    "n": 23,
+    "N": 3858,
+    "meanIssue": 251.69565217391303,
+    "medianIssue": 173,
+    "meanCap512": 233.3913043478261,
+    "fencedShare": 0.20320656226696496,
+    "htmlShare": 0.03131991051454139,
+    "templateOld": 0.5217391304347826,
+    "templateForm": 0,
+    "commentsPerIssue": 5.956521739130435,
+    "humanTokPerIssue": 607.8260869565217
+   },
+   "2018": {
+    "n": 23,
+    "N": 5864,
+    "meanIssue": 247.52173913043478,
+    "medianIssue": 250,
+    "meanCap512": 246.7391304347826,
+    "fencedShare": 0.07136006138499904,
+    "htmlShare": 0.0826779205831575,
+    "templateOld": 0.6956521739130435,
+    "templateForm": 0,
+    "commentsPerIssue": 4.521739130434782,
+    "humanTokPerIssue": 376.1304347826087
+   },
+   "2019": {
+    "n": 23,
+    "N": 5968,
+    "meanIssue": 275.4782608695652,
+    "medianIssue": 220,
+    "meanCap512": 253.08695652173913,
+    "fencedShare": 0.15400340715502556,
+    "htmlShare": 0.07427597955706984,
+    "templateOld": 0.6956521739130435,
+    "templateForm": 0,
+    "commentsPerIssue": 2.9565217391304346,
+    "humanTokPerIssue": 190.2173913043478
+   },
+   "2020": {
+    "n": 23,
+    "N": 5118,
+    "meanIssue": 1643.5652173913043,
+    "medianIssue": 359,
+    "meanCap512": 351.9130434782609,
+    "fencedShare": 0.8387758960646085,
+    "htmlShare": 0.00864327580152878,
+    "templateOld": 0.8695652173913043,
+    "templateForm": 0,
+    "commentsPerIssue": 8.521739130434783,
+    "humanTokPerIssue": 1392.695652173913
+   },
+   "2021": {
+    "n": 23,
+    "N": 5350,
+    "meanIssue": 517.1739130434783,
+    "medianIssue": 375,
+    "meanCap512": 366.8695652173913,
+    "fencedShare": 0.3632577100319036,
+    "htmlShare": 0.02056008507621411,
+    "templateOld": 0.21739130434782608,
+    "templateForm": 0.782608695652174,
+    "commentsPerIssue": 3.130434782608696,
+    "humanTokPerIssue": 327.5217391304348
+   },
+   "2022": {
+    "n": 23,
+    "N": 7121,
+    "meanIssue": 466.4782608695652,
+    "medianIssue": 359,
+    "meanCap512": 348.5217391304348,
+    "fencedShare": 0.2548632368914782,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 5.173913043478261,
+    "humanTokPerIssue": 727.5217391304348
+   },
+   "2023": {
+    "n": 23,
+    "N": 8965,
+    "meanIssue": 450.17391304347825,
+    "medianIssue": 336,
+    "meanCap512": 345.2173913043478,
+    "fencedShare": 0.2960780329201382,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 4.6521739130434785,
+    "humanTokPerIssue": 485.2173913043478
+   },
+   "2024": {
+    "n": 23,
+    "N": 6842,
+    "meanIssue": 516.6086956521739,
+    "medianIssue": 371,
+    "meanCap512": 360.6521739130435,
+    "fencedShare": 0.24388731396172927,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 4.043478260869565,
+    "humanTokPerIssue": 781.5652173913044
+   },
+   "2025": {
+    "n": 23,
+    "N": 6065,
+    "meanIssue": 314.17391304347825,
+    "medianIssue": 277,
+    "meanCap512": 306.4782608695652,
+    "fencedShare": 0.037904288014049464,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 2.8260869565217392,
+    "humanTokPerIssue": 1406.0869565217392
+   },
+   "2026": {
+    "n": 23,
+    "N": 4416,
+    "meanIssue": 546.6521739130435,
+    "medianIssue": 413,
+    "meanCap512": 387.2173913043478,
+    "fencedShare": 0.0979487601944147,
+    "htmlShare": 0,
+    "templateOld": 0,
+    "templateForm": 1,
+    "commentsPerIssue": 2.5652173913043477,
+    "humanTokPerIssue": 508.39130434782606
+   }
+  },
+  "extrapolation": {
+   "stratified": {
+    "issues": 31275895.815560695,
+    "issuesCap512": 20052512.785009213,
+    "issuesCap2048": 25232682.204039827,
+    "comments": 285162.0906897593,
+    "humanComments": 284864.58475520613,
+    "humanTok": 41941128.01447588,
+    "humanTokCap512": 29206521.67241954
+   },
+   "naive": {
+    "issues": 28084261.03344482,
+    "issuesCap512": 18014673.97324414,
+    "issuesCap2048": 22267341.66220735,
+    "comments": 291018.5518394642,
+    "humanComments": 290802.82274247427,
+    "humanTok": 39555655.765886284,
+    "humanTokCap512": 28447333.103678934
+   },
+   "ci90": {
+    "issues": [
+     23371608.30632971,
+     40096874.290056
+    ],
+    "issuesCap512": [
+     19177926.344958406,
+     20833086.175718997
+    ],
+    "issuesCap2048": [
+     23026107.12470145,
+     27457459.80264402
+    ],
+    "comments": [
+     255876.06218691665,
+     327188.52168250474
+    ],
+    "humanComments": [
+     255561.9025293392,
+     326896.0596953951
+    ],
+    "humanTok": [
+     30518429.095947836,
+     56311927.85784776
+    ],
+    "humanTokCap512": [
+     24724335.83124796,
+     35749348.8444154
+    ]
+   }
+  },
+  "top": [
+   {
+    "year": 2020,
+    "tok": 28444,
+    "fencedPct": 100,
+    "stack": true
+   },
+   {
+    "year": 2024,
+    "tok": 2616,
+    "fencedPct": 73,
+    "stack": false
+   },
+   {
+    "year": 2022,
+    "tok": 1997,
+    "fencedPct": 91,
+    "stack": true
+   },
+   {
+    "year": 2021,
+    "tok": 1741,
+    "fencedPct": 89,
+    "stack": true
+   },
+   {
+    "year": 2023,
+    "tok": 1736,
+    "fencedPct": 76,
+    "stack": false
+   },
+   {
+    "year": 2020,
+    "tok": 1633,
+    "fencedPct": 57,
+    "stack": true
+   },
+   {
+    "year": 2021,
+    "tok": 1621,
+    "fencedPct": 60,
+    "stack": false
+   },
+   {
+    "year": 2022,
+    "tok": 1488,
+    "fencedPct": 0,
+    "stack": false
+   }
+  ]
+ }
+}
