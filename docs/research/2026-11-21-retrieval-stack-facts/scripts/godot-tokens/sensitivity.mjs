@@ -1,0 +1,33 @@
+// Outlier sensitivity (bge): totals and fenced share without the single largest issue / comment.
+import { createRequire } from 'node:module';
+import { readFileSync } from 'node:fs';
+const [pkg, cache, yearsCsv, samplePath] = process.argv.slice(2);
+const req = createRequire(pkg + '/package.json');
+const mod = await import(req.resolve('@huggingface/transformers'));
+const { AutoTokenizer, env } = mod.AutoTokenizer ? mod : mod.default;
+env.cacheDir = cache;
+const years = Object.fromEntries(readFileSync(yearsCsv, 'utf8').trim().split('\n').slice(1).map((l) => l.split(',').map(Number).slice(0, 2)));
+const sample = JSON.parse(readFileSync(samplePath, 'utf8'));
+const n = {}; for (const s of sample) n[s.year] = (n[s.year] ?? 0) + 1;
+const sc = 64503 / Object.values(years).reduce((a, b) => a + b, 0);
+const tok = await AutoTokenizer.from_pretrained('Xenova/bge-small-en-v1.5');
+const c = (t) => (t ? tok.encode(t, { add_special_tokens: false }).length : 0);
+const fence = (md) => { let inside = false, mk = '', f = [], o = []; for (const l of md.split(/\r?\n/)) { const m = l.match(/^\s{0,3}(`{3,}|~{3,})/); if (!inside && m) { inside = true; mk = m[1][0]; f.push(l); continue; } if (inside) { f.push(l); if (m && m[1][0] === mk) inside = false; continue; } o.push(l); } return [f.join('\n'), o.join('\n')]; };
+const rows = sample.map((s) => { const [f, o] = fence(s.body); const hc = s.comments.filter((x) => !x.isBot).map((x) => { const [cf, co] = fence(x.body); return { t: c(x.body), f: c(cf), o: c(co) }; });
+  return { w: years[s.year] * sc / n[s.year], it: c(`${s.title}\n\n${s.body}`), f: c(f), o: c(o), hc, cc: s.comments.length, tc: s.commentCount }; });
+console.log('commentCount==fetched for all:', rows.every((r) => r.cc === r.tc), 'stratified comments:', Math.round(rows.reduce((a, r) => a + r.w * r.cc, 0)), 'human:', Math.round(rows.reduce((a, r) => a + r.w * r.hc.length, 0)));
+const maxI = rows.reduce((m, r, i) => (r.it > rows[m].it ? i : m), 0);
+const sum = (rs, f) => rs.reduce((a, r) => a + r.w * f(r), 0);
+const rest = rows.filter((_, i) => i !== maxI);
+console.log('issues total, all:', (sum(rows, (r) => r.it) / 1e6).toFixed(2), 'M; without top issue (reweighting its year):');
+// reweight the year of the outlier: 22 issues represent that year
+const y = sample[maxI].year; const rw = rest.map((r, i) => r);
+const restW = rows.map((r, i) => ({ ...r, w: sample[i].year === y ? years[y] * sc / (n[y] - 1) : r.w })).filter((_, i) => i !== maxI);
+console.log('  ', (sum(restW, (r) => r.it) / 1e6).toFixed(2), 'M; mean/issue', (sum(restW, (r) => r.it) / sum(restW, () => 1)).toFixed(0));
+console.log('fenced share issue bodies: all', (sum(rows, (r) => r.f) / sum(rows, (r) => r.f + r.o) * 100).toFixed(1), '% ; without top issue', (sum(restW, (r) => r.f) / sum(restW, (r) => r.f + r.o) * 100).toFixed(1), '%');
+const allC = rows.flatMap((r) => r.hc.map((h) => ({ ...h, w: r.w })));
+const maxC = allC.reduce((m, h) => Math.max(m, h.t), 0);
+const restC = allC.filter((h) => h.t !== maxC);
+console.log('human comment tokens: all', (sum(allC, (h) => h.t) / 1e6).toFixed(2), 'M; without top comment', (sum(restC, (h) => h.t) / 1e6).toFixed(2), 'M; fenced share comments', (sum(allC, (h) => h.f) / sum(allC, (h) => h.f + h.o) * 100).toFixed(1), '% / w/o top', (sum(restC, (h) => h.f) / sum(restC, (h) => h.f + h.o) * 100).toFixed(1), '%');
+const top5 = [...allC].sort((a, b) => b.t - a.t).slice(0, 5).map((h) => `${h.t} (${Math.round(100 * h.f / Math.max(1, h.f + h.o))}% fenced)`);
+console.log('top human comments:', top5.join(', '));

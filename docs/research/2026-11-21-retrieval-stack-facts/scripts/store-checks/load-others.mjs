@@ -1,0 +1,10 @@
+import { createRequire } from 'node:module';
+const [libsqlProj, lanceProj, tmp] = process.argv.slice(2);
+const { createClient } = await import(createRequire(libsqlProj + '/package.json').resolve('@libsql/client'));
+const c = createClient({ url: 'file:' + tmp + '/l.db' });
+const r = await c.execute("select sqlite_version() v"); 
+await c.execute("create virtual table if not exists f using fts5(body)");
+console.log(process.version, 'libsql', r.rows[0].v, 'fts5 ok');
+const lancedb = await import(createRequire(lanceProj + '/package.json').resolve('@lancedb/lancedb'));
+const db = await lancedb.connect(tmp + '/lance');
+console.log('lancedb connect ok', typeof db.createTable);
