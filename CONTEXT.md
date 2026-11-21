@@ -31,10 +31,14 @@ The issue being triaged, whose duplicates are searched: one just opened, one abo
 _Avoid_: query, incoming issue
 
 **Duplicate**:
-An issue that a maintainer marked as a duplicate of an earlier one.
+An issue that a maintainer marked as a duplicate of another.
 
 **Original**:
-The earlier issue that a duplicate was marked as a duplicate of.
+The issue a duplicate was marked as a duplicate of: usually earlier, sometimes newer, when a maintainer folds an old issue into a newer one.
+
+**Duplicate cluster**:
+The issues joined by maintainers' duplicate markings, directly or through a chain: a duplicate, its original, that original's own original, and the other duplicates of any of them.
+_Avoid_: duplicate group, family
 
 **Duplicate candidate**:
 An issue the system proposes as the original of a new issue, whether right or wrong.
@@ -60,6 +64,14 @@ _Avoid_: snapshot, as-of date, time slice
 **Replay**:
 Running an eval case as of its cutoff: the search sees everything that existed before the cutoff, back to the start of the target repository's history, and nothing after.
 _Avoid_: simulation, backtest
+
+**Lenient replay**:
+A replay that mimics triage-bench's protocol and lets through, on purpose, the leaks a replay excludes, to measure how much each one moves the numbers. _Replay_ alone always means the strict one.
+_Avoid_: loose replay, baseline replay
+
+**Correction**:
+One step from the lenient replay toward the replay that removes one leak or bias, so its effect on the numbers can be measured.
+_Avoid_: fix, adjustment
 
 **Leak**:
 Anything from after an eval case's cutoff that reaches its replay: text edited later, comments or labels added later, scoring statistics that count later issues.
