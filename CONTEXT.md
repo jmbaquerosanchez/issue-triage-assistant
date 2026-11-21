@@ -40,6 +40,10 @@ The earlier issue that a duplicate was marked as a duplicate of.
 An issue the system proposes as the original of a new issue, whether right or wrong.
 _Avoid_: match, hit
 
+**Piece**:
+The text of an issue (its title and body) or of a comment, as it stood between two edits: the unit that duplicate search scores.
+_Avoid_: chunk, document, passage, entry
+
 ### Evaluation
 
 **Eval case**:
