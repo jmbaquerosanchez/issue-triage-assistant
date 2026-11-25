@@ -21,8 +21,12 @@ A person with permissions on the target repository who decides what to do with a
 A GitHub label on an issue, such as `duplicate` or `bug`.
 _Avoid_: tag; using it for ground truth
 
+**Ingestion**:
+Bringing a target repository's history up to date locally. The first one downloads it whole; each later one, only what changed since the previous one.
+_Avoid_: sync, refresh, crawl
+
 **Snapshot**:
-The history of a target repository as ingested up to a moment. An eval runs on one and declares its date; the demo ships the index of one. Not a cutoff: a cutoff belongs to each eval case, a snapshot to each ingestion.
+The history of a target repository as it stood at a moment no later than its last ingestion. An eval runs on one and declares its date; the demo ships the index of one. Not a cutoff: a cutoff belongs to each eval case, a snapshot to the whole eval.
 _Avoid_: dump, export
 
 ### Triage
