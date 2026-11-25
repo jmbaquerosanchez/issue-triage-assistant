@@ -21,6 +21,10 @@ A person with permissions on the target repository who decides what to do with a
 A GitHub label on an issue, such as `duplicate` or `bug`.
 _Avoid_: tag; using it for ground truth
 
+**Snapshot**:
+The history of a target repository as ingested up to a moment. An eval runs on one and declares its date; the demo ships the index of one. Not a cutoff: a cutoff belongs to each eval case, a snapshot to each ingestion.
+_Avoid_: dump, export
+
 ### Triage
 
 **Triage**:
@@ -59,7 +63,7 @@ _Avoid_: label, gold label, expected label
 
 **Cutoff**:
 The moment an eval case's issue was opened. Only what existed before it is visible when that case is replayed.
-_Avoid_: snapshot, as-of date, time slice
+_Avoid_: as-of date, time slice
 
 **Replay**:
 Running an eval case as of its cutoff: the search sees everything that existed before the cutoff, back to the start of the target repository's history, and nothing after.
