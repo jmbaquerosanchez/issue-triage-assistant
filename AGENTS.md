@@ -12,7 +12,10 @@ This repo and its tracker are meant to be public: everything in them (code, docs
 
 What every ticket meets even when it does not name it: `jmb-implement-ticket` covers them in each one.
 
-None yet.
+- **Outside data is validated where it enters**: GitHub responses, model outputs, the offline scripts' files, eval plans and results files (ADR 0001).
+- **stdout carries the result; stderr the progress, warnings and errors**, with instants in UTC, as § CLI › Conventions of `docs/spec.md` says.
+- **Each command a ticket adds goes into `--help`**, `build-demo-index` and `reprocess` in its "Maintenance" group.
+- **Tests sit at the seams of § Test seams in `docs/agents/flow.md`**, and every history they need comes from the real ingestion against the fake GitHub (ADR 0003). Their text is invented or recorded from this repository's own tracker, never a target repository's.
 
 <!-- jmb-setup:start -->
 <!-- Written by jmb-setup, which on a rerun rewrites it whole and keeps the values of the "Languages" table and the rows the project has added to it. Everything else of the project goes outside these markers. -->
