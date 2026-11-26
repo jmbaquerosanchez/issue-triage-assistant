@@ -17,7 +17,7 @@ A local tool, the npm package `issue-triage-assistant`, that finds the duplicate
 - **Ingestion.** With a GitHub token, one command downloads a target repository's history (issues, comments, every revision of their text, and timeline events, each with its date) and keeps it up to date. The first ingestion of godot takes hours and resumes if cut off; a daily one takes seconds.
 - **Duplicate search.** For a new issue given by number, by URL, or as a draft (title and body), it proposes up to 20 duplicate candidates from hybrid search over the pieces of the history: a keyword score of its own and local embeddings, fused, with an optional local reranker. It needs no API key. Each candidate carries what a maintainer needs to judge it: title, link, state, the original it was marked a duplicate of, and the excerpt that matched. It shows no score.
 - **Two surfaces.** A CLI, and a read-only MCP tool, `find_duplicates`, that Claude Code uses over every ingested repository. Nothing writes to GitHub.
-- **The eval.** Every usable duplicate of godot opened since June 2018 is replayed at its cutoff, seeing only what existed then, text as it stood included. Recall@5 is reported with margins for 15 configurations and baselines, and a ladder of corrections, anchored on triage-bench's own code, shows how much each leak moves the numbers. A stated rule picks the default configuration from those results. The results and the report are committed to this repository and hold no issue text.
+- **The eval.** Every eval case, a godot duplicate opened since June 2018, is replayed at its cutoff, seeing only what existed then, text as it stood included. Recall@5 is reported with margins for 15 configurations and baselines, and a ladder of corrections, anchored on triage-bench's own code, shows how much each leak moves the numbers. A stated rule picks the default configuration from those results. The results and the report are committed to this repository and hold no issue text.
 - **The demo.** `npx issue-triage-assistant demo` downloads, with no credential of any kind, a ready-built index of godot and searches it from the CLI and from Claude Code, showing, for an eval case, the rank it got in the replay.
 
 ## User Stories
@@ -88,7 +88,7 @@ A local tool, the npm package `issue-triage-assistant`, that finds the duplicate
 
 ### Readers of the eval report
 
-53. As a reader of the report, I want every usable duplicate since June 2018 replayed at its cutoff with only what existed then, so that the numbers describe what a maintainer would have got when the issue was opened.
+53. As a reader of the report, I want every eval case, a duplicate opened since June 2018, replayed at its cutoff with only what existed then, so that the numbers describe what a maintainer would have got when the issue was opened.
 54. As a reader, I want a case to count as found when any member of its duplicate cluster opened before the cutoff is in the top 5, because the output leads from any member to the original.
 55. As a reader, I want Recall@5 with a 95% margin from a bootstrap over whole duplicate clusters, so that the margins are not narrower than they should be.
 56. As a reader, I want Recall@1, @10 and @20, MRR@10 and the distribution of the first cluster member's rank, so that I see more than one cut.
@@ -100,7 +100,7 @@ A local tool, the npm package `issue-triage-assistant`, that finds the duplicate
 62. As a reader, I want the lenient replay checked against triage-bench's own code on the same data, so that the ladder starts from a faithful imitation.
 63. As a reader, I want a column for eval cases opened after the local embedder's release, so that I can see whether training data contaminates the numbers.
 64. As a reader, I want the default configuration chosen by a rule stated before the results, so that the choice is not cherry-picked.
-65. As a reader, I want each row's p95 latency, so that I can weigh quality against speed.
+65. As a reader, I want each local configuration's p95 latency and peak memory, so that I can weigh quality against speed.
 66. As a reader, I want the number of eval cases, the exclusions by reason and the cluster sizes, so that I know what was measured.
 67. As a reader, I want the noise of the ground truth estimated by hand review, so that I know how far to trust the extraction and how many correct answers went unrecorded.
 68. As a reader, I want the declared limits listed, so that I know what the replay cannot guarantee.
@@ -137,7 +137,7 @@ A local tool, the npm package `issue-triage-assistant`, that finds the duplicate
 ### Scope
 
 - Phase 1 is duplicate search and its eval. Documentation search and its eval move to phase 2: maintainer closing comments that link the docs are too few for an eval with margins. The data model only leaves room for documentation fragments (§ Pieces).
-- The code works on any GitHub repository. Phase 1 is evaluated and demoed on one target repository, **godotengine/godot**: about 5,000 usable duplicates, 64.5k issues and about 285k comments, MIT, no automation that suggests or closes duplicates anywhere in its history, and comment markings by maintainers that can be verified.
+- The code works on any GitHub repository. Phase 1 is evaluated and demoed on one target repository, **godotengine/godot**: about 5,000 duplicates since June 2018, 64.5k issues and about 285k comments, MIT, no automation that suggests or closes duplicates anywhere in its history, and comment markings by maintainers that can be verified.
 - Criteria for choosing a later target repository, in order of weight: medium size (about 14k–65k issues); no duplicate automation that biases the ground truth; comment markings counted only from accounts that show triage-level actions; serving phase 2 only breaks ties.
 - Nothing in phase 1 writes to GitHub.
 
@@ -145,7 +145,7 @@ A local tool, the npm package `issue-triage-assistant`, that finds the duplicate
 
 - **TypeScript** (ADR 0001) on **Node, `engines: >=24.15`**: from 24.15.0, `node:sqlite` is a release candidate and prints no experimental warning. Bun and Deno are neither promised nor tested.
 - **Platforms promised:** Linux x64 and arm64, macOS arm64, native Windows x64. Intel macOS is not promised.
-- **pnpm**, pinned in `packageManager`. Dependency install scripts stay blocked: `allowBuilds: {onnxruntime-node: false, protobufjs: false}`, since onnxruntime-node's script only fetches the CUDA provider on Linux x64 and the CPU binaries are already in its tarball. Transformers.js needs sharp's binary even for text models.
+- **pnpm**, pinned in `packageManager`. Dependency install scripts stay blocked: `allowBuilds: {onnxruntime-node: false, protobufjs: false}`, since onnxruntime-node's script only fetches the CUDA provider on Linux x64 and the CPU binaries are already in its tarball. Transformers.js needs sharp's binary even for text models. `minimumReleaseAge` delays adopting freshly published versions; the ticket that scaffolds the project picks its value.
 - **License:** MIT, covering this repository's own code and docs only.
 - **One npm package, `issue-triage-assistant`,** with one `bin` of the same name and one folder per module. Each module exposes a single entry file, and a lint rule forbids importing its internals. No pnpm workspace packages. The core is internal: the public surfaces are the CLI and the MCP tool, and there is no library API and no semver promise beyond them.
 - **How TypeScript runs.** Development and tests run the `.ts` sources through Node's type stripping, with no build. The published package is compiled to JS with `tsc`, since Node does not strip types inside `node_modules`. Only erasable syntax (`erasableSyntaxOnly`: no `enum`, `namespace` or parameter properties); relative imports carry `.ts`, which `rewriteRelativeImportExtensions` turns into `.js`. `tsc --noEmit` checks types.
@@ -165,7 +165,7 @@ Eleven modules in the one package. Every dependency a test replaces enters throu
 | `ingestion` | `ingest({history, github, raw}, {full?, onProgress})` → snapshot date; `reprocess({history, raw})` | the loop by `updatedAt`, the checkpoint, the page sizes, parsing, the merge rules, the raw response archive |
 | `markings` | `markingsAsOf(history, instant)` → the original or originals of each marked duplicate, plus the markings set aside, by reason | the signals, the wordings, the maintainer test, the direction, "the marking still stands" |
 | `models` | `Embedder` and `Reranker`, each with an id (model, revision, dtype); `cachedEmbedder(embedder, file)` and `cachedReranker(reranker, file)` | Transformers.js (pinned revision, dtype, cache directory), Voyage, the caches' tables |
-| `retrieval` | `buildIndex({history, embedders, snapshotDate, scope, kinds, textPrep, window?, exclusions?, results?, onProgress}, file)`; `openIndex(file, {embedders, reranker?})` → `findDuplicates(newIssue, options)`, and each issue's facts and current text by number | deriving pieces (intervals, lost text, lenient dating, cleaning), the tokenizers, posting lists by start and by end, cumulative arrays, the vectors with their int8 scan and float32 rescoring, the piece of each issue, fusion, reranking |
+| `retrieval` | `buildIndex({history, embedders, snapshotDate, scope, kinds, textPrep, window?, exclusions?, results?, onProgress}, file)`; `openIndex(file, {embedders, reranker?})` → `findDuplicates(newIssue, options)`, and each issue's facts and current text by number | deriving pieces (intervals, lost text, backdating, cleaning), the tokenizers, posting lists by start and by end, cumulative arrays, the vectors with their int8 scan and float32 rescoring, the piece of each issue, fusion, reranking |
 | `workspace` | `openWorkspace({home, github, models})` → `repositories()`, and `repository(name)`: state, snapshot date, `findDuplicates({issue} \| {title, body}, limit)`, `ingest({full?, onProgress})`, `installDemoIndex(file)`; for `eval` and `demo`, also its history, its vector cache and its `eval/` directory | the data directory and its layout, the per-repository lock, generations and their switch, number → text, the repository states |
 | `eval` | `runEval(repository, {snapshotDate, plan, onProgress})` → results file; `reviewSheets(repository, results, seed)`; `renderReport(results, verdicts)` → markdown | § Eval |
 | `demo` | `buildDemoIndex(repository, {results, exclusions})` → index file and NOTICE; `fetchDemoIndex({url, sha256}, onProgress)` → verified file | the pinned release tag and sha256, and their override |
@@ -186,7 +186,7 @@ index.findDuplicates(
   options?: {
     cutoff?: Date;            // replay: only what was visible before it; without one, everything in the index
     statsAt?: Date;           // BM25 statistics instant; defaults to the cutoff, or the index's snapshot date
-    config?: RetrievalConfig; // legs (BM25, vectors by embedder id), reranker, comment pieces; the default when omitted
+    config?: RetrievalConfig; // legs (BM25, vectors by embedder id), reranker, comment pieces; when omitted, the one a live index was built for
     exclude?: number;         // the new issue's number, kept out of the candidates
     limit?: number;           // 5 by default, up to 200 issues
   },
@@ -224,7 +224,7 @@ index.findDuplicates(
 
 **The snapshot date** is the `Date` header of the first response of the last complete ingestion: GitHub's clock, not the local one, so it compares directly with `updatedAt` and `since`. Every change before it that bumps `updatedAt` is captured. A cut-off ingestion does not move it, and the next one starts from it.
 
-**After each ingestion the live index is rebuilt** from the history at the snapshot date, with the same code as the first time (§ Index files). Vectors come from the vector cache, so only new texts are embedded: a day of godot is a few dozen issues and comments, seconds of CPU. Tokenizing and building the posting lists of every live piece is estimated, not measured, at 1–3 min for 350k pieces.
+**After each ingestion the live index is rebuilt** from the history at the snapshot date, with the same code as the first time, holding only what the default configuration searches (§ Index files). Vectors come from the vector cache, so only new texts are embedded: a day of godot is a few dozen issues, plus their comments if the default searches comment pieces, seconds of CPU. Tokenizing and building the posting lists of the live pieces is estimated, not measured, at 1–3 min for 350k pieces, godot's live issue and comment pieces together, and proportionally less for its ~64k live issue pieces alone.
 
 **Running it.**
 
@@ -237,7 +237,7 @@ index.findDuplicates(
 
 ### Duplicate markings
 
-`markingsAsOf(history, instant)` decides, at an instant, which issues are marked duplicates and of which original or originals, and which markings are set aside and why. The eval's ground truth and the original each candidate names come from it.
+`markingsAsOf(history, instant)` decides, at an instant, which issues are marked duplicates and of which original or originals, and which markings are set aside and why. The eval's ground truth and the original each candidate names come from it. The eval passes the snapshot date as the instant (§ Eval › Ground truth).
 
 **Signals.**
 
@@ -304,27 +304,32 @@ A piece is the text of an issue (its title and body) or of a comment as it stood
 
 Every index is a file written once and never changed, in one format for the live index, the eval's indexes, the demo index and the fixture index (ADR 0004). The surfaces read only the index, never the history.
 
-**What an index records:** its snapshot date, its scope, its piece kinds, its text preparation (tokenizer included), the models whose vectors it carries, a window of issues by opening date, an exclusion list of issues and comments, and, for a demo or fixture index only, the eval results it carries (§ Demo).
+**What an index records:** its snapshot date, its scope, its piece kinds, its text preparation (tokenizer included), the models whose vectors it carries, for a live index the retrieval configuration it was built for, a window of issues by opening date, an exclusion list of issues and comments, and, for a demo or fixture index only, the eval results it carries (§ Demo).
 
 **Per-issue facts**, as of the snapshot date: number, title, URL, opening date, state with its close reason, and its original or originals from `markings`. An issue's current text is its live issue piece. So the CLI and the MCP server resolve a number from the index alone.
 
 **Scopes.**
 
-- **`live`**: the piece valid at the snapshot date of each issue and comment. It is what `workspace` serves and what a demo index ships. It rejects any cutoff.
+- **`live`**: the piece valid at the snapshot date of each issue and comment, among the index's piece kinds. It is what `workspace` serves and what a demo index ships. It rejects any cutoff.
 - **`full`**: every piece started before the snapshot date, with its end. The replay uses it. It rejects a cutoff after the snapshot date.
-- **`lenient`**: each issue's current text as of the snapshot date, with its piece dated at the issue's opening, so the same cutoff prefix selects by opening date. It rejects a cutoff after the snapshot date.
+- **`backdated`**: each issue's current text as of the snapshot date, as in `live`, with its piece dated at the issue's opening, so the same cutoff prefix selects by opening date. What sets it apart from `live` is the dating, not the text. Steps 0 to 2 of the ladder use it (§ Eval › The ladder and the anchor). It rejects a cutoff after the snapshot date.
 
-**The live index** that `workspace` builds after each ingestion holds issue and comment pieces, with the local embedder's vectors, so every local configuration can run on it. A demo index is a live index built with filters: only what the default configuration searches, and the exclusion list.
+**The live index** that `workspace` builds after each ingestion holds only what the default configuration searches: its piece kinds and its embedders' vectors, nothing else, and no vectors at all if the default is BM25 alone. A demo index is then a live index with the exclusion list applied. When the default changes, the next ingestion embeds what the new default needs: for godot, adding comment pieces costs about 4 h of embedding (§ Further Notes).
 
-**Vectors travel with the index.** An index carries the float32 vectors of its pieces in piece order, copied from the vector cache when it is built, and the int8 vectors derived from them. It opens with no vector cache. In godot that is about 0.15 GB per live index without comment pieces and 0.7 GB with them, and the disk holds two live indexes during a rebuild.
+**A live index is searched with the configuration it was built for**, which it records, not with the package's current default. After an upgrade that changes the default, the current generation keeps serving the previous version's default until the next ingestion writes one built for the new default, as it keeps serving the previous snapshot during any rebuild (§ Workspace); an installed demo index built for an earlier version is the same case, until `demo` installs the one the version pins. Searching the new default over an index built for the old one would find legs or pieces missing, sometimes every leg, as with a granite default over an index built for BM25 alone; refusing would stop every search, the MCP server's included, for as long as the ingestion embeds. `status` and `find-duplicates` say when it happens (§ CLI).
 
-**Sizes, estimated for godot:** a live index of about 250 MB without comment pieces and 1–1.5 GB with them; int8 vectors in memory of about 25 MB and 135 MB respectively; CLI or MCP server memory of about 50–100 MB and 150–250 MB.
+To time each local configuration, the eval builds, under `eval/`, the live index that configuration would get as the default (§ Eval › The default rule).
+
+**Vectors travel with the index.** An index carries the float32 vectors of its pieces in piece order, copied from the vector cache when it is built, and the int8 vectors derived from them. It opens with no vector cache. In godot that is about 0.15 GB per live index when the default searches issue pieces only and 0.7 GB when it also searches comment pieces, and the disk holds two live indexes during a rebuild.
+
+**Sizes, estimated for godot:** a live index of about 250 MB when the default searches issue pieces only and 1–1.5 GB when it also searches comment pieces; int8 vectors in memory of about 25 MB and 135 MB respectively; CLI or MCP server memory of about 50–100 MB and 150–250 MB.
 
 ### Retrieval
 
 **Legs.**
 
-- **BM25, scored by our own code** over posting lists in plain `node:sqlite` tables (ADR 0002). Its statistics (the number of visible pieces, each term's count of visible pieces, the average length) are computed as of an instant: the cutoff in a replay, the end of the window in the lenient replay (`statsAt`), the snapshot date outside a replay. Each term has a posting list ordered by start and a second one ordered by end; a term's count at an instant is its postings in the prefix minus those whose piece ended before the instant, and the piece count and average length come from cumulative arrays of starts and ends. Everything is a binary search. BM25's parameters are constants fixed before the eval runs, never tuned on it.
+- **BM25, scored by our own code** over posting lists in plain `node:sqlite` tables (ADR 0002). Its statistics (the number of visible pieces, each term's count of visible pieces, the average length) are computed as of an instant: the cutoff in a replay, the end of the window in the lenient replay (`statsAt`), the snapshot date outside a replay. Each term has a posting list ordered by start and a second one ordered by end; a term's count at an instant is its postings in the prefix minus those whose piece ended before the instant, and the piece count and average length come from cumulative arrays of starts and ends. Everything is a binary search.
+- **BM25's parameters:** k1 = 1.2 and b = 0.75, with Lucene's IDF, `ln(1 + (N − df + 0.5) / (df + 0.5))`, where N is the number of visible pieces and df the term's count of visible pieces; each distinct term of the new issue counts once. They are triage-bench's own (`BM25Retriever` in `src/triage/systems/duplicates.py`, commit `b00f341`), so step 1 of the ladder changes the text preparation and the tokenizer but not the scoring formula. They are constants fixed before the eval runs, never tuned on it (§ Decisions by analogy).
 - **Vectors, by an exact scan** written in TypeScript: int8 over the visible prefix, skipping ended pieces through an array of ends. The scan keeps each issue's best score and the 200 best issues, then rescores those issues' best pieces with their float32 vectors. It keeps 200 issues, not 200 pieces, because with comment pieces 200 pieces could collapse into far fewer issues. At 350k pieces the scan took 141 ms with everything visible and 7 ms with 5% visible.
 
 **From pieces to issues.** Each leg keeps the best piece of each issue. After fusion, the issue takes the piece of the leg where it ranks higher, the vector leg's on a tie. That piece gives the excerpt and is the one the reranker scores, so the reader sees what was scored. With one leg, or without comment pieces, it is that leg's best piece.
@@ -335,7 +340,7 @@ Every index is a file written once and never changed, in one format for the live
 
 **Candidates.** The new issue's number, when known, is excluded. A candidate's facts are those of the index's snapshot date, in a replay too, where only the ranks matter. Its original is named, never substituted, and may be several.
 
-**The retrieval configuration** says which legs run (BM25, vectors by embedder id), whether the reranker runs, and whether comment pieces are searched. It has a default (§ Default retrieval configuration). The eval sweeps it; the surfaces always use the default.
+**The retrieval configuration** says which legs run (BM25, vectors by embedder id), whether the reranker runs, and whether comment pieces are searched. It has a default (§ Default retrieval configuration). The eval sweeps it, always naming the configuration; the surfaces use the one the live index was built for, which is the default once an ingestion has run under the current version (§ Index files).
 
 ### Models
 
@@ -370,8 +375,10 @@ Every index is a file written once and never changed, in one format for the live
 
 ### Default retrieval configuration
 
+- **The package's default configuration** is a constant of the package: the one each live index is built for, and so the one the surfaces use once an ingestion has run under that version (§ Index files).
 - **Provisional default, until the eval has run:** hybrid BM25 + granite with reciprocal rank fusion, without the reranker and without comment pieces.
-- **Final default, set by the rule of § Eval › The default rule.** The rule's choice replaces the provisional default in the package, and the report marks it together with the rule.
+- **Final default, set by the rule of § Eval › The default rule.** The rule's choice replaces the provisional default in that constant, and the report marks it together with the rule.
+- **The default configuration's run** in a results file is the run whose configuration equals the package's default configuration. `build-demo-index` and the replay line find it that way, not by applying the rule, which also works for CI's single-row run, where the rule cannot be applied. The report warns when the rule's choice differs from the package's default.
 - **Every default is local:** no key, no hosted model.
 
 ### Workspace
@@ -413,7 +420,7 @@ While a first ingestion runs or is stopped, the repository gives no results; if 
 
 **A new issue by number** is resolved from the index (its facts and its live issue piece) or, when the index does not have it, from GitHub over REST, with `GITHUB_TOKEN` when set; unauthenticated suffices for one issue. Either way the issue is excluded from its own candidates.
 
-**The replay line.** When the new issue is given by number, is an eval case, and the index carries eval results (only demo and fixture indexes do), the search also returns the rank the default configuration gave its duplicate cluster in the replay.
+**The replay line.** When the new issue is given by number, is an eval case, and the index carries eval results (only demo and fixture indexes do), the search also returns the rank its duplicate cluster got in the default configuration's run (§ Default retrieval configuration), which the index carries.
 
 ### CLI
 
@@ -454,6 +461,7 @@ issue-triage-assistant reprocess <owner/repo>
 - **The new issue:** a number (`12345` or `#12345`) or an issue URL, which fixes the repository and is an error if it contradicts `--repo`; or a draft, with `--title`, required, and `--body` or `--body-file`, optional.
 - **`--repo`** is optional when only one repository is ingested. When it is missing or unknown, the error lists the ingested ones.
 - **A number not in the index** is fetched from GitHub, and the output says so.
+- **A live index built for an earlier version's default** is searched with its own configuration (§ Index files), and one line on stderr says so: `owner/repo: searched with the default configuration of an earlier version; the next ingest applies this version's` (`demo` instead of `ingest` for a demo index). The exit code stays 0.
 - **`--limit`:** 5 by default, up to 20.
 - **No score in any output**, `--json` included: an uncalibrated number reads as confidence to a human as much as to an agent running the CLI. Only the eval sees it.
 - **Errors:** `#N is a pull request`; `#N not found in owner/repo (transferred or deleted?)`.
@@ -499,7 +507,7 @@ issue-triage-assistant reprocess <owner/repo>
 
   After a first ingestion, the changes line is `first ingestion complete: <n> issues, <n> comments`.
 
-**`status`** lists the data directory, the models directory with its size, and each repository with its state, snapshot date, issue count and size; `--json` gives the same. There is no `remove` in phase 1: it would need the lock, and on Windows it would fail while an MCP server holds the index. The README's "Uninstall" section lists the data directory, the models' cache and npx's cache.
+**`status`** lists the data directory, the models directory with its size, and each repository with its state, snapshot date, issue count and size, noting when its live index was built for an earlier version's default configuration; `--json` gives the same. There is no `remove` in phase 1: it would need the lock, and on Windows it would fail while an MCP server holds the index. The README's "Uninstall" section lists the data directory, the models' cache and npx's cache.
 
 ```
 $ issue-triage-assistant status
@@ -529,6 +537,7 @@ godotengine/godot  demo index   snapshot <date> UTC             64,401 issues   
 - **Output:** the schema of § Output schema, declared as the tool's `outputSchema`, returned as `structuredContent` and, as the MCP specification recommends, also as serialized JSON in a text block. The human rendering is the CLI's only. No score.
 - **Errors:** an unknown or missing repository (listing the ingested ones), a first ingestion running or stopped, a pull request, an issue not found: results with `isError: true` carrying the CLI's messages.
 - A running server sees a new generation at its next call.
+- It searches with the configuration the live index was built for, as the CLI does (§ Index files). Its output does not flag a live index built for an earlier version's default: `status` and the CLI report it.
 
 ### Output schema
 
@@ -569,7 +578,7 @@ The eval runs only on the author's machine, against an ingested repository. CI r
 
 #### Eval cases
 
-- **Every usable duplicate opened from 2018-06-01**, when the text at a cutoff becomes guaranteed, **up to 90 days before the snapshot date**, with no sampling: about 5,000 in godot. The 90 days let markings settle (the historical p90 marking delay is 83 days).
+- **Every duplicate opened from 2018-06-01**, when the text at a cutoff becomes guaranteed, **up to 90 days before the snapshot date** is an eval case, with no sampling, unless it is out and counted below: about 5,000 duplicates in godot. The 90 days let markings settle (the historical p90 marking delay is 83 days).
 - **Candidates come from the whole history before the cutoff**, issues from before 2018 included, with their declared limits.
 - **Out and counted:** a case with no member opened before its cutoff; a case whose text at opening is lost (about 1%), since its first known text would be a leak in its favour; markings set aside by `markings`.
 - **Late markings are in**, with no cap: a perfect system would have found the original when the issue was opened.
@@ -590,7 +599,8 @@ The replay over every eval case: `full` index, text at opening, our ground truth
 - **12 local configurations:** {BM25, granite, hybrid with RRF k = 60} × {with or without the reranker over the top 20} × {with or without comment pieces}. All are candidates for the default rule.
 - **2 voyage-4-large rows:** alone, and in hybrid with BM25. Issue pieces only and no reranker, paired with the same granite configurations without comment pieces.
 - **1 GitHub semantic search row:** `search_type=semantic`, the closest to the issue form's suggestions; the query is the title plus the body at opening, trimmed to stay under 2,000 characters, with `repo:<owner/repo> is:issue created:<cutoff`; the top 20 are kept; raw responses are stored with their date under `eval/` and reused. It needs `GITHUB_TOKEN` and is limited to 10 requests a minute (about 8.5 h for godot). Its caveats go with the row: GitHub's index holds current text, a leak in its favour, so the comparison is conservative; it measures GitHub's search, not necessarily the engine behind the issue form's suggestions; and its index changes over time.
-- **Recent stratum:** a secondary column for cases opened since 2025-09-01, the first full month after granite-embedding-small-english-r2's release (2025-08-15), about 375 cases, with the same date for every row. For voyage-4-large, released in 2026, it does not rule out contamination, and the report says so.
+- **Recent stratum:** a secondary column for cases opened since 2025-09-01, the first full month after granite-embedding-small-english-r2's release (2025-08-15), about 330 cases with a snapshot at the end of November 2026, more with later ones, with the same date for every row. For voyage-4-large, released in 2026, it does not rule out contamination, and the report says so.
+- **Latency and memory** are measured for the 12 local configurations only (§ The default rule). The hosted rows, both voyage-4-large rows and the GitHub row, show "—": they can never be the default, and their latency would measure the provider's network and quota, not the system.
 - **No hold-out:** the knobs are fixed in advance (RRF k = 60, no weights, fixed cleaning, fixed BM25 parameters), so choosing among configurations barely overfits.
 
 #### The ladder and the anchor
@@ -603,8 +613,8 @@ A cumulative ladder from a lenient replay that mimics triage-bench to the replay
 
 | Step | What changes | Index | Run |
 |---|---|---|---|
-| 0 | Imitation: the anchor | `lenient`, window, triage-bench's text preparation and tokenizer, bge-small fp32 | triage-bench's ground truth and extraction, current text, `statsAt` = the window's end |
-| 1 | Our system: a bridge, not a correction | `lenient`, window, our preparation and tokenizer, granite | the same |
+| 0 | Imitation: the anchor | `backdated`, window, triage-bench's text preparation and tokenizer, bge-small fp32 | triage-bench's ground truth and extraction, current text, `statsAt` = the window's end |
+| 1 | Our system: a bridge, not a correction | `backdated`, window, our preparation and tokenizer, granite | the same |
 | 2 | Correction: BM25 statistics at the cutoff | the same | no `statsAt` |
 | 3 | Correction: text at the cutoff | `full`, window | text at opening |
 | 4 | Correction: our ground truth (maintainers only, the cluster) | the same | our ground truth |
@@ -620,8 +630,11 @@ A cumulative ladder from a lenient replay that mimics triage-bench to the replay
 #### The default rule
 
 - **The default is the configuration with the best Recall@5 on the full replay** among those that need no key and run under ~5 s per search at p95. The hosted rows can never be the default.
-- **Ties within the margin** go to the lowest p95 latency; latencies within 10% of each other go to the one that uses less memory. So BM25 alone, tying hybrid, would win, which also spares the model download.
-- **Latency is measured** on the live index, outside a replay, since that is what a user runs: on the author's laptop, with the text at opening of 200 eval cases as new issues, after warm-up, timing the whole search (embedding the new issue, searching and reranking), with a monotonic clock.
+- **Ties within the margin** go to the lowest p95 latency; latencies within 10% of each other go to the one with less peak memory. So BM25 alone, tying hybrid, would win, which also spares the model download.
+- **Each local configuration is timed, and its memory measured, on the live index it would get as the default**, outside a replay, since that is what a user would run: an index of scope `live` at the snapshot date holding exactly what that configuration searches (§ Index files), built by the eval under the repository's `eval/` from the vector cache. That is up to 6 shapes, {BM25, granite, hybrid} × {with or without comment pieces}; the reranker does not change the index.
+- **Latency** is timed on the author's laptop, with the text at opening of 200 eval cases as new issues, after warm-up, timing the whole search (embedding the new issue, searching and reranking), with a monotonic clock.
+- **Memory** is the peak RSS of a fresh process per local configuration that opens that index and runs the 200 latency searches. The results file records it per local row beside the p95 latency, so `renderReport` applies the rule from the results file alone.
+- **The hosted rows have neither**, and show "—" (§ The main table).
 
 #### Hand review
 
@@ -644,7 +657,7 @@ A cumulative ladder from a lenient replay that mimics triage-bench to the replay
 4. **Hand review:** `reviewSheets` writes sheets A and B from seeded samples.
 5. **The reranker score cache** (§ Models).
 
-**The results file** holds, as numbers only (no text and no logins): per case and run, the first member's rank up to 200; each case's issue number, cutoff and cluster; the top 5 of each case under the default configuration, which sample B needs; the exclusions by reason; the latency of each row; the configurations, model revisions, snapshot date and seed; and the package version that computed each run.
+**The results file** holds, as numbers only (no text and no logins): per case and run, the first member's rank up to 200; each case's issue number, cutoff and cluster; the top 5 of each case under the default configuration, which sample B needs; the exclusions by reason; the p95 latency and peak memory of each local row, and no latency or memory for the hosted rows; the configurations, model revisions, snapshot date and seed; and the package version that computed each run.
 
 **`eval run <owner/repo> --plan <file> [--snapshot <instant>] [--row <id>]...`**
 
@@ -672,7 +685,7 @@ A cumulative ladder from a lenient replay that mimics triage-bench to the replay
 
 Markdown generated from the results file, in `docs/eval/` beside it, linked from the README. Its sections:
 
-1. **Main table:** the 15 rows with Recall@1/5/10/20 and MRR@10, each with its interval, the recent stratum column, the p95 latency, and the default marked together with the rule that chose it.
+1. **Main table:** the 15 rows with Recall@1/5/10/20 and MRR@10, each with its interval, the recent stratum column, the p95 latency and peak memory, and the default marked together with the rule that chose it. The hosted rows show "—" for latency and memory, with the reason: they can never be the default, and their latency would measure the provider's network and quota, not the system. When the rule's choice differs from the package's default configuration, the report warns.
 2. **Paired differences** of each row against the default.
 3. **The ladder:** the steps × the 3 rows, each step's effect with its interval, the decomposition of steps 4 and 5, and the anchor's verdict.
 4. **Eval cases:** the count, exclusions by reason, cluster sizes, and the histogram of the first member's rank.
@@ -688,7 +701,7 @@ Markdown generated from the results file, in `docs/eval/` beside it, linked from
 
 **What the demo index holds.**
 
-- The live pieces the default configuration searches, with their posting lists and vectors, and nothing the default does not use: comment pieces only if the default searches them (about 250 MB without them, 1–1.5 GB with them), and no vectors and no model download if the default is BM25 alone.
+- The live index's pieces, with their posting lists and vectors: a demo index is a live index with the exclusion list applied, so it holds only what the default configuration searches (§ Index files). Comment pieces only if the default searches them (about 250 MB without them, 1–1.5 GB with them), and no vectors and no model download if the default is BM25 alone.
 - Per issue, only what the output shows: number, title, URL, opening date, state with its close reason, and its original as a derived fact, without who marked it.
 - The eval results it carries: each eval case's rank under the default, and the headline Recall@5 with its margin. `demo` and the replay line read them from the installed index, not from `docs/eval/`, which does not exist under `npx`.
 - No logins, timeline events, replaced revisions, raw responses or Voyage vectors.
@@ -696,7 +709,7 @@ Markdown generated from the results file, in `docs/eval/` beside it, linked from
 
 **Building it.**
 
-- **`build-demo-index <owner/repo> --results <file> [--exclusions <file>] --out <dir>`** builds the index file and the NOTICE in `<dir>` from the latest snapshot. It prints their sizes and sha256, the snapshot date, and how many issues and comments the exclusion list removed. It refuses when the results lack the default configuration's run, and on a demo index, which has no history.
+- **`build-demo-index <owner/repo> --results <file> [--exclusions <file>] --out <dir>`** builds the index file and the NOTICE in `<dir>` from the latest snapshot. It prints their sizes and sha256, the snapshot date, and how many issues and comments the exclusion list removed. It takes the ranks and the headline Recall@5 the index carries from the default configuration's run, the run whose configuration equals the package's default configuration (§ Default retrieval configuration), so it works on CI's single-row run too. It refuses when the results lack that run, and on a demo index, which has no history.
 - **When:** right after an ingestion, when the eval takes a new snapshot (in practice the two coincide) and on a removal request; no fixed cadence. Built from the latest snapshot, a rebuild also drops whatever was deleted, edited away or disappeared since.
 - **Before publishing,** the author downloads it from the release, checks the checksum and runs a search. The godot demo index never goes through CI: its example search would print godot text in public Actions logs.
 
@@ -809,7 +822,7 @@ For the ticket that scaffolds the project to copy to § Test seams of `docs/agen
 | `retrieval` (`buildIndex` and `findDuplicates`) | What a replay sees under a cutoff: renames, later comments, ended pieces, BM25 statistics at the instant and `statsAt`. The three scopes and the cutoffs they reject. Text preparation and tokenizer applied to both sides. The piece of each issue, which gives the excerpt and is the one reranked; the vector leg's 200 issues; RRF, reranking the top 20, `exclude` and `limit`. The facts, the original from `markings` included. An index file opens with no vector cache. Exact scores, which travel in `Candidate` | `src/retrieval/*.test.ts`; fake models, scenarios | `node --test <file>` |
 | `markings` | Every signal and wording, the maintainer test, the direction, a marking undone or redone, several originals, and every marking set aside: own author, deleted account, another repository, a pull request | `src/markings/*.test.ts`; one scenario per case | `node --test <file>` |
 | `ingestion` | A cut-off and resumed ingestion equals an uninterrupted one and does not move the snapshot date; a disappeared issue found through the `totalCount` mismatch and ended at the last snapshot that matched; a deleted comment ending at its event; an `updatedAt` tie at a page boundary; the quota wait. `reprocess` gives the same history. Responses recorded from this repository's tracker parse | `src/ingestion/*.test.ts`; fake GitHub, recorded responses, injected `sleep` | `node --test <file>` |
-| `workspace` | States (first ingestion running or stopped, ready, demo) and the repository list. Number → text from the index or from GitHub, and its exclusion. The snapshot date in the output. Two ingestions, at T1 and then at T2, give the same live index as one at T2, and a disappeared issue leaves it. An ingestion embeds only new texts, counted on the fake embedder. A reader seeing the new generation at its next call, while another still holds the old one. A second ingestion refused, and the lock freed when its process dies. A demo index installed, refused over a real ingestion, and replaced by a real one. The replay line | `src/workspace/*.test.ts`; fake GitHub, fake models, temporary data directory | `node --test <file>` |
+| `workspace` | States (first ingestion running or stopped, ready, demo) and the repository list. Number → text from the index or from GitHub, and its exclusion. The snapshot date in the output. Two ingestions, at T1 and then at T2, give the same live index as one at T2, and a disappeared issue leaves it. An ingestion embeds only new texts, counted on the fake embedder. A reader seeing the new generation at its next call, while another still holds the old one. A second ingestion refused, and the lock freed when its process dies. A demo index installed, refused over a real ingestion, and replaced by a real one. The replay line. A live index built for another default, searched with the configuration it records and reported by `status` | `src/workspace/*.test.ts`; fake GitHub, fake models, temporary data directory | `node --test <file>` |
 | `demo` (build and fetch) | Only live pieces and the default's legs, the exclusion list applied, no history and no logins, the eval results carried, the NOTICE. A checksum mismatch rejected | `src/demo/*.test.ts`; scenarios, fake models, fake GitHub | `node --test <file>` |
 | `eval`: ground truth | Clusters on `markings`, the June 2018 and 90-day bounds, every case exclusion; triage-bench's extraction | `src/eval/*.test.ts`; one scenario per case | `node --test <file>` |
 | `eval`: the run | End to end on the synthetic repository with its leak traps: exact ranks and recall per run, each of the ladder's steps with its case set, `statsAt` and new issue text, the default's top 5, the GitHub row from stored responses | `src/eval/*.test.ts`; fake models, fake GitHub | `node --test <file>` |
@@ -881,27 +894,31 @@ Also out of phase 1:
 
 | Section | Tickets |
 |---|---|
-| Scope | [Target repository and phase 1 scope](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/9), [Target repository candidates and their ground truth counts](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/3) |
-| Runtime, package and platforms | [Runtime, package manager and repository license](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/10), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36) |
-| Modules | [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Duplicate search as an MCP read tool or as a library](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/11) |
-| Ingestion | [Incremental ingestion](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/32), [GitHub API for ingesting a repository's history under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/4), [Data model and chunking under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/13) |
-| Duplicate markings | [Duplicate eval strategy](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/14), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27) |
-| Pieces, Index files, Retrieval | [Data model and chunking under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/13), [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27) |
-| Models, Default retrieval configuration | [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Embedding and reranking models usable from TypeScript](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/7) |
-| Workspace | [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Incremental ingestion](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/32), [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36) |
-| CLI, MCP server, Output schema | [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Duplicate search as an MCP read tool or as a library](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/11) |
-| Eval | [Duplicate eval strategy](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/14), [Where phase 1 differs from triage-bench and GitHub's duplicate suggestions](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/21), [Existing AI triage and duplicate detection tools](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/6) |
-| Demo | [Phase 1 demo mode](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/15), [Whether issue text and derived data can be redistributed](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/5) |
-| Testing Decisions | [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27) |
+| Scope | [Target repository and phase 1 scope](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/9), [Target repository candidates and their ground truth counts](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/3), [Duplicate search as an MCP read tool or as a library](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/11), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43) |
+| Runtime, package and platforms | [Runtime, package manager and repository license](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/10), [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43) |
+| Modules | [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Duplicate search as an MCP read tool or as a library](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/11), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43), [Searching a live index built for an older default configuration](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/45) |
+| Ingestion | [Incremental ingestion](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/32), [GitHub API for ingesting a repository's history under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/4), [Data model and chunking under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/13), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43) |
+| Duplicate markings | [Duplicate eval strategy](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/14), [Target repository and phase 1 scope](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/9), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43) |
+| Pieces | [Data model and chunking under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/13), [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27) |
+| Index files, Retrieval | [Data model and chunking under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/13), [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43), [Searching a live index built for an older default configuration](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/45) |
+| Models | [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Embedding and reranking models usable from TypeScript](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/7), [Data model and chunking under a cutoff](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/13) |
+| Default retrieval configuration | [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Duplicate eval strategy](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/14), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43), [Searching a live index built for an older default configuration](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/45) |
+| Workspace | [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Incremental ingestion](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/32), [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Phase 1 demo mode](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/15), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43) |
+| CLI, MCP server, Output schema | [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Duplicate search as an MCP read tool or as a library](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/11), [Searching a live index built for an older default configuration](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/45) |
+| Eval | [Duplicate eval strategy](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/14), [Where phase 1 differs from triage-bench and GitHub's duplicate suggestions](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/21), [Existing AI triage and duplicate detection tools](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/6), [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Incremental ingestion](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/32), [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43) |
+| Demo | [Phase 1 demo mode](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/15), [Whether issue text and derived data can be redistributed](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/5), [Incremental ingestion](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/32), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Close the gaps found reviewing the phase 1 spec](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/43) |
+| Environment variables | [Phase 1 CLI surface](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/36), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Phase 1 demo mode](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/15) |
+| Publishing and CI | [Phase 1 demo mode](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/15), [Runtime, package manager and repository license](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/10), [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27) |
+| Testing Decisions | [Phase 1 modules and seams](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/27), [Duplicate eval strategy](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/14), [Incremental ingestion](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/32), [Phase 1 demo mode](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/15), [Retrieval stack: store, embedding model and reranker](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/12), [Searching a live index built for an older default configuration](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/45) |
 
-- **Left to the ticket that scaffolds the project:** § Verification of `docs/agents/flow.md` and copying § Test seams there; `tsconfig` with `erasableSyntaxOnly` and `rewriteRelativeImportExtensions`; the lint tool and its rule against importing a module's internals; pnpm with `allowBuilds` and `packageManager`; the Node check in the `bin`'s entry file and `parseArgs`; the CI matrix on three platforms with the models' cache path; the npm publishing workflow on `v*` tags.
+- **Left to the ticket that scaffolds the project:** § Verification of `docs/agents/flow.md` and copying § Test seams there; `tsconfig` with `erasableSyntaxOnly` and `rewriteRelativeImportExtensions`; the lint tool and its rule against importing a module's internals; pnpm with `allowBuilds`, `packageManager` and `minimumReleaseAge`, whose value it picks; the Node check in the `bin`'s entry file and `parseArgs`; the CI matrix on three platforms with the models' cache path; the npm publishing workflow on `v*` tags.
 - **Cost, estimated on the author's laptop (i7-1255U) for godot:**
 
 | Item | Cost |
 |---|---|
 | First ingestion (full pass) | ~4 h, ~7,800 GitHub points |
 | Daily ingestion | ~15 s, ~5–7 points |
-| Embedding live pieces once, granite q8 | ~2.6 h issues only, ~6.5 h with comments |
+| Embedding the live index's pieces once, granite q8 | ~2.6 h if the default searches issue pieces only, ~6.5 h if it also searches comment pieces, none if it is BM25 alone |
 | Embedding every revision once, for the replay | ~5.5 h issues only, ~11 h with comments |
 | voyage-4-large row | ~3 days in the background, $0 |
 | One replay configuration without the reranker, ~5k cases | ~25 min |
@@ -911,10 +928,11 @@ Also out of phase 1:
 | A search, without / with the reranker | < 0.5 s / +~1.8 s |
 | Money | $0 |
 
-- **The weakest figures:** our own BM25 and the size of its posting lists were not measured; CPU hours come from one laptop with ±25% noise; rebuilding the live index after an ingestion is estimated at 1–3 min; Voyage may use the submitted texts to train its models (they are public anyway).
+- **The weakest figures:** our own BM25 and the size of its posting lists were not measured; CPU hours come from one laptop with ±25% noise; rebuilding the live index after an ingestion is estimated at 1–3 min with comment pieces; Voyage may use the submitted texts to train its models (they are public anyway).
 
 ## Decisions by analogy
 
 What a branch resolves by analogy with something already decided, with the decision it follows.
 
-None yet.
+- **BM25's parameters are fixed before the eval runs and never tuned on it** (§ Retrieval). Follows the "knobs fixed in advance" of [Duplicate eval strategy](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/14) (RRF k = 60, no weights, fixed cleaning), which is why the eval needs no hold-out (§ Eval › The main table).
+- **A live index is searched with the configuration it was built for**, until the next ingestion builds one for the package's current default (§ Index files), resolving [Searching a live index built for an older default configuration](https://github.com/jmbaquerosanchez/issue-triage-assistant/issues/45). Follows the generations of § Workspace: a reader keeps serving the previous snapshot until the new generation is written, so a generation is served as it was built.

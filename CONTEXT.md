@@ -21,6 +21,10 @@ A person with permissions on the target repository who decides what to do with a
 A GitHub label on an issue, such as `duplicate` or `bug`.
 _Avoid_: tag; using it for ground truth
 
+**History**:
+Everything ingested about a target repository: its issues and comments, every revision of their text, and their timeline events, each dated, including what has since disappeared at the source.
+_Avoid_: dump, corpus, dataset
+
 **Ingestion**:
 Bringing a target repository's history up to date locally. The first one downloads it whole; each later one, only what changed since the previous one.
 _Avoid_: sync, refresh, crawl
@@ -28,6 +32,10 @@ _Avoid_: sync, refresh, crawl
 **Snapshot**:
 The history of a target repository as it stood at a moment no later than its last ingestion. An eval runs on one and declares its date; the demo ships the index of one. Not a cutoff: a cutoff belongs to each eval case, a snapshot to the whole eval.
 _Avoid_: dump, export
+
+**Demo index**:
+A ready-built index of one snapshot of a target repository, downloaded with no credentials to try the product: current text only, plus the eval results it shows.
+_Avoid_: sample data, fixture
 
 ### Triage
 
@@ -48,6 +56,10 @@ An issue that a maintainer marked as a duplicate of another.
 **Original**:
 The issue a duplicate was marked as a duplicate of: usually earlier, sometimes newer, when a maintainer folds an old issue into a newer one.
 
+**Duplicate marking**:
+A statement on an issue that it duplicates another: GitHub's duplicate marking, a close as duplicate, or a closing comment naming the original. Only a maintainer's counts.
+_Avoid_: duplicate label
+
 **Duplicate cluster**:
 The issues joined by maintainers' duplicate markings, directly or through a chain: a duplicate, its original, that original's own original, and the other duplicates of any of them.
 _Avoid_: duplicate group, family
@@ -59,6 +71,10 @@ _Avoid_: match, hit
 **Piece**:
 The text of an issue (its title and body) or of a comment, as it stood between two edits: the unit that duplicate search scores.
 _Avoid_: chunk, document, passage, entry
+
+**Retrieval configuration**:
+Which signals duplicate search combines and over which pieces: keyword scoring, embeddings or both, with or without reranking, with or without comment pieces. The *default configuration* is the one users get, chosen by a rule stated before the eval's results.
+_Avoid_: setup, variant, pipeline
 
 ### Evaluation
 
@@ -88,3 +104,15 @@ _Avoid_: fix, adjustment
 **Leak**:
 Anything from after an eval case's cutoff that reaches its replay: text edited later, comments or labels added later, scoring statistics that count later issues.
 _Avoid_: lookahead
+
+**Window**:
+The ladder's fixed span: a test period whose issues are eval cases, and an earlier start before which no issue is a candidate. The last correction replaces it with the whole history.
+_Avoid_: range, slice
+
+**Ladder**:
+The sequence of corrections from the lenient replay to the replay, each applied on top of the previous one, showing how much each moves the numbers.
+_Avoid_: ablation
+
+**Anchor**:
+The run of triage-bench's own code on the window that the lenient replay must match, so the ladder starts from a faithful imitation.
+_Avoid_: reference run, calibration
