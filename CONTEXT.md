@@ -38,6 +38,10 @@ The preparation of a proposal of what to do with a new issue, for a maintainer t
 The issue being triaged, whose duplicates are searched: one just opened, one about to be opened, or, in a replay, the eval case's issue as of its cutoff.
 _Avoid_: query, incoming issue
 
+**Draft**:
+A new issue about to be opened, given by its title and body rather than a number.
+_Avoid_: pending issue
+
 **Duplicate**:
 An issue that a maintainer marked as a duplicate of another.
 
