@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # models-dir: the platform's cache directory for models (§ Workspace of docs/spec.md).
+          - os: ubuntu-latest
+            models-dir: ~/.cache/issue-triage-assistant
+          - os: macos-latest
+            models-dir: ~/Library/Caches/issue-triage-assistant
+          - os: windows-latest
+            models-dir: ~/AppData/Local/issue-triage-assistant/Cache
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+
+      # The version pinned in package.json's packageManager.
+      - uses: pnpm/action-setup@v6
+
+      # The oldest Node the package promises (engines), so nothing newer slips in.
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24.15.0
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Empty until the models arrive: the first ticket that downloads them keys
+      # this cache on their pinned revisions.
+      - uses: actions/cache@v6
+        with:
+          path: ${{ matrix.models-dir }}
+          key: models-${{ runner.os }}
+
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm test:e2e
