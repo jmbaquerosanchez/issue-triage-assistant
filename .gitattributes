@@ -1,0 +1,4 @@
+# LF everywhere, Windows checkouts included, so that text compared byte for byte
+# in the tests (outputs, recorded responses, fixtures) is the same on every
+# platform CI runs on.
+* text=auto eol=lf

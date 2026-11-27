@@ -1,0 +1,41 @@
+{
+  "name": "issue-triage-assistant",
+  "version": "0.0.0",
+  "description": "Finds the duplicates of a new GitHub issue, and measures how well it does so by replaying the repository's own history.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmbaquerosanchez/issue-triage-assistant.git"
+  },
+  "type": "module",
+  "bin": {
+    "issue-triage-assistant": "src/bin.ts"
+  },
+  "publishConfig": {
+    "bin": {
+      "issue-triage-assistant": "dist/bin.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=24.15"
+  },
+  "packageManager": "pnpm@11.28.13",
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\" && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --flag unstable_native_nodejs_ts_config",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "pack:e2e": "pnpm build && pnpm pack --out .pack/issue-triage-assistant.tgz",
+    "test:e2e": "pnpm pack:e2e && node --test \"test/e2e/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.15.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.73.0"
+  }
+}

@@ -145,10 +145,10 @@ A local tool, the npm package `issue-triage-assistant`, that finds the duplicate
 
 - **TypeScript** (ADR 0001) on **Node, `engines: >=24.15`**: from 24.15.0, `node:sqlite` is a release candidate and prints no experimental warning. Bun and Deno are neither promised nor tested.
 - **Platforms promised:** Linux x64 and arm64, macOS arm64, native Windows x64. Intel macOS is not promised.
-- **pnpm**, pinned in `packageManager`. Dependency install scripts stay blocked: `allowBuilds: {onnxruntime-node: false, protobufjs: false}`, since onnxruntime-node's script only fetches the CUDA provider on Linux x64 and the CPU binaries are already in its tarball. Transformers.js needs sharp's binary even for text models. `minimumReleaseAge` delays adopting freshly published versions; the ticket that scaffolds the project picks its value.
+- **pnpm**, pinned in `packageManager`. Dependency install scripts stay blocked: `allowBuilds: {onnxruntime-node: false, protobufjs: false}`, since onnxruntime-node's script only fetches the CUDA provider on Linux x64 and the CPU binaries are already in its tarball. Transformers.js needs sharp's binary even for text models. `minimumReleaseAge` delays adopting freshly published versions: 7 days, the value the ticket that scaffolds the project picked, with its reason in `pnpm-workspace.yaml`.
 - **License:** MIT, covering this repository's own code and docs only.
 - **One npm package, `issue-triage-assistant`,** with one `bin` of the same name and one folder per module. Each module exposes a single entry file, and a lint rule forbids importing its internals. No pnpm workspace packages. The core is internal: the public surfaces are the CLI and the MCP tool, and there is no library API and no semver promise beyond them.
-- **How TypeScript runs.** Development and tests run the `.ts` sources through Node's type stripping, with no build. The published package is compiled to JS with `tsc`, since Node does not strip types inside `node_modules`. Only erasable syntax (`erasableSyntaxOnly`: no `enum`, `namespace` or parameter properties); relative imports carry `.ts`, which `rewriteRelativeImportExtensions` turns into `.js`. `tsc --noEmit` checks types.
+- **How TypeScript runs.** Development and tests run the `.ts` sources through Node's type stripping, with no build. The published package is compiled to JS with `tsc`, since Node does not strip types inside `node_modules`. Only erasable syntax (`erasableSyntaxOnly`: no `enum`, `namespace` or parameter properties); relative imports carry `.ts`, which `rewriteRelativeImportExtensions` turns into `.js`. `tsc --noEmit` checks types. The `bin` in `package.json` is `src/bin.ts`, so a clone runs it with no build, and `publishConfig.bin` makes it `dist/bin.js` in the packed package. Only pnpm applies `publishConfig.bin`, so what is published is the tarball `pnpm pack` builds, the one the end-to-end tests run, never a directory published with `npm publish`.
 - **The `bin`'s entry file has no imports.** It checks `process.versions.node` first and exits with `issue-triage-assistant needs Node ≥ 24.15; this is Node <v>`, because npm only warns on `engines`.
 - **Arguments** are parsed with `parseArgs` from `node:util`, with a hand-written subcommand dispatcher and `--help`, and no CLI dependency.
 - **Data from outside is validated at the boundary** (ADR 0001): GitHub responses, model outputs, the offline scripts' files, eval plans and results files.
@@ -828,19 +828,20 @@ For the ticket that scaffolds the project to copy to § Test seams of `docs/agen
 | `eval`: the run | End to end on the synthetic repository with its leak traps: exact ranks and recall per run, each of the ladder's steps with its case set, `statsAt` and new issue text, the default's top 5, the GitHub row from stored responses | `src/eval/*.test.ts`; fake models, fake GitHub | `node --test <file>` |
 | `eval`: the report | Results files and verdicts → markdown: metrics, the seeded cluster bootstrap, paired differences, the default rule and its tie-breaks | `src/eval/*.test.ts`; hand-written results files | `node --test <file>` |
 | Real `models`: the CI guard | The embedder against reference vectors and the reranker against reference scores, with the thresholds from `offline/` | `src/models/*.test.ts`; references in `test/support/`, written by the offline script | `node --test <file>` |
-| The packed package, end to end | The fixture index built by `ingest`, `eval run` and `build-demo-index` against the fake. `demo` against it: download, checksum, installation, the example search with its replay line, the NOTICE line. `find_duplicates` over stdio: by number, by text, an issue not ingested, an unknown repository. Real models | `test/e2e/*.test.ts` | `node --test <file>`, after the build and `pnpm pack` |
+| `cli` from the sources | What a clone runs with no build, through `src/bin.ts` in a subprocess: the dispatcher (`--help`, bad usage exiting 2) and the bin's Node version check, on a version faked by a preload. The commands themselves are covered end to end | `src/cli/*.test.ts`; `test/support/run-cli.ts`, `test/support/fake-node-version.ts` | `node --test <file>` |
+| The packed package, end to end | The `bin` from the tarball run as `npx` runs it: `--help`, and the Node version message on an older Node. The fixture index built by `ingest`, `eval run` and `build-demo-index` against the fake. `demo` against it: download, checksum, installation, the example search with its replay line, the NOTICE line. `find_duplicates` over stdio: by number, by text, an issue not ingested, an unknown repository. Real models | `test/e2e/*.test.ts`; `test/support/run-cli.ts` | `node --test <file>`, after the build and `pnpm pack`, which `pnpm pack:e2e` runs |
 
 **Not seams of their own:**
 
 - `history` and `github`, tested through whoever writes and reads them;
 - the BM25 scorer, the vector scan, the tokenizers and cleaning, internal seams of `retrieval` tested through `findDuplicates`;
-- `cli` and `mcp`, which are thin and covered end to end.
+- `mcp`, and the commands of `cli`, which are thin and covered end to end; the dispatcher and the bin's version check have the `cli` seam above.
 
 `ingestion` is a seam apart from `workspace` because its tests need what `workspace` does not expose: cutting an ingestion off at a chosen request, the fake's instant, and reading the history it wrote.
 
 ### Prior art
 
-- The repository has no code yet, so no test in it to follow. The scripts under `docs/research/` are evidence of their reports, not tests.
+- The first tests, from the ticket that scaffolds the project, run the bin in a subprocess: `src/cli/cli.test.ts` from the sources and `test/e2e/package.test.ts` from the packed package, both through `test/support/run-cli.ts`. The scripts under `docs/research/` are evidence of their reports, not tests.
 - triage-bench's `tests/test_leakage.py` checks its time mask for BM25 and difflib only. The synthetic repository's leak traps go further: the vector leg, text revisions, comments and BM25 statistics.
 - ADR 0003 (GitHub faked at HTTP) and ADR 0004 (immutable index files) record the decisions this section rests on.
 

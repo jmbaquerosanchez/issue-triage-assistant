@@ -1,0 +1,16 @@
+# pnpm's settings. This is one package, not a workspace of several (§ Runtime,
+# package and platforms of docs/spec.md), so there is no `packages` list.
+
+# Dependency install scripts stay blocked. onnxruntime-node's only fetches the
+# CUDA provider on Linux x64, and its CPU binaries are already in its tarball;
+# protobufjs's is not needed to run. Any other package with a build script makes
+# `pnpm install` fail until it is listed here.
+allowBuilds:
+  onnxruntime-node: false
+  protobufjs: false
+
+# A version is installed only once it has been on the registry for 7 days
+# (in minutes). Hijacked versions are usually caught and unpublished within
+# hours or days, and nothing here needs a dependency the week it ships. An
+# urgent fix goes in `minimumReleaseAgeExclude`, with its reason.
+minimumReleaseAge: 10080
