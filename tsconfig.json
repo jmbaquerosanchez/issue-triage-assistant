@@ -1,0 +1,20 @@
+{
+  // Type checks everything. Development and tests run the .ts sources through
+  // Node's type stripping, so nothing here may need a transform: only erasable
+  // syntax, and relative imports with their .ts extension.
+  "compilerOptions": {
+    "target": "es2024",
+    "lib": ["es2024"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "rewriteRelativeImportExtensions": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["src", "test", "lint", "eslint.config.ts"]
+}

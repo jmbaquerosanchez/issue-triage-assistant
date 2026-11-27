@@ -1,0 +1,13 @@
+{
+  // Compiles the published package: Node does not strip types inside
+  // node_modules. `rewriteRelativeImportExtensions` turns the sources' .ts
+  // imports into .js.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts"]
+}
